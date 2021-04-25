@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<h2> <%= @andinist.fullname %> </h2>
+	<div class="btn-group" role="group" aria-label="Acciones">
+		<%= link_to ['Editar', @andinist.fullname].join(" "), edit_andinist_path(@andinist), class: "btn btn-primary my-2"  %> 
+	</div>
+
+
+<table class="table table-sm table-striped">
+  	<tbody>
+  		<tr>
+    		<th>ID</th>
+    		<td><%= @andinist.id %></th>
+    	</tr>
+    	<tr>
+    		<th>Nombres</th>
+    		<td><%= @andinist.name %></th>
+    	</tr>
+    	<tr>
+    		<th>Apellidos</th>
+    		<td><%= @andinist.surname %></th>
+    	</tr>
+    	<tr>
+    		<th>Nacionalidad</th>
+    		<td><%= @andinist.country %></th>
+    	</tr>
+    	<tr>
+    		<th>Club</th>
+    		<td><%= @andinist.club %></th>
+    	</tr>
+    	<tr>
+    		<th>Género</th>
+    		<td><%= @andinist.gender %></th>
+    	</tr>
+ 	</tbody>
+</table>
+
+
+<%= link_to ['Editar ', @andinist.fullname].join(" "), edit_andinist_path(@andinist) %> |
+<%= link_to 'Volver a Andinistas', andinists_path %>

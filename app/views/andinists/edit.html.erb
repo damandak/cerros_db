@@ -1,0 +1,6 @@
+<h1>Editar Andinista</h1>
+
+<%= render 'form', andinist: @andinist %>
+
+<%= link_to ['Volver a', @andinist.fullname].join(" "), @andinist %> |
+<%= link_to 'Volver a Andinistas', andinists_path %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cerros</h1>
+
+<table class="table table-striped table-sm">
+  <thead class="thead-dark">
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Altura</th>
+      <th>Latitud Sur</th>
+      <th>Longitud Oeste</th>
+      <th>Ascendido</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @mountains.each do |mountain| %>
+      <tr>
+        <th> <%= mountain.id %> </th>
+        <td> <%= link_to mountain.fullname, mountain_path(mountain) %> </td>
+        <td> <%= mountain.altitude ? mountain.altitude : "-" %> </td> 
+        <td> <%= mountain.latitude ? mountain.latitude : "-" %> </td> 
+        <td> <%= mountain.longitude ? mountain.longitude : "-" %> </td>
+        <td> <%= mountain.ascended %></td>
+        <td>
+          <%= link_to(edit_mountain_path(mountain)) do %>
+            <i class="far fa-edit"></i>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+    <%= paginate @mountains %>
+<br>
+
+<%= link_to 'Crear Cerro', new_mountain_path %>

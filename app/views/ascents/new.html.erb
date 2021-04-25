@@ -1,0 +1,13 @@
+
+<% if @mountain %>
+	<h1>Registrar ascenso de <%= Mountain.find(@mountain.id).fullname %></h1>
+
+	<%= render 'form', ascent: @ascent %>
+
+<% else %>
+
+	<h1>Ascenso debe estar vinculado a montaña</h1>
+
+<% end %>
+
+<%= link_to "Volver", ascents_path, class: "btn btn-secondary my-2"  %>

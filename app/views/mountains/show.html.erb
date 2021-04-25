@@ -1,0 +1,142 @@
+<p id="notice"><%= notice %></p>
+
+<h2> <%= @mountain.fullname %> </h2>
+	<div class="btn-group" role="group" aria-label="Acciones">
+		<%= link_to ['Editar', @mountain.fullname].join(" "), edit_mountain_path(@mountain), class: "btn btn-primary my-2"  %> 
+		<%= link_to 'Volver a Cerros', mountains_path, class: "btn btn-secondary my-2"  %>
+	</div>
+
+
+<table class="table table-sm table-striped">
+  	<tbody>
+  		<tr>
+    		<th>ID</th>
+    		<td><%= @mountain.id %></th>
+    	</tr>
+    	<tr>
+    		<th>Tipo</th>
+    		<td><%= @mountain.prefix %></th>
+    	</tr>
+    	<tr>
+    		<th>Nombre</th>
+    		<td><%= @mountain.name %></th>
+    	</tr>
+    	<tr>
+    		<th>Altura</th>
+    		<td><%= @mountain.altitude %></th>
+    	</tr>
+    	<tr>
+    		<th>Latitud Sur</th>
+    		<td><%= @mountain.latitude %></th>
+    	</tr>
+    	<tr>
+    		<th>Longitud Oeste</th>
+    		<td><%= @mountain.longitude %></th>
+    	</tr>
+ 	</tbody>
+</table>
+
+<h3 class="mt-3"> Ubicación </h3>
+
+	<p>
+	<%= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=17&size=400x300&center=#{@mountain.latitude},#{@mountain.longitude}&key=#{Rails.application.credentials.google_maps_api_key}", alt: "Map" %>
+	</p>
+	<p>
+	<%= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=17&size=400x300&center=#{51.477222},#{0}&key=#{Rails.application.credentials.google_maps_api_key}", alt: "Map" %>
+	</p>
+
+
+<h3> Rutas existentes </h3>
+
+<% @mountain.routes.each do |route| %>
+
+	<p><%= route.name %></p>
+
+<% end %>
+<%= link_to 'Crear Ruta', new_route_path, class: "btn btn-primary btn-sm my-2"  %>
+
+<h3 class="mt-3"> Ascensos Destacados</h3>
+
+<% if @mountain.ascents.count > 0 %>
+	<table class="table table-striped">
+	  	<thead>
+	    	<tr>
+	    		<th>ID</th>
+	    		<th>Ruta</th>
+	    		<th>Descripción</th>
+	      		<th>Ascensionistas</th>
+				<th>Día</th>
+				<th>Mes</th>
+				<th>Año</th>
+				<th>Referencias</th>
+	    	</tr>
+	  	</thead>
+	  	<tbody>
+	    	<% @mountain.ascents.each do |ascent| %>
+				<tr>
+					<th> <%= ascent.id %> </th>
+					<td> <%= ascent.route.name %> </td>
+					<td> <%= ascent.name %> </td>
+					<td> 
+						<% cont = 0  %>
+						<% ascent.andinists.each do |andinist| %>
+							<%= cont == 0 ? "" :', '%>
+							<%= link_to andinist.fullname, andinist_path(andinist) %>
+							<% cont += 1 %>
+						<% end %>
+					</td>
+					<td> <%= ascent.day %> </td>
+					<td> <%= ascent.month %></td>
+					<td> <%= ascent.year %></td>
+					<td> <%= "not yet" %></td>
+				</tr>
+	    	<% end %>
+	 	</tbody>
+	</table>
+<% else %>
+	<p>Sin Ascensos Registrados</p>
+<% end %>
+<%= link_to 'Crear Ascenso Destacado', new_ascent_path(:mountain => @mountain), class: "btn btn-primary btn-sm my-2"  %>
+
+<% if @mountain.nomenclatura_object != nil %>
+	<h3 class="mt-3"> Información levantada en Proyecto Nomenclatura</h3>
+
+	<table class="table table-sm table-striped">
+	  	<tbody>
+    		<% nom = @mountain.nomenclatura_object %>
+	    	<tr>
+	    		<th>Nombre Nomenclatura</th>
+	    		<td><%= nom.name %></th>
+	    	</tr>
+	    	<tr>
+	    		<th>Mapa IGM</th>
+	    		<td><%= [nom.igm_rectangle.file_id, nom.igm_rectangle.name].join(" ") %></th>
+	    	</tr>
+	    	<tr>
+	    		<th>Altitud IGM</th>
+	    		<td><%= nom.altitude_igm %></th>
+	    	</tr>
+	    	<tr>
+	    		<th>Latitud Sur PSAD 56</th>
+	    		<td><%= nom.latitude_south %></th>
+	    	</tr>
+	    	<tr>
+	    		<th>Longitud Oeste PSAD 56</th>
+	    		<td><%= nom.longitude_west %></th>
+	    	</tr>
+	    	<tr>
+	    		<th>Código de Revisión</th>
+	    		<td><%= nom.revision_code %></th>
+	    	</tr>
+	    	<tr>
+	    		<th>Observaciones</th>
+	    		<td><%= nom.observations %></th>
+	    	</tr>
+	    	<tr>
+	    		<th>Comentarios</th>
+	    		<td><%= nom.comment %></th>
+	    	</tr>
+	 	</tbody>
+	</table>
+
+<% end %>

@@ -1,0 +1,1083 @@
+﻿ID,nom_id,revision_code,name,altitude_igm,latitude_south,longitude_west,observations,comment,igm_rectangle_id,mountain_id
+1,El Ingenio_1,1,Morro El Pangal,2575,33º 45' 42'',70º 19' 48'',,,1,1
+2,El Ingenio_2,2,San Pedro Nolasco,3177,33º 48' 21'',70º 19' 12'',,,1,2
+3,El Ingenio_3,3,Euskadi,3615,33° 51' 18'',70° 20' 46'',"Info de SGIM; Primera Ascension 1956 por vascos residentes en Chile; ver foto de cumbre (cordada, 15C_44/UL)",,1,3
+4,El Ingenio_4,4,La Carlota,3563,33º 51' 21'',70º 18' 45'',,,1,4
+5,El Ingenio_5,5,P2856,2856,33º 51' 31'',70º 28' 18'',,,1,5
+6,El Ingenio_6,6,Los Cristales,3057,33º 51' 42'',70º 26' 22'',,,1,6
+7,El Ingenio_7,7,Santa Rita,3533,33º 52' 08'',70º 16' 40'',,,1,7
+8,El Ingenio_8,8,P3558,3558,33º 54' 14'',70º 21' 39'',,,1,8
+9,El Ingenio_9,9,P3760,3760,33º 54' 41'',70º 18' 04'',,,1,9
+10,El Ingenio_10,10,de la Punta,3702,33º 57' 02'',70º 20' 46'',,,1,10
+11,El Ingenio_11,11,Alto Rodcillo?,2778,33º 56' 55'',70º 28' 29'',,,1,11
+12,El Ingenio_12,12,P3669,3669,33º 58' 00'',70º 17' 21'',,,1,12
+13,El Ingenio_13,13,P3935,3935,33º 59' 46'',70º 17' 02'',,,1,13
+14,Lagunas de Teno_1,1,El Horno,3715,35º 00' 57'',70º 21' 47'',,,2,14
+15,Lagunas de Teno_2,2,Alto de Cayetano,2878,35º 00' 36'',70º 38' 22'',,,2,15
+16,Lagunas de Teno_4,4,P3478,3478,35º 02' 12'',70º 24' 14'',,,2,16
+17,Lagunas de Teno_5,5,P3621,3621,35º 03' 10'',70º 22' 22'',,,2,17
+18,Lagunas de Teno_6,6,Torre Santa Elena,3845,35º 04' 45'',70º 22' 18'',,,2,18
+19,Lagunas de Teno_8,8,Alto de las Lajas,2866,35º 05' 19'',70º 41' 27'',,,2,19
+20,Lagunas de Teno_11,11,Cordon Caletas,3257,35º 08' 24'',70º 33' 33'',,,2,20
+21,Lagunas de Teno_12,12,Villagra,3265,35º 11' 54'',70º 28' 09'',,,2,21
+22,Lagunas de Teno_15,15,Morro El Planchon,3977,35º 12' 58'',70º 34' 11'',,,2,22
+23,Lagunas de Teno_16,16,Vn Planchon,3920,35º 13' 10'',70º 33' 58'',,,2,23
+24,Termas del Flaco_1,1,"Sierra de San Hilario
+(Sector Suroeste)",3869,34º 45' 55'',70º 23' 09'',,,3,24
+25,Termas del Flaco_2,2,"Sierra de San Hilario
+(Sector Noreste)",3840,34º 45' 13'',70º 22' 11'',,,3,25
+26,Termas del Flaco_3,3,P4670,4670,34º 45' 58'',70º 18' 38'',Nombre ?,,3,26
+27,Termas del Flaco_4,4,Punta Rosita,4136,34º 46' 10'',70º 20' 51'',,,3,27
+28,Termas del Flaco_5,5,Alto del Azufre,4691,34º 46' 07'',70º 19' 12'',,,3,28
+29,Termas del Flaco_6,6,Puntilla I del Azufre,4508,34º 46' 40'',70º 19' 26'',"Cinco Puntillas, entre el Alto del Azufre y el Volcan Tinguiririca; muy mala roca ! Orientacion de Norte a Sur; Ver datos segun FEACh (Elvis Acevedo), escaneo 0005 ",,3,29
+30,Termas del Flaco_7,7,Puntilla II del Azufre,4516,34º 47' 01'',70º 19' 25'',,,3,30
+31,Termas del Flaco_8,8,Puntilla III del Azufre,4508,34º 47' 07'',70º 19' 26'',,,3,31
+32,Termas del Flaco_9,9,Puntilla IV del Azufre,4538,34º 47' 13'',70º 19' 25'',,,3,32
+33,Termas del Flaco_10,10,Puntilla V del Azufre,4463,34º 47' 31'',70º 19' 26'',"Eleccion de cumbres fué arbitraria: se eligieron las cinco cumbres más altas (excepcion: Puntilla V); segun los primeros ascensionistas, Puntilla III sería la más baja",,3,33
+34,Termas del Flaco_11,11,Moño,4699,34º 47' 45'',70º 14' 49'',Cumbre fronteriza / Nombre ?,,3,34
+35,Termas del Flaco_12,12,P4495,4495,34º 48' 06'',70º 15' 08'',Cumbre fronteriza / Nombre ?,,3,35
+36,Termas del Flaco_13,13,P4455,4455,34º 48' 49'',70º 15' 18'',Cumbre fronteriza / Nombre ?,,3,36
+37,Termas del Flaco_14,14,Volcan Tinguiririca,4280,34º 48' 54'',70º 20' 56'',,,3,37
+38,Termas del Flaco_15,15,Volcan Monserrat,4230,34º 48' 07'',70º 20' 30'',,,3,38
+39,Termas del Flaco_16,16,P4297,4297,34º 49' 32'',70º 15' 43'',Cumbre fronteriza / Nombre ?,,3,39
+40,Termas del Flaco_17,17,Volcan Fray Carlos,4012,34º 50' 23'',70º 21' 27''," 4 012m = altura del cono volcanico; 
+ altura máxima en zona  = 4223m (1km+ al Norte)",,3,40
+41,Termas del Flaco_18,18,Natalia,3639,34º 51' 42'',70º 21' 29'',,,3,41
+42,Termas del Flaco_19,19,Alto de las Placetas,3255,34º 51' 04'',70º 28' 04'',Nombre alternativo: Cerro Negro ??,,3,42
+43,Termas del Flaco_20,20,Don Cucho,3556,34º 52' 48'',70º 21' 48'',,,3,43
+44,Termas del Flaco_22,22,Los Guzmanes,3713,34º 53' 31'',70º 23' 44'',,,3,44
+45,Termas del Flaco_23,23,P4138,4138,34º 55' 43'',70º 19' 07'',Cumbre fronteriza / Nombre ?,,3,45
+46,Termas del Flaco_24,24,Sin Nombre,4160,34º 56' 18'',70º 19' 42'',Nombre dudoso; ver Pano 20_55_3B,,3,46
+47,Termas del Flaco_25,25,Orejas,3949,34º 58' 54'',70º 19' 47'',Cumbre fronteriza,,3,47
+48,Termas del Flaco_26,26,Punta de los Suizos,3995,34º 58' 24'',70º 19' 30'',"Ver Pano 20_55_3B y Foto 11_11;
+Ver Report de ascension, L'Echo des Alpes 1905 No 11, p. 397 - 423",,3,48
+49,Termas del Flaco_27,27,Sordo Lucas,,,,Ver hoja Sierras de Bellavista,,3,49
+50,Termas del Flaco_28,28,Horno de la Vieja,3602,34º 59' 51'',70º 21' 19'',,,3,50
+51,Termas del Flaco_29,29,Alto del Padre,3349,34º 59' 11'',70º 27' 21'',"Ver Trekking and Mountaineering, de Siebert y Schubert, pag 101 (relato de ascension, en ingles)",,3,51
+52,Termas del Flaco_31,31,Rincon de Pincheira,3291,34º 48' 29'',70º 17' 05'',Importancia historica ??,,3,52
+53,Termas del Flaco_32,32,Alto de las Llaretas,,34º 52',70º 30',"No aparece en esta hoja IGM; Aparece en el mapa de Lliboutry (""Fig 50"" entre pags 304 y 305 del libro original / 1956)",,3,53
+54,Sierras de Bellavista_1,1,San Antonio,2713,34º 45' 38'',70º 35' 20'',354 / 6152,,4,54
+55,Sierras de Bellavista_2,2,Los Lunes,2193,34º 48' 02'',70º 40' 32'',346 / 6147,,4,55
+56,Sierras de Bellavista_3,3,Alto las Aguilas,2380,34º 49' 10'',70º 38' 48'',349 / 6145,,4,56
+57,Sierras de Bellavista_4,4,Aguilas del Chivato,2783,34º 50' 30'',70º 37' 03'',352 / 6143,,4,57
+58,Sierras de Bellavista_5,5,El Sillon,2756,34º 50' 27'',70º 37' 29'',351 / 6143,,4,58
+59,Sierras de Bellavista_6,6,Alto de la Plaza,2482,34º 51' 22'',70º 43' 57'',342 / 6141 ,,4,59
+60,Sierras de Bellavista_7,7,Las Placetas,2902,34º 51' 43'',70º 30' 23'',362 / 6141,,4,60
+61,Sierras de Bellavista_8,8,P2790,2790,34º 53' 23'',70º 35' 10'',355 / 6138,,4,61
+62,Sierras de Bellavista_9,9,P3063,3063,34º 54' 40'',70º 34' 00'',357 / 6136,,4,62
+63,Sierras de Bellavista_10,10,Alto de las Mesas,2524,34º 54' 56'',70º 42' 31'',344 / 6135,,4,63
+64,Sierras de Bellavista_11,11,Pellejo,2767,34º 55' 26'' ,70º 41' 07'',346 / 6134,,4,64
+65,Sierras de Bellavista_12,12,P3045,3045,34º 55' 59'',70º 32' 27'',359 / 6133,,4,65
+66,Sierras de Bellavista_13,13,Alto las Mesas,2638,34º 57' 42'',70º 36' 58'',352 / 6130,,4,66
+67,Sierras de Bellavista_14,14,Sordo Lucas,3399,34º 57' 52'',70º 31' 35'',360 / 6130,,4,67
+68,Sierras de Bellavista_15,15,El Peñon,2975,34º 59' 26'',70º 37' 22'',352 / 6127,,4,68
+69,Alto de los Arrieros_01,01,Punta Lajas,3521,34º 30' 47'',70º 28' 46'',,SIERRA DE LOS PUNZONES,5,69
+70,Alto de los Arrieros_02,02,Tridente,3547,34º 31' 10'',70º 28' 58'',,SIERRA DE LOS PUNZONES,5,70
+71,Alto de los Arrieros_03,03,Alto de la Buena Vista,3675,34º 31' 35'',70º 29' 00'',,SIERRA DE LOS PUNZONES,5,71
+72,Alto de los Arrieros_04,04,Rosario,3476,34º 33' 13'',70º 29' 13'',,SIERRA DE LOS PUNZONES,5,72
+73,Alto de los Arrieros_05,05,Corona de los Punzones,3519,34º 33' 57'',70º 28' 06'',,SIERRA DE LOS PUNZONES,5,73
+74,Alto de los Arrieros_10,10,San Augusto,3590,34º 35' 10'',70º 27' 57'',,SIERRA DE LOS PUNZONES,5,74
+75,Alto de los Arrieros_11,11,Cuerno,3556,34º 35' 45'',70º 28' 16'',,SIERRA DE LOS PUNZONES,5,75
+76,Alto de los Arrieros_12,12,Alto de la Planchada,3558,34º 35' ,70º 33',Info segun mapa Lliboutry (queda fuera del mapa IGM),SIERRA DE LOS PUNZONES,5,76
+77,Alto de los Arrieros_13,13,Alto de los Cristales,3810,34º 35',70º 31',Info segun mapa Lliboutry (queda fuera del mapa IGM),SIERRA DE LOS PUNZONES,5,77
+78,Alto de los Arrieros_14,14,Torta,3688,34º 36' 57'',70º 29' 04'',El nombre se debe a la forma del cerro,SIERRA DE LOS PUNZONES,5,78
+79,Alto de los Arrieros_15,15,P3578,3578,34º 37' 48'',70º 29' 20'',Nombre ?,SIERRA DE LOS PUNZONES,5,79
+80,Alto de los Arrieros_16,16,P3759,3759,34º 38' 55'',70º 29' 45'',Nombre ?,SIERRA DE LOS PUNZONES,5,80
+81,Alto de los Arrieros_17,17,Alto del Pelambre,3943,34º 41',70º 32',Info segun mapa Lliboutry (queda fuera del mapa IGM),SIERRA DE LOS PUNZONES,5,81
+82,Alto de los Arrieros_18,18,Peineta,3910,34º 43',70º 32',Info segun mapa Lliboutry (queda fuera del mapa IGM),SIERRA DE LOS PUNZONES,5,82
+83,Alto de los Arrieros_20,20,Coton,4292,34º 30' 41'',70º 21' 34'',,SIERRA DEL BRUJO,5,83
+84,Alto de los Arrieros_21,21,Chile Japon,4186,34º 34' 44'',70º 22' 38'',,SIERRA DEL BRUJO,5,84
+85,Alto de los Arrieros_22,22,P4060,4060,34º 35' 09'',70º 22' 21'',Nombre ?,SIERRA DEL BRUJO,5,85
+86,Alto de los Arrieros_23,23,ASAVA,4345,34º 36' 30'',70º 22' 37'',,SIERRA DEL BRUJO,5,86
+87,Alto de los Arrieros_24,24,ASAE,4306,34º 37' 42'',70º 22' 59'',,SIERRA DEL BRUJO,5,87
+88,Alto de los Arrieros_25,25,P4716,4716,34º 38' 31'',70º 21' 59'',Antecumbre Norte del Alto de los Arrieros,SIERRA DEL BRUJO,5,88
+89,Alto de los Arrieros_26,26,Alto de los Arrieros,4990,34º 38' 49'',70º 22' 12'',,SIERRA DEL BRUJO,5,89
+90,Alto de los Arrieros_27,27,Portillo,4961,34º 39' 26'',70º 22' 37'',,SIERRA DEL BRUJO,5,90
+91,Alto de los Arrieros_29,29,Torre Norte,4860,34º 39' 55'',70º 22' 27'',,SIERRA DEL BRUJO,5,91
+92,Alto de los Arrieros_30,30,Torre Central,4957,34º 40' 04'',70º 22' 35'',,SIERRA DEL BRUJO,5,92
+93,Alto de los Arrieros_31,31,Torre Sur,4800,34º 40' 10'',70º 22' 46'',Esta Torre no se encuentra en la linea de las otras dos torres. Se ubica en una estribacion que baja hacia el Oeste,SIERRA DEL BRUJO,5,93
+94,Alto de los Arrieros_32,32,Punta NUSEVA,4570,34º 40' 43'',70º 22' 36'',,SIERRA DEL BRUJO,5,94
+95,Alto de los Arrieros_33,33,El Brujo,4732,34º 41' 12'',70º 22' 48'',,SIERRA DEL BRUJO,5,95
+96,Alto de los Arrieros_34,34,P4697,4697,34º 41' 32'',70º 23' 17'',Cumbre secundaria en el filo suroeste del Brujo,SIERRA DEL BRUJO,5,96
+97,Alto de los Arrieros_35,35,Cumbre Sur del Brujo,4458,34º 42' 23'',70º 23' 18'',,SIERRA DEL BRUJO,5,97
+98,Alto de los Arrieros_36,36,Aguja de Roca,3700,34º 40' 10'',70º 20' 39'',"Ubicada entre Glaciar Mañke y Glaciar Universidad;
+Cota segun CA Mañke Exped. 1963-64",SIERRA DEL BRUJO,5,98
+99,Alto de los Arrieros_38,38,Dr. Hernan Cruz,4565,34º 32' 50'',70º 19' 27'',,SIERRA DEL BRUJO / Cordón Intermedio,5,99
+100,Alto de los Arrieros_39,39,P4131,4131,34º 32' 52'',70º 17' 48'',Nombre ?,SIERRA DEL BRUJO / Cordón Intermedio,5,100
+101,Alto de los Arrieros_40,40,Punta Maria Angeles,4470,34º 33' 05'',70º 19' 05'',"Ver www.escalando.cl (EAcevedoR)
+Nombre confirmado (Elias Lira)",SIERRA DEL BRUJO / Cordón Intermedio,5,101
+102,Alto de los Arrieros_41,41,Sandra,4198,34º 33' 35'',70º 19' 10'',"Nombre confirmado (Elias Lira)
+Ver foto 11_26 y tambien AHB (Mayo 2012)",SIERRA DEL BRUJO / Cordón Intermedio,5,102
+103,Alto de los Arrieros_42,42,P4323,4323,34º 34' 19'',70º 18' 44'',Nombre ?,SIERRA DEL BRUJO / Cordón Intermedio,5,103
+104,Alto de los Arrieros_43,43,Punta Estructura,4000,34º 35' 00'',70º 18' 53'',Modificacion en base a Panoramica 11_50 (Sven Gleisner),SIERRA DEL BRUJO / Cordón Intermedio,5,104
+105,Alto de los Arrieros_44,44,Punta Escultura,4286,34º 35' 44'',70º 18' 50'',"Era antes Punta Estructura;
+Modificacion en base a Panoramica 11_50 (Sven Gleisner)",SIERRA DEL BRUJO / Cordón Intermedio,5,105
+106,Alto de los Arrieros_46,46,Monolitos,4160,34º 35' 38'',70º 20' 27'',Cumbre terminal Norte del Cordon Granitos ,SIERRA DEL BRUJO / Cordón Granitos,5,106
+107,Alto de los Arrieros_47,47,Cipres del Granitos,4100,34º 36' 02'',70º 20' 38'',,SIERRA DEL BRUJO,5,107
+108,Alto de los Arrieros_48,48,"Torreones Centrales 
+del Granitos",4150,34º 36' 33'',70º 20' 40'',"Son dos y se denominan Torreon Oeste y Torreon Este; Palomo, Torreones Centrales y ASAVA en una linea = base de las modifs. !",SIERRA DEL BRUJO,5,108
+109,Alto de los Arrieros_49,49,"Aguja de la Meza
+(ortografia ?)",4000,34º 36',70º 20',"Nuevo; ver 11_54, marcas de CMM/Rengo",SIERRA DEL BRUJO,5,109
+110,Alto de los Arrieros_50,50,Nevado del Granitos,4300,34º 37' 02'',70º 20' 43'',,SIERRA DEL BRUJO,5,110
+111,Alto de los Arrieros_51,51,Punta Chimenea,4000,34º 37',70º 20',"Nuevo; ver 11_54, marcas de CMM/Rengo",SIERRA DEL BRUJO,5,111
+112,Alto de los Arrieros_52,52,Nevado Granitos,4505,34º 37' 40'',70º 20' 47'',La cumbre más alta del Cordon Granitos; No confundir con R50; Dificultad en posicionar esta cumbre exactamente en el mapa IGM,SIERRA DEL BRUJO,5,112
+113,Alto de los Arrieros_53,53,P4309,4309,34º 37' 07'',70º 20' 08'',Nombre ?,SIERRA DEL BRUJO,5,113
+114,Alto de los Arrieros_55,55,Nevado Penitente,4350,34º 37' 51'',70º 20' 19'',Nuevo; en base a datos Exped. CA Mañke 1963-64; IGM no aporta cota; Posicion dudosa,SIERRA DEL BRUJO / Cordón Divisorio,5,114
+115,Alto de los Arrieros_56,56,Nevado Mañke,4480,34º 38' 07'',70º 20' 49'',"Cota segun CA Mañke Exped. 1963-64;
+Posicion corregida de acuerdo a Panoramica 11_54B",SIERRA DEL BRUJO / Cordón Divisorio,5,115
+116,Alto de los Arrieros_57,57,Nevado Cisne,4350,34º 38' 29'',70º 20' 54'',"Cota segun CA Mañke Exped. 1963-64;
+Posicion corregida de acuerdo a Panoramica 11_54B",SIERRA DEL BRUJO / Cordón Divisorio,5,116
+117,Alto de los Arrieros_58,58,P4584,4584,34º 38' 51'',70º 20' 59'',Nombre ?,SIERRA DEL BRUJO / Cordón Divisorio,5,117
+118,Alto de los Arrieros_59,59,Corona del Diablo,4589,34º 39' 11'',70º 20' 38'',,SIERRA DEL BRUJO / Cordón Divisorio,5,118
+119,Alto de los Arrieros_60,60,Volcan Palomo,4860,34º 36' 27'',70º 17' 44'',Altura tomada con GPS = 4 865 msnm,SIERRA DEL BRUJO,5,119
+120,Alto de los Arrieros_60B,60B,Agujas del Palomo,4000,34º 36',70º 19',"Ver foto 11_41; numerosas agujas graniticas, aprox en la falda noroeste del Palomo; nombres (segun foto 11_41): Velero, Maestra, Mellizas, Penitente, Buho;",SIERRA DEL BRUJO,5,120
+121,Alto de los Arrieros_61,61,Pilar Occidental,4016,34º 37' 54'',70º 19' 11'',,SIERRA DEL BRUJO,5,121
+122,Alto de los Arrieros_62,62,Pilar Oriental,3998,34º 38' 39'',70º 18' 05'',,SIERRA DEL BRUJO,5,122
+123,Alto de los Arrieros_63,63,Gran Torre del Cortaderal,3968,34º 37' 37'',70º 16' 53'',Datos de acuerdo a Exped. CA Mañke 1963-64; Cota del IGM,SIERRA DEL BRUJO,5,123
+124,Alto de los Arrieros_64,64,Aguja Roja,3926,34º 39' 07'',70º 18' 11'',Datos de acuerdo a Exped. CA Mañke 1963-64; Cota del IGM,SIERRA DEL BRUJO,5,124
+125,Alto de los Arrieros_65,65,Punta Torrecilla,3858,34º 39' 22'',70º 18' 37'',Datos de acuerdo a Exped. CA Mañke 1963-64; Cota del IGM,SIERRA DEL BRUJO,5,125
+126,Alto de los Arrieros_67,67,Punta Colmillo,3613,34º 41' 44'',70º 18' 46'',Datos de acuerdo a Exped. CA Mañke 1963-64; Informacion aproximada (posicion); cotas segun IGM; Coordenadas aproximadas,SIERRA NEGRA,5,126
+127,Alto de los Arrieros_68,68,Punta Mesoncito,3946,34º 40' 59'',70º 17' 28'',Datos de acuerdo a Exped. CA Mañke 1963-64; Informacion aproximada (posicion); cotas segun IGM; Coordenadas aproximadas,SIERRA NEGRA,5,127
+128,Alto de los Arrieros_69,69,Punta Cortaderal,3810,34º 40' 23'',70º 17' 08'',Datos de acuerdo a Exped. CA Mañke 1963-64; Informacion aproximada (posicion); cotas segun IGM; Coordenadas aproximadas,SIERRA NEGRA,5,128
+129,Alto de los Arrieros_70,70,Punta Budapest,3931,34º 41' 33'',70º 15' 24'',Datos de acuerdo a Exped. CA Mañke 1963-64; Informacion aproximada (posicion); cotas segun IGM; Coordenadas aproximadas,SIERRA NEGRA,5,129
+130,Alto de los Arrieros_71,71,Punta Hermandad,4139,34º 42' 40'',70º 15' 57'',Datos de acuerdo a Exped. CA Mañke 1963-64; Informacion aproximada (posicion); cotas segun IGM; Coordenadas aproximadas,SIERRA NEGRA,5,130
+131,Alto de los Arrieros_76,76,P4413,4413,34º 43' 10'',70º 15' 37'',Cumbre fronteriza / Nombre ?,,5,131
+132,Alto de los Arrieros_77,77,P4565,4565,34º 44' 08'',70º 17' 34'',Cumbre fronteriza / Nombre ?,,5,132
+133,Alto de los Arrieros_78,78,P4625,4625,34º 44' 46'',70º 18' 19'',Cumbre fronteriza / Nombre ?,,5,133
+134,Rio Clarillo_1,1,P3048,3048,34º 30' 26'',70º 33' 54'',,,6,134
+135,Rio Clarillo_2,2,P3167,3167,34º 30' 37'',70º 32' 29'',,,6,135
+136,Rio Clarillo_3,3,Alto del Corazon,1664,34º 31' 04'',70º 37' 51'',,,6,136
+137,Rio Clarillo_4,4,Alto de las Verdolagas,2068,34º 31' 18'',70º 36' 31'',,,6,137
+138,Rio Clarillo_5,5,Alto de los Peñascos,2935,34º 31' 04'',70º 34' 25'',,,6,138
+139,Rio Clarillo_6,6,P3010,3010,34º 31' 40'',70º 30' 41'',,,6,139
+140,Rio Clarillo_7,7,P3031,3031,34º 32' 43'',70º 30' 01'',,,6,140
+141,Rio Clarillo_8,8,Alto de la Campana,2430,34º 33' 28'',70º 38' 57'',,,6,141
+142,Rio Clarillo_9,9,Alto del Sapo,3052,34º 33' 12'',70º 31' 10'',,,6,142
+143,Rio Clarillo_10,10,Alto de Monserrat,3014,34º 34' 34'',70º 34' 48'',,,6,143
+144,Rio Clarillo_11,11,Alto de las Yeguas,3217,34º 35' 06'',70º 33' 33'',,,6,144
+145,Rio Clarillo_12,12,P3404,3404,34º 35' 08'',70º 31' 38'',,,6,145
+146,Rio Clarillo_13,13,P3525,3525,34º 35' 29'',70º 33' 03'',,,6,146
+147,Rio Clarillo_14,14,Alto de la Plancha,3702,34º 35' 35'',70º 30' 56'',,,6,147
+148,Rio Clarillo_15,15,Alto de las Lagunas,3032,34º 36' 39'',70º 39' 13'',,,6,148
+149,Rio Clarillo_16,16,P3560,3560,34º 36' 40'' ,70º 31' 17'',,,6,149
+150,Rio Clarillo_17,17,Alto de los Lirios,3053,34º 37' 29'',70º 39' 26'',,,6,150
+151,Rio Clarillo_18,18,Alto de Barahona,3537,34º 37' 36'',70º 32' 29'',,,6,151
+152,Rio Clarillo_19,19,P3049,3049,34º 38' 04'',70º 39' 52'',,,6,152
+153,Rio Clarillo_20,20,Alto de Pellejo,2663,34º 38' 01'',70º 35' 05'',,,6,153
+154,Rio Clarillo_21,21,Alto de Castañeda,2785,34º 39' 45'',70º 36' 15'',,,6,154
+155,Rio Clarillo_22,22,P3682,3682,34º 39' 50'',70º 30' 52'',,,6,155
+156,Rio Clarillo_23,23,P3255,3255,34º 40' 14'',70º 32' 58'',,,6,156
+157,Rio Clarillo_24,24,(Sierra de los Punzones),3526,34º 40' 46'',70º 31' 40'',,,6,157
+158,Rio Clarillo_25,25,Alto del Pelambre,3934,34º 41' 43'',70º 32' 04'',,,6,158
+159,Rio Clarillo_26,26,P3648,3648,34º 42' 44'',70º 30' 41'',,,6,159
+160,Rio Clarillo_27,27,P3932,3932,34º 42' 38'',70º 32' 32'',,,6,160
+161,Rio Clarillo_28,28,Alto de las Mulas,3468,34º 44' 03'',70º 32' 40'',(antes Cajon de las Mulas),,6,161
+162,Rio Cortaderal_1,1,P2664,2664,34° 16' 09'',70° 18' 43'',,,7,162
+163,Rio Cortaderal_2,2,Agujereado,2522,34° 16' 28'',70° 24' 22'',,,7,163
+164,Rio Cortaderal_3,3,P3313,3313,34° 16' 52'',70° 15' 54'',Nombre ?,,7,164
+165,Rio Cortaderal_4,4,Manantiales,3511,34° 17' 16'',70° 18' 50'',,,7,165
+166,Rio Cortaderal_5,5,Mirador del Manantiales,3530,34° 17' 27'',70° 19' 02'',al Oeste del Manantiales,Ver foto 11_28,7,166
+167,Rio Cortaderal_6,6,Sesquicentenario,3404,34° 17' 35'',70° 19' 48'',al Oeste del Mirador del Manantiales,Ver foto 11_28,7,167
+168,Rio Cortaderal_7,7,Alto del Retamal,3353,34° 17' 52'',70° 21' 06'',,,7,168
+169,Rio Cortaderal_8,8,Duende,3559,34° 18' 10'',70° 19' 44'',,Ver foto 11_28; ver AHB,7,169
+170,Rio Cortaderal_9,9,Los Llanos,3115,34° 18' 58'',70° 15' 52'',,,7,170
+171,Rio Cortaderal_9B,9B,Alto del Guayacan,2860,34-18-NN,70-25-NN,Info de mapa Lliboutry / hoja Sur,,7,171
+172,Rio Cortaderal_10,10,La Guardia,3305,34° 19' 00'',70° 19' 38'',,,7,172
+173,Rio Cortaderal_11,11,Alto del Collay,3154,34° 23' 17'',70° 21' 29'',,,7,173
+174,Rio Cortaderal_12,12,P3248,3248,34° 24' 01'',70° 21' 38'',Nombre ?,,7,174
+175,Rio Cortaderal_13,13,Alto de los Bueyes,3064,34° 24' 07'',70° 17' 04'',"este no es el Cerro Socavones ""de Cortaderal""; ver hoja Paso Las Leñas",,7,175
+176,Rio Cortaderal_14,14,Escalones,3329,34° 24' 55'',70° 29' 11'',,,7,176
+177,Rio Cortaderal_15,15,Morro Bandera ,3483,34° 26' 19'',70° 22' 17'',,,7,177
+178,Rio Cortaderal_16,16,P3279,3279,34° 26' 45'',70° 29' 53'',Nombre ?,,7,178
+179,Rio Cortaderal_17,17,P3468,3468,34° 27' 13'',70° 22' 28'',Nombre ?,,7,179
+180,Rio Cortaderal_18,18,Morro Urriola,3162,34° 27' 17'',70° 23' 10'',,,7,180
+181,Rio Cortaderal_19,19,P3760,3760,34° 28' 13'',70° 22' 07'',Nombre ?,,7,181
+182,Rio Cortaderal_20,20,Alto de los Pejerreyes,3741,34° 28' 44'',70° 18' 36'',,,7,182
+183,Rio Cortaderal_21,21,P3457,3457,34° 29' 32'',70° 29' 06'',Nombre ?,,7,183
+184,Rio Cortaderal_22,22,Alto Cotón Norte,4086,34° 29' 36'',70° 21' 24'',Info de Elvis Acevedo; ver Perros alpinos; Expedicion chileno-japonesa 1960,,7,184
+185,Rio Cortaderal_23,23,Tinajon,3189,34° 17' 13'',70° 21' 49'',OK / 2.8.2011 / EAR / UL,,7,185
+186,Rio Cortaderal_-,-,Morro de la Torre,3300,34-20,70-17,"Aparece en el mapa Lliboutry, hoja Sur; se descarta (no calza con hoja IGM)",,7,186
+187,Rio Cortaderal_-,-,Yeguas,3000,34-25,70-30,"Aparece en el mapa Lliboutry, hoja Sur; se descarta (no calza con hoja IGM)",,7,187
+188,Lag Cauquenes_1,1,Las Lamparas,2282,34º 20' 59'',70º 35' 17'',,6198 / 354,8,188
+189,Lag Cauquenes_2,2,Blanco,2232,34º 21' 58'',70º 36' 11'',,6196 / 352,8,189
+190,Lag Cauquenes_3,3,Los Caletones,2402,34º 23' 50'',70º 30' 46'',,6193 / 361,8,190
+191,Lag Cauquenes_4,4,Sierra Nevada,2089,34º 24' 16'',70º 40' 06'',,6192 / 346,8,191
+192,Lag Cauquenes_5,5,La Bandera,2284,34º 24' 36'',70º 35' 59'',,6191 / 353,8,192
+193,Lag Cauquenes_6,6,P3008,3008,35º 25' 14'',70º 30' 44'',,6190 / 361,8,193
+194,Lag Cauquenes_7,7,P2544,2544,34º 26' 54'',70º 36' 55'',,6186 / 351,8,194
+195,Lag Cauquenes_8,8,Las Llaretas,2535,34º 27' 03'',70º 34' 52'',,6186 / 355,8,195
+196,Lag Cauquenes_9,9,Portezuelo,2414,34º 27' 04'',70º 37' 48'',,6186 / 350,8,196
+197,Lag Cauquenes_10,10,Los Pocillos,2578,34º 27' 42'',70º 34' 50'',,6186 / 355,8,197
+198,Lag Cauquenes_11,11,Las Pizarras,3390,34º 28' 14'',70º 31' 22'',,6184 / 360,8,198
+199,Lag Cauquenes_12,12,Dr. Augusto Figueroa,3442,34º 29' 27'',70º 31' 47'',"Antiguo nombre (segun IGM) ""Los Helados""; Ver AHB",6182 / 359,8,199
+200,Lag Cauquenes_13,13,Altos del Cepillo,3125,34º 29' 50'',70º 33' 36'',,6181 / 357,8,200
+201,Vn Maipo_1,1,Gorro,4520,34° 01' 44'',69° 50' 11'',,,9,201
+202,Vn Maipo_2,2,P4715,4715,34° 02' 52'',69° 47' 29'',"En territorio argentino
+Nombre ?",,9,202
+203,Vn Maipo_3,3,P4417,4417,34° 02' 57'',69° 53' 06'',Nombre ?,,9,203
+204,Vn Maipo_4,4,P4802,4802,34° 03' 14'',69° 56' 30'',Nombre ?,,9,204
+205,Vn Maipo_5,5,Amarillo,4900,34° 04' 01'',69° 49' 51'',,,9,205
+206,Vn Maipo_6,6,P4632,4632,34° 04' 39'',69° 57' 53'',Nombre ?,,9,206
+207,Vn Maipo_7,7,Yeseras,3865,34° 04' 16'',69° 54' 25'',,,9,207
+208,Vn Maipo_8,8,Nevado de Argüelles,4819,34° 04' 12'',69° 56' 32'',,,9,208
+209,Vn Maipo_9,9,P4292,4292,34° 05' 24'',69° 55' 34'',Nombre ?,,9,209
+210,Vn Maipo_10,10,de Alvarado,4361,34° 06' 01'',69° 51' 41'',,,9,210
+211,Vn Maipo_13,13,Volcan Maipo,5264,34° 09' 36'',69° 49' 58'',,,9,211
+212,Vn Maipo_14,14,Tortolas,4016,34° 10' 18'',69° 53' 13'',,,9,212
+213,Vn Maipo_15,15,P4073,4073,34° 12' 29'',69° 55' 22'',"Cumbre secundaria en el Cordon Cruz de Piedra
+Nombre ?",,9,213
+214,Vn Maipo_16,16,Cruz de Piedra,4134,34° 13' 30'',69° 54' 43'',,,9,214
+215,Vn Maipo_18,18,Borbollon,4197,34° 14' 45'',69° 58' 08'',"Nombre segun Lliboutry/1956;
+Cumbre fronteriza",,9,215
+216,Vn Maipo_19,19,Pico de Rio Bayo,4921,34° 16' 51'',69° 53' 45'',,,9,216
+217,Vn Maipo_21,21,P4395,4395,34° 17' 28'',69° 59' 16'',Nombre ?,,9,217
+218,Vn Maipo_22,22,Listado,4521,34° 17' 49'',69° 52' 32'',,,9,218
+219,Cerro Catedral_1,1,Lomita Blanca,4282,34º 01' 41'',70º 13' 44'',Expedicion Noviembre 2010 (E. Atalah ++),,10,219
+220,Cerro Catedral_1B,1B,Pistacho,4279,34º 01' 42'',70º 13' 24'',,,10,220
+221,Cerro Catedral_2,2,Azufre,4396,34° 01' 36'',70° 12' 44'',"Nombre: ver mapa Matassi
+Ver foto 24_31",,10,221
+222,Cerro Catedral_3,3,P4389,4389,34º 02' 14'',70º 14' 34'',Nombre ?,,10,222
+223,Cerro Catedral_3B,3B,P4091,4091,34º 02' 19'',70º 12' 29'',Nombre ?,,10,223
+224,Cerro Catedral_4,4,Mirador del Extravio,4394,34º 02' 30'',70º 14' 39'',,,10,224
+225,Cerro Catedral_5,5,Cabeza de Novillo,4482,34º 02' 36'',70º 10' 04'',,,10,225
+226,Cerro Catedral_6,6,Manantial Redondo,4172,34º 02' 17'',70º 04' 18'',IGM y Lliboutry discrepan entre si. Se eligió la posicion de Lliboutry (1956),,10,226
+227,Cerro Catedral_7,7,Azul,4423,34º 03' 11'',70º 14' 44'',"Llamado Cerro Azul por gente local, Cerro Penitentes en el mapa de Matassi",Ver foto 24_31,10,227
+228,Cerro Catedral_8,8,Alfalfalito,3532,34º 04' 17'',70º 08' 07'',IGM y Matassi,,10,228
+229,Cerro Catedral_9,9,Plomo,3738,34º 04' 03'',70º 03' 53'',IGM y Lliboutry discrepan entre si. Se eligió la posicion de Lliboutry (1956),,10,229
+230,Cerro Catedral_10,10,Amarillo,4098,34º 04' 09'',70º 10' 04'',,,10,230
+231,Cerro Catedral_11,11,P4343,4343,34º 05' 40'',70º 09' 45'',Nombre ?,,10,231
+232,Cerro Catedral_12,12,Potrerillo Alto,3668,34º 05' 15'',70º 13' 43'',IGM y Matassi,,10,232
+233,Cerro Catedral_13,13,Del Valle,4414,34º 07' 00'',70º 08' 22'',"La cumbre es el lomo, segun IGM; no el picacho / A confirmar",,10,233
+234,Cerro Catedral_14,14,P4299,4299,34º 06' 12'',70º 07' 36'',Nombre ?,,10,234
+235,Cerro Catedral_15,15,Gendarme,4445,34º 08' 06'',70º 10' 49'',Sin ascenso; nombre: info de Elvis Acevedo; se ajustó altura !,,10,235
+236,Cerro Catedral_16,16,"Champagnat
+ Nor-Este",4027,34º 07' 59'',70º 12' 15'',Ascendido; altura medida por GPS,,10,236
+237,Cerro Catedral_17,17,Alto del Potrerillo,3820,34º 08' 52'',70º 13' 07'',,,10,237
+238,Cerro Catedral_18,18,San Joaquín,3852,34º 08' 57'',70 13' 20'',,,10,238
+239,Cerro Catedral_19,19,"Champagnat
+ Sur",3980,34º 08' 12'',70º 12' 19'',,,10,239
+240,Cerro Catedral_20,20,Nevado de Flores,4883,34º 08' 10'',70º 09' 45'',,,10,240
+241,Cerro Catedral_21,21,Torre de Flores,4890,34º 09' 22'',70º 09' 50'',,Ver Foto 20_60B,10,241
+242,Cerro Catedral_22,22,Punta Ventisquero,4762,34º 09' 30'',70º 09' 05'',Nombre = info de Elvis Acevedo / 8Ene2009 / Ver perrosalpinos,"Pedro Duran y Waldo Espinoza, al ascender la Torre de Flores por su Glaciar Sur, ascendieron una punta ""En la cabecera del Glaciar"", la llamaron Punta Ventisquero, no hay seguridad absoluta de que sea la P4762",10,242
+243,Cerro Catedral_23,23,del Rio Blanco,3984,34º 09' 40'',70º 03' 43'',"Cerro del Rio Blanco, segun IGM;
+a confirmar",,10,243
+244,Cerro Catedral_24,24,Punta Gualtatas de Flores,3638,34º 09' 07'',70º 12' 54'',A confirmar por EAR: nombre y posicion,,10,244
+245,Cerro Catedral_25,25,P4681,4681,34º 09' 47'',70º 14' 13'',Nombre ?,,10,245
+246,Cerro Catedral_26,26,P4451,4451,34º 10' 08'',70º 08' 40',Nombre ?,,10,246
+247,Cerro Catedral_27,27,P4340,4340,34º 10' 33'',70º 04' 19'',Nombre ?,,10,247
+248,Cerro Catedral_28,28,Puntilla I de Flores,4429,34º 10' 52'',70º 10' 21'',A confirmar posicion,"Ver Foto 20_60B, 24_27",10,248
+249,Cerro Catedral_29,29,P4502,4502,34º 10' 38'',70º 09' 30'',"De acuerdo a nueva info., esta cumbre no es la Puntilla I de Flores",,10,249
+250,Cerro Catedral_30,30,Puntilla II de Flores,4329,34º 11' 09'',70º 10' 58'',,"Ver Foto 20_60B, 24_27",10,250
+251,Cerro Catedral_31,31,Puntilla III de Flores,4217,34º 11' 30'',70º 11' 18'',"Primera ascension Keith e Irene Whitelock, de Sudafrica (3 Dic 1962); ver AAJ 1973 Vol. 19 pag 92, item 987 (U. Lorber)","Ver Foto 20_60B, 24_27",10,251
+252,Cerro Catedral_32,32,Puntilla IV de Flores,4077,34º 11' 44'',70º 11' 49'',"Primera ascension Keith e Irene Whitelock, de Sudafrica (2 Dic 1962); ver AAJ 1973 Vol. 19 pag 93, item 1006 (U. Lorber)","Ver Foto 20_60B, 24_27",10,252
+253,Cerro Catedral_33,33,Serrucho,4765,34º 11' 38'',70º 04' 31'',,,10,253
+254,Cerro Catedral_34,34,Torre de Pangal,4508,34º 11' 51'',70º 09' 50'',Nombre = info de Elvis Acevedo / 8Ene2009 / Antes: Puntilla Alta de Flores,,10,254
+255,Cerro Catedral_36,36,Puntilla Baja de Flores,3467,34º 12' 14'',70º 12' 49'',"La mas baja de las Puntillas de Flores, en el extremo suroeste del cordon",,10,255
+256,Cerro Catedral_37,37,Diablo,4202,34º 12' 15'',70º 07' 02'',Nombre = info de Elvis Acevedo / 8Ene2009,"Cerro Sin Ascenso, pero ubicado en la quebrada Diablo",10,256
+257,Cerro Catedral_38,38,Federico,3847,34º 13' 10'',70º 03' 02'',,,10,257
+258,Cerro Catedral_39,39,Catedral del Barroso,4668,34º 13' 10'',70º 03' 02'',,,10,258
+259,Cerro Catedral_40,40,Circo,4589,34º 14' 22'',70º 02' 49'',"Nombre confirmado, ver Elias Dic 2009; texto incluye altura ligeramente más alta ? (UL)",Primera ascension Dic 2009 (Elias),10,259
+260,Cerro Catedral_-,-,P4343,4343,,,filo del Co Amarillo al Co del Valle,Nombre ?,10,260
+261,Cerro Catedral_-,-,P4229,4299,,,filo del Co Amarillo al Co del Valle,Nombre ?,10,261
+262,Sewell_1,1,Cruz del Muerto,3201,34º 02' 33'',70º 22' 52'',,"Nombre alternativo = Huachuchero, segun mapa IGM",11,262
+263,Sewell_2,2,Extravio,3596,34º 02' 47'',70º 20' 19'',,"No confundir con Cerro Extravio de Hoja El Volcan / 2.8.2011/EAR, UL",11,263
+264,Sewell_3,3,Vizcachas,3620,34º 03' 12'',70º 18' 46'',,,11,264
+265,Sewell_4,4,Penitentes,4197,34º 04' 02'',70º 15' 35'',,,11,265
+266,Sewell_5,5,P3820,3820,34º 04' 19'',70º 18' 18'',,,11,266
+267,Sewell_6,6,Los Patos,2242,34º 04' 03'',70º 26' 58'',,al Norte de Caletones,11,267
+268,Sewell_7,7,P3912,3912,34º 05' 28'',70º 17' 21'',,,11,268
+269,Sewell_8,8,Potrerillo Vargas,3510,34º 06' 32'',70º 16' 12'',,,11,269
+270,Sewell_9,9,Lomas Bayas,3363,34º 06' 37'',70º 21' 52'',,al Sur de Sewell,11,270
+271,Sewell_10,10,P3772,3772,34º 06' 11'',70º 20' 16'',,al Sur de Sewell,11,271
+272,Sewell_11,11,Matancilla,3728,34º 07' 38'',70º 19' 40'',,,11,272
+273,Sewell_12,12,Durazno,2810,34º 07' 48'',70º 25' 35'',,al Sur de Caletones,11,273
+274,Sewell_13,13,Morro La Piedra,3170,34º 08' 31'',70º 22' 53'',,al Sur de Sewell,11,274
+275,Sewell_14,14,Valdenegro,3567,34º 08' 50'',70º 18' 44'',,EAR / 2 Ago 2011,11,275
+276,Sewell_15,15,"Gualtatas 
+de Río Blanco",3156,34º 08' 57'',70º 17' 54'',,EAR / 2 Ago 2011,11,276
+277,Sewell_16,16,Cuchilla,3257,34º 09' 14'',70º 19' 33'',,EAR / 2 Ago 2011,11,277
+278,Sewell_17,17,Niebla,2362,34º 12' 15'',70º 22' 54'',,EAR / 2 Ago 2011,11,278
+279,Sewell_18,18,Aguja de Caracoles,2160,34º 13' 38'',70º 22' 38'',identico con C° Boca Nieve en mapa IGM;,EAR / 2 Ago 2011,11,279
+280,Sewell_19,19,Socavones,2760,34º 14' 04'',70º 20' 52'',,"""Socavones de Pangal"", no confundir con ""Socavones de Cortaderal"" (Hoja Las Leñas, Lliboutry)",11,280
+281,Vn San Jose_1,1,San Jose Norte,5740,33º 45' 53'',69º 54' 03'',Cumbre fronteriza,,12,281
+282,Vn San Jose_2,2,P4157,4157,33º 45' 03'',69º 59' 05'',Ver eM E Atalah / 4 Feb 2009,,12,282
+283,Vn San Jose_3,3,Punta Camanchaca,4007,33º 45' 31'',69º 59' 18'',,,12,283
+284,Vn San Jose_4,4,P5612,5612,33º 45' 17'',69º 54' 50'',Dato ex Plataforma,,12,284
+285,Vn San Jose_5,5,Punta Equivocados,4139,"33º 45' 14,5''",69º 59' 11'',"Cota segun GPS
+Ver foto 14_30 y 31",,12,285
+286,Vn San Jose_6,6,Marisemberg,4120,"33º 45' 18,4''","69º 59' 05,7''","Cota segun ficha Purto
+Ver foto 14_30 y 31",,12,286
+287,Vn San Jose_7,7,Punta Torreones,3602,33º 46' 26'',69º 59' 43'',,,12,287
+288,Vn San Jose_8,8,Volcan San Jose,5856,33º 46' 56'',"69º 53 27,1''",Cumbre fronteriza,,12,288
+289,Vn San Jose_11,11,Punta San Josecito,3456,33º 47' 55'',69º 57' 20'',Cumbre casera del refugio Plantat,"AV, Mayo 2011",12,289
+290,Vn San Jose_12,12,Manutara,4529,33º 49' 41'',69º 53' 38'',Cumbre fronteriza,,12,290
+291,Vn San Jose_13,13,Panamericano,4493,33º 50' 39'',69º 53' 45'',Cumbre fronteriza,,12,291
+292,Vn San Jose_14,14,Andrade,4062,33º 50' 09'',69º 56' 29'',"Primera ascension y nombre: E.Echevarria, AAJ 1996",AV / Sept 2011,12,292
+293,Vn San Jose_15,15,Amarillo,4221,33º 52' 21'',69º 53' 53'',,,12,293
+294,Vn San Jose_16,16,"Pico Colina
+Norte",4296,33º 52' 38'',69º 51' 56'',Cumbre fronteriza,,12,294
+295,Vn San Jose_17,17,P4448,4448,33º 52' 53'',69º 51' 18'',Al sureste del Pico Colina Norte,,12,295
+296,Vn San Jose_18,18,"Pico Colina
+Oriente",4490,33º 53' 17'',69º 51' 13'',Cumbre fronteriza,,12,296
+297,Vn San Jose_19,19,"Pico Colina
+Sur",4620,33º 53' 39'',69º 51' 39'',Cumbre fronteriza,,12,297
+298,Vn San Jose_20,20,Punta Portillo,4181,33º 54' 36'',69º 52' 25'',Ver relato y mapa Rentzsch 1939 / DAV,AV / Sept 2011,12,298
+299,Vn San Jose_21,21,Puntiagudo,4126,33º 54' 05'',69º 57' 40'',Ver foto 15B_42,,12,299
+300,Vn San Jose_22,22,Morro Negro,4276,33º 54' 44'',69º 57' 41'',"E. Acevedo confirma el nombre
+Ver foto 15B_42",,12,300
+301,Vn San Jose_23,23,P4260 ,4260,33º 56' 19'',69º 54' 46'',Al pie de este cerro se encuentra la laguna El Azufre - que los arrieros llaman Garañino / UL 2011_03,,12,301
+302,Vn San Jose_24,24,P3985,3985,33º 56' 12'',69º 59' 29'',No es cumbre,,12,302
+303,Vn San Jose_25,25,Chancaca,4059,33º 56' 47'',69º 59' 26'',Primera ascension Abril 2011,,12,303
+304,Vn San Jose_26,26,Manchado,5385,33º 57' 33'',69º 51' 04'',Cumbre fronteriza,,12,304
+305,Vn San Jose_27,27,Castillo,5468,33º 58' 23'',69º 52' 52'',Cumbre fronteriza,,12,305
+306,Vn San Jose_28,28,P5062,5062,33º 58' 03'',69º 53' 50'',"Nombre ?
+Al  Oeste del Castillo",,12,306
+307,Vn San Jose_29,29,P5009,5009,33º 58' 53'',69º 50' 34'',"Nombre ?
+Al Sur del Manchado",,12,307
+308,Vn San Jose_30,30,P4396,4396,33º 58' 28'',69º 56' 51'',Nombre ?,,12,308
+309,Vn San Jose_31,31,P4290,4290,33º 58' 50'',69º 54' 33'',,,12,309
+310,Vn San Jose_-,-,P4271,,,,,,12,310
+311,Vn San Jose_-,-,P4512,,,,,,12,311
+312,Vn San Jose_-,-,P4412,,,,,,12,312
+313,Vn San Jose_-,-,P4566,,,,,,12,313
+314,Vn San Jose_-,-,Punta Cuba,,,,,,12,314
+315,El Volcan_1,1,Unión,3658,33º 45' 09'',70º 03' 10'',,,13,315
+316,El Volcan_2,2,Arenas,4366,33º 45' 14'',70º 00' 42'',,,13,316
+317,El Volcan_3,3,Punta Balcón,3516,33º 45' 45'',70º 01' 58'',OK / 20 Oct 2008,,13,317
+318,El Volcan_4,4,Punta Canaletas,4055,33º 45' 31'',70º 05' 43'',,,13,318
+319,El Volcan_5,5,San Gabriel,3125,33º 45' 12'',70º 12' 38'',,,13,319
+320,El Volcan_6,6,Punta Pedro Rodriguez,3458,33º 45' 37'',70º 03' 12'',,,13,320
+321,El Volcan_7,7,Punta Sin Nombre,3639,33º 46' 50'',70º 05' 29'',Ajustado a plataforma (cota segun GPS; cota IGM = 3614),,13,321
+322,El Volcan_7B,7B,Los Lunes,3619,33º 46' 51'',70º 06' 43'',(AV/29.9.2012),,13,322
+323,El Volcan_8,8,Rubillas Norte,3503,33º 46' 55'',70º 02' 52'',,,13,323
+324,El Volcan_9,9,Rubillas Sur,3427,33º 47' 35'',70º 02' 52'',Nuevo / 20 Oct 2008,,13,324
+325,El Volcan_10,10,P3180,3180,33º 47' 24'',70º 02' 07'',Datos extraidos de plataforma,,13,325
+326,El Volcan_11,11,Mirador del Rubillas,3441,33º 47' 13'',70º 02' 38'',Datos extraidos de plataforma,,13,326
+327,El Volcan_12,12,Chacaya,2839,33º 48' 35'',70º 04' 46'',Nombre cambiado a Chacaya (corresponde con andeshandbook) 19 Oct 2008,,13,327
+328,El Volcan_13,13,Punta Gólgota,3501,33º 47' 09'',70º 02' 55'',,,13,328
+329,El Volcan_14,14,Punta Ventanas,3144,33º 48' 01'',70º 02' 03'',,,13,329
+330,El Volcan_15,15,Punta Zanzi,3250,33º 49' 50'',70º 01' 37'',"Cota revisada (AV, FG, UL), Mayo 2011 (2850 era error)","Ver San Roman, 1989, # 94 (ver Neate 1994, pag 13)",13,330
+331,El Volcan_16,16,Catedral Norte,3838,33º 49' 55'',70º 00' 38'',,,13,331
+332,El Volcan_17,17,P3747,3747,33º 50' 15'',70º 00' 25'',Aguja Innominada,,13,332
+333,El Volcan_18,18,Valdés,3711,33º 50' 18'',70º 01' 17'',,,13,333
+334,El Volcan_19,19,Catedral Sur,3799,33º 50' 05'',70º 00' 54'',,,13,334
+335,El Volcan_20,20,El Salto,3520,33º 50' 48'',70º 08' 00'',Info AV Julio 2012,,13,335
+336,El Volcan_21,21,San Simon,3580,33º 51' 24'',70º 07' 49'',Info AV Julio 2012,,13,336
+337,El Volcan_22,22,Retumbadero Norte,3825,33º 51' 40'',70º 04' 50'',"Altura segun Plataforma !
+Ver FEACh 1988 pags 19 y 66",,13,337
+338,El Volcan_23,23,Lagunas,3785,33º 51' 08'',70º 01' 13'',,,13,338
+339,El Volcan_24,24,Corona,4112,33º 52' 44'',70º 02' 37'',,,13,339
+340,El Volcan_25,25,Vega,3955,33º 52' 36'',70º 03' 18'',,,13,340
+341,El Volcan_26,26,Retumbadero Alto,3999,33º 52' 15'',70º 05' 32'',"Las Amarillas (IGM) = Error !
+Ver FEACh 1988 pags 19 y 66",,13,341
+342,El Volcan_27,27,Diente del Diablo,3943,33º 53' 01'',70º 05' 50'',,,13,342
+343,El Volcan_28,28,Diablo,4190,33º 53' 57'',70º 05' 45'',,,13,343
+344,El Volcan_29,29,P3987,3987,33º 53' 03'',70º 00' 37'',"""Carreño Antecumbre Norte""",,13,344
+345,El Volcan_30,30,P4053,4053,33º 53' 45'',70º 00' 49'',"""Carreño Cumbre Norte""",,13,345
+346,El Volcan_31,31,P4105,4105,33º 54' 20'',70º 02' 24'',,,13,346
+347,El Volcan_32,32,Carreño,4198,33º 54' 15'',70º 00' 50'',Carreño Cumbre Principal,,13,347
+348,El Volcan_33,33,P4130,4130,33º 55' 01'',70º 02' 42'',,,13,348
+349,El Volcan_34,34,Yesillo,3616,33º 56' 47'',70º 06' 28'',,,13,349
+350,El Volcan_35,35,Extravio,3911,33º 59' 30'',70º 11' 22'',El Cerro Extravio de la hoja Sewell es otro cerro !,Report del DAV 1954 confirma nombre Extravio y posicion. Nombre alternativo: Alto de las Damas; 2.8.2011 / EAR_UL,13,350
+351,Rio Yeso_1,1,Nevado Piuquenes,6019,33º 30' 41'',69º 49' 59'',Cumbre fronteriza,,14,351
+352,Rio Yeso_2,2,Trono,5477,33º 30' 10'',69º 51' 48'',,,14,352
+353,Rio Yeso_3,3,Bello,5230,33º 30' 57'',69º 55' 51'',,,14,353
+354,Rio Yeso_4,4,Cuerno Blanco,5038,33º 30' 36'',69º 56' 57'',,,14,354
+355,Rio Yeso_5,5,P5446,5446,33º 30' 25'',69º 51' 33'',Cumbre secundaria Trono,"""Trono Sureste 1""",14,355
+356,Rio Yeso_6,6,P5928,5928,33º 30' 14'',69º 49' 50'',"Cumbre secundaria, pero alta y fronteriza","""Piuquenes Norte""",14,356
+357,Rio Yeso_7,7,P4620,4620,33º 31' 02'',69º 59' 34'',Nombre ? (cumbre secundaria filo norte Aguja Delgada),,14,357
+358,Rio Yeso_8,8,P4925,4925,33º 31' 23'',69º 53' 53'',Nombre ? (cumbre al norte del Alto del Yeso),,14,358
+359,Rio Yeso_9,9,Aguja Delgada,4652,33º 31' 41'',69º 59' 12'',"Nombre OK; ver RPonce eMail 12 Mar 2009
+Antes Punta Escondida; Ver David Valdes 20Mar2009",,14,359
+360,Rio Yeso_10,10,Mirador del Yeso,4537,33º 31' 55'',69º 55' 31'',,,14,360
+361,Rio Yeso_11,11,Punta Hohf,4882,33º 31' 37'',69º 55' 31'',"En memoria de Werner Hohf, accidentado en el Tupungato en Feb 1949
+Ver RA Nov/Dic 1949, p 29/30",,14,361
+362,Rio Yeso_12,12,P4812,4812,33º 31' 08'',69º 54' 57'',,,14,362
+363,Rio Yeso_13,13,Yeguas Muertas,4912,33º 31' 22'',69º 57' 38'',,,14,363
+364,Rio Yeso_14,14,Alto del Yeso,5170,33º 31' 58'',69º 54' 08'',,,14,364
+365,Rio Yeso_15,15,Piramide,5484,33º 32' 24'',69º 52' 12'',Cumbre fronteriza,,14,365
+366,Rio Yeso_16,16,Aparejo,4794,33º 32' 10'',69º 59' 22'',,,14,366
+367,Rio Yeso_17,17,P4443,4443,33º 32' 46'',69º 56' 31'',Sobre largo filo sur del Yeguas Muertas,"""Yeguas Muertas Antecumbre Sur""",14,367
+368,Rio Yeso_18,18,Punta Universitaria,3927,33º 34' 26'',69º 58' 31'',,,14,368
+369,Rio Yeso_19,19,P4020,4020,33º 35' 01'',69º 55' 53'',"Accion de reconocimiento del DAV-Stgo; Este cerro no es el llamado ""Gaston"", G es más chico",,14,369
+370,Rio Yeso_20,20,Mirador de Piuquenes,4433,33º 36' 14'',69º 52' 24'',"Neate pag 10. Fronteriza al N del Paso Piuquenes; 
+Punto modesto, pero marcante, ademas es frontera","Ver David Valdes/ahbk, 20Mar2009",14,370
+371,Rio Yeso_21,21,Quilpué,4218,33º 36' 53'',69º 52' 44'',"Neate pag 10. Fronteriza al N del Paso Piuquenes / Ver San Roman grupo 3, # 46 / Punto modesto, pero marcante, ademas es frontera","Ver David Valdes/ahbk, 20Mar2009;
+Ver AV eM 25Mar09",14,371
+372,Rio Yeso_22,22,Rotario,4083,33º 37' 34'',69º 52' 27'',"Contacto EAtalah con Rouliez (eM 17.04.2009)
+Al Norte del Paso Piuquenes",,14,372
+373,Rio Yeso_23,23,P4034,4034,33º 37' 38'',"69º 52' 57,5''","Al Oeste del Paso Piuquenes, ""Atalaya""",,14,373
+374,Rio Yeso_25,25,Puente Alto,4239,33º 38' 14'',69º 52' 23'',"Contacto EAtalah con Rouliez (eM 17.04.2009)
+Al Sur del Paso Piuquenes",Primera ascension Enero 1962 (Vasquez y Rouliez) - el mismo dia que el Cerro Rotario,14,374
+375,Rio Yeso_26,26,P4357,4357,33º 38' 37'',69º 52' 37'',"Al sur del Paso Piuquenes;
+ver eMails 5Mar2009",,14,375
+376,Rio Yeso_27,27,P4539,4539,33º 39' 40'',69º 59' 25'',"Al norte del Loma Larga / Se eligió P4539, en vez de P4446, porque es más alta y está sobre el filo norte","""Loma Larga Antecumbre Norte""",14,376
+377,Rio Yeso_28,28,P5068,5068,33º 40' 58'',69º 58' 38'',"""Loma Larga Antecumbre Este""
+(no aparece marcada en hoja VAD por falta de espacio)",,14,377
+378,Rio Yeso_29,29,Loma Larga Oeste,5385,33º 40' 59'',69º 59' 30'',,,14,378
+379,Rio Yeso_30,30,Loma Larga Este,5375,33º 40' 58'',69º 58' 59'',,,14,379
+380,Rio Yeso_31,31,Loma Larga CP,5404,33º 41' 00'',69º 59' 10'',,5361,14,380
+381,Rio Yeso_32,32,"Marmolejo
+Antecumbre Norte",5399,33º 41' 52'',69º 52' 09'',"Cumbre fronteriza, posiblemente inescalada (ver Lliboutry / 1956, pag 275)",,14,381
+382,Rio Yeso_33,33,Marmolejo Norte,5964,33º 42' 48'',69º 51' 47'',Cumbre fronteriza,,14,382
+383,Rio Yeso_34,34,Marmolejo Este,5934,33º 42' 39'',69º 50' 58'',,,14,383
+384,Rio Yeso_35,35,Punta Italia,4863,33º 42' 52'',69º 59' 45'',,4543,14,384
+385,Rio Yeso_36,36,Cortaderas,5197,33º 42' 02'',69º 59' 47'',,5144,14,385
+386,Rio Yeso_37,37,P4260,4260,33º 42' 09'',69º 57' 02'',"""Cumbre del portezuelo Marmolejo""",,14,386
+387,Rio Yeso_38,38,Freile,4598,33º 43' 42'',69º 59' 18'',,4548,14,387
+388,Rio Yeso_39,39,Punta Brasil,4594,33º 43' 39'',69º 59' 59'',,,14,388
+389,Rio Yeso_40,40,Marmolejo CP,6108,33º 43' 52'',69º 52' 33'',Cumbre fronteriza,6092,14,389
+390,Rio Yeso_41,41,Morro Escondido,4442,33º 44' 18'',69º 59' 26'',"Ver San Roman (""primeras ascensiones"") grupo tercero # 8",4420,14,390
+391,Rio Yeso_42,42,Punta Chile,4377,33º 44' 22'',69º 59' 14'',Ver Neate 1994 pag 12 (la altura no cuadra !),4355,14,391
+392,Rio Yeso_43,43,Moai,4368,33º 44' 29'',69º 58' 57'',,4346,14,392
+393,Rio Yeso_44,44,Punta Veleta,4305,33º 44' 08'',69º 59' 31'',,,14,393
+394,Embalse Yeso_1,1,Pirámide,4157,"33° 31' 45.6""","70° 00' 18.2""",Al oeste del Aguja Delgada y del Aparejo,Nombre segun RPonce,15,394
+395,Embalse Yeso_2,2,Tambillos,4254,33° 31' 42'',70° 02' 58'',"Al norte del Casa de Piedra, en el cabezal del Estero Los Tambillos y sobre el margen occidental del Estero de las Vacas.",,15,395
+396,Embalse Yeso_3,3,Alto de los Bronces,4046,"33° 32' 27""","70° 09' 46""","Al Este de la cabecera del Estero Aucayes, en el sector Los Chorreados,  segun IGM",,15,396
+397,Embalse Yeso_4,4,Alto de las Amarillas,4143,33° 32' 46'',70° 09' 20'',"Al Este de la cabecera del Estero Aucayes, en el sector Los Chorreados,  segun IGM",,15,397
+398,Embalse Yeso_5,5,"Casa de Piedra
+Cumbre Oeste",4508,"33° 32' 25.7""","70° 03' 19.6""","Punta Nays
+Ver FEACh 1988 pag 65, que describe tres cumbres; Punta Nays sería la segunda cumbre",P4503 se considera como antecumbre de P4508 / UL,15,398
+399,Embalse Yeso_7,7,"Casa de Piedra
+Cumbre Principal",4542,33° 32' 32'',70° 03' 06'',"Cumbre Ricardo Vivanco
+Ver FEACh 1988 pag 65, que describe tres cumbres;",,15,399
+400,Embalse Yeso_8,8,"Casa de Piedra
+Cumbre Noreste",4485,33° 32' 22'',70° 02' 55'',"Ver FEACh 1988 pag 65, que describe tres cumbres; esta sería la tercera cumbre",,15,400
+401,Embalse Yeso_10,10,Pico de Loro,4397,"33° 32' 30.3""",70° 2' 30.1'',Info DValdes y AM,"ver Foto 15B_51, 52 y 52B; 15C_29B",15,401
+402,Embalse Yeso_12,12,El Muro,4364,33° 32' 39.9'',70° 02' 22.6'',"Ver andeshandboook / Aguja Helada
+Ver foto 15B_44 / Info DValdes y AM",Foto 15C_29B,15,402
+403,Embalse Yeso_13,13,Punta Aguila Azul,3987,33° 32' 19'',70° 09' 07'',Cumbre Norte del Alto de los Bronces,,15,403
+404,Embalse Yeso_14,14,P4503,4503,"33° 32' 30.5""","70° 03' 12.6""","Cumbre del CdP >4500m, pero no acotada; entre P4508 y P4542 (CP)",P4503 se considera como antecumbre de P4508 / UL; No va a plataforma !,15,404
+405,Embalse Yeso_15,15,P4225,4225,33° 33' 02'',"70° 00' 18,5''",Nombre ? (en el filo Oeste del Aparejo),Foto 15B_53,15,405
+406,Embalse Yeso_16,16,P3986,3986,33° 33' 08'',70° 06' 45'',Nombre ?,al norte del Granito /Abril 09/Ponce,15,406
+407,Embalse Yeso_16B,16B,Punta Maccio,4125,"33° 33' 05.8""","70° 01' 52.3""","Al oriente del cerro Casa de Piedra, cierra por el norte el Cajón Casa de Piedra.
+Info DValdes y AM",Ver foto 15C_29B,15,407
+408,Embalse Yeso_17,17,P4571,4571,33° 33' 26.1'',"70° 03' 58.7""",Cumbre al norte del Aguja Helada/Abril 09/Ponce,,15,408
+409,Embalse Yeso_18,18,Granito,4097,33° 33' 45'',70° 07' 09'',"Al noreste de los Dientes del Echaurren. Primer ascenso enero de 1933 por Walter Klatt y Adolf Bethke, Anuario de Montaña 1956. Mencionado en ""Mountaineering in the Andes"" de Jill Neate, Andes Centrales, 2da Ed. Pag. 11",,15,409
+410,Embalse Yeso_19,19,Aguja Seleccion,4083, 33° 33' 29.5'',70° 01' 25.0'',Info de Gaston Oyarzun y DValdes y AM,Ver Foto 15C_29B,15,410
+411,Embalse Yeso_19B,19B,Punta Ona,"3800
+(aprox)",,,"Hombro al Oeste de Aguja Seleccion 4083m;
+nombre segun Patricio Uribe
+(ver tambien DValdes y AM)",Foto 15B_44+,15,411
+412,Embalse Yeso_20,20,Aguja Helada,4655,33° 33' 47'',70° 03' 55'',,,15,412
+413,Embalse Yeso_21,21,P4127,4127,33° 34' 42'',70° 08' 22'',Nombre ?,al noreste del Echaurren/ Abril09/Ponce,15,413
+414,Embalse Yeso_22,22,Punta del Paraiso,3976,"33° 34' 18.7""","70° 08' 49.9""","Datos de EAB (Purto)
+Coordenadas GM",,15,414
+415,Embalse Yeso_23,23,Punta Observatorio,4050,33° 35' 39.8''," 70° 04' 30.3""","Datos de EAB (Paulo Cox + 1)
+Coordenadas segun GM","Antecumbre occidental del Pico Negro;
+Cumbre de filo !",15,415
+416,Embalse Yeso_24,24,Echaurren,4203,33° 35' 16'',70° 08' 55'',,,15,416
+417,Embalse Yeso_25,25,"Punta Aya
+(Dientes del Echaurren)",4028,33° 35' 23'',70° 07' 52'',"Se distinguen 4 ""dientes"": Punta Aya es el tercero desde oriente",,15,417
+418,Embalse Yeso_26,26,Piuquencillo,4047,33° 35' 50'',70° 11' 06'',,,15,418
+419,Embalse Yeso_27,27,Pico Negro,4430,33° 35' 28'',70° 03' 38'',,,15,419
+420,Embalse Yeso_28,28,Punta Andino,4240,33° 35' 58'',70° 03' 28'',,,15,420
+421,Embalse Yeso_29,29,Punta Negra,4127,33° 36' 48'',70° 03' 27'',,,15,421
+422,Embalse Yeso_30,30,Meson Alto,5257,33° 40' 42'',70° 02' 01'',"Cumbre Norte del macizo, la más alta",,15,422
+423,Embalse Yeso_31,31,Punta Gervasutti,5253,33° 40' 53'',70° 01' 54'',Cumbre Central del macizo,,15,423
+424,Embalse Yeso_32,32,Reina,4755,33° 40' 13.5'',70° 01' 23.0'',"Cerro que cierra el cajón del Morado entre el Loma Larga y el Mesón Alto, el nombre se lo dieron andinistas del CAU sin haberlo subido es un nombre medianamente difundido./ Abril 09/Ponce",,15,424
+425,Embalse Yeso_33,33,Ciervo,4160,33° 41' 30'',70° 04' 00'',,,15,425
+426,Embalse Yeso_34,34,Punta Saavedra,5190,33° 41' 27'',70° 02' 14'',Cumbre Suroeste,Cota / Abril 09 / Ponce,15,426
+427,Embalse Yeso_35,35,Punta Cacharro,4441,33° 42' 11'',70° 02' 30'',"AM  1963-67  pag 179 (entre Punta Saavedra y Cerro Morado, ascension desde Estero Cortaderas);
+Ver Neate pag 12","Nombre aceptado es Punta Cacharro, no Cachureo (EAB)",15,427
+428,Embalse Yeso_36,36,Peladeros,3886,33° 41' 12'',70° 12' 45'',,,15,428
+429,Embalse Yeso_37,37,Dedo de Dama,3780,33° 42' 05'',70° 12' 23'',,,15,429
+430,Embalse Yeso_38,38,Jorge San Martin,4471,33° 42' 35'',70° 02' 49'',Ver foto 14_28 (Carancho),,15,430
+431,Embalse Yeso_39,39,Punta Yamakawa,4967,33° 42' 21'',70° 00' 12'',AM 1963-67 pag 175; Estribacion occidental del Cerro Cortaderas (P4967 segun IGM / Embalse El Yeso)      ,Nombre alternativo Cielo Amarillo/Abril 09/Ponce,15,431
+432,Embalse Yeso_40,40,Morado,4647,33° 43' 34'',70° 03' 45'',,,15,432
+433,Embalse Yeso_41,41,Morado Sur,4490,33° 44' 02'',70° 04' 09'',,,15,433
+434,Embalse Yeso_42,42,San Lorenzo,3220,33° 43' 03'',70° 12' 17'',,,15,434
+435,Embalse Yeso_43,43,Punta Carancho,4108,"33° 43' 02""","70° 02' 58""","Altura segun AHB;
+Ver Fotos 20_63, 14_26",VER AHB / Carancho,15,435
+436,Embalse Yeso_44,44,Placas,4672,33° 44' 35'',70° 00' 27'',,,15,436
+437,Embalse Yeso_45,45,Mirador del Morado,3883,33° 44' 36'',70° 04' 00'',,,15,437
+438,Embalse Yeso_46,46,San Francisco,4345,33° 44' 39'',70° 05' 12'',,,15,438
+439,San Jose de Maipo_1,1,P3149,3149,33º 30' 25'',70º 26' 36'',,6291 / 366,16,439
+440,San Jose de Maipo_2,2,Loma Las Vegas,2608,33º 30' 49'',70º 21' 28'',,6290 / 374,16,440
+441,San Jose de Maipo_3,3,Las Minillas,2483,33º 31' 51'',70º 28' 49'',,6289 / 363,16,441
+442,San Jose de Maipo_4,4,Manzanito,2438,33º 32' 05'',70º 25' 54'',,6288 / 367,16,442
+443,San Jose de Maipo_5,5,La Tinaja,2509,33º 35' 18'',70º 17' 42'',,6283 / 380,16,443
+444,San Jose de Maipo_6,6,Morro Bayo,2655,33º 36' 47'',70º 16' 07'',,6280 / 382,16,444
+445,San Jose de Maipo_7,7,Morro Purgatorio,2252,33º 37' 15'',70º 26' 11'',,6279 / 367,16,445
+446,San Jose de Maipo_8,8,Morro Doña Isidora,2340,33º 38' 20'',70º 23' 15'',,6277 / 371,16,446
+447,San Jose de Maipo_9,9,Los Azules,2436,33º 44' 18'',70º 27' 52'',,6273 / 364,16,447
+448,San Jose de Maipo_10,10,Sin Nombre,2815,33º 41' 01'',70º 16' 18'',,6272 / 382,16,448
+449,San Jose de Maipo_11,11,Cruzada Las Hormigas,2532,33º 41' 00'',70º 26' 25'',,6272 / 367,16,449
+450,San Jose de Maipo_12,12,La Chupalla,2193,33º 43' 53'',70º 16' 27'',,6267 / 382,16,450
+451,San Jose de Maipo_13,13,Toro Seco,2394,33º 44' 45'',70º 23' 47'',,6265 / 371,16,451
+452,San Jose de Maipo_14,14,Punta Horizonte,2374,33º 44' 51'',70º 20' 35'',"Comentario al nombre, ver AHB",6265 / 375,16,452
+453,Tupungato_1,1,Polleritas,5447,33° 15' 47'',69° 54' 52'',Cumbre fronteriza,,17,453
+454,Tupungato_2,2,Chimbote,5493,33° 16' 50'',69° 56' 25'',"Se distinguen 3 cumbres; la Sureste es la más alta; ""hombro"" al Suroeste; cumbre fronteriza (UL / Ene 2008)","Waldo Farías y Fernando Fainberg, primera ascension (noticia de Abril 2011) ",17,454
+455,Tupungato_3,3,Sierra Bella,5275,33° 16' 09'',69° 49' 58'',Cumbre fronteriza,,17,455
+456,Tupungato_4,4,Orientacion,5020,33° 17' 00'',69° 47' 57'',Cumbre fronteriza,Cota revisada (RPonce),17,456
+457,Tupungato_5,5,Toscas,5036,33° 17' 07'',69° 57' 17'',"Ver Relato E. Meier / DAV Stgo, 1955
+Vecino inmediato al Oeste del Chimbote
+Altura IGM 5036, a confirmar (ilegible !)",,17,457
+458,Tupungato_6,6,"Gran Bizcocho
+(Cordon)",4576,33° 17' 48'',69° 51' 44'',,,17,458
+459,Tupungato_7,7,Catedral,5334,33° 18' 34'',69° 58' 53'',Cumbre fronteriza,"Evitar / Eliminar nombre alternativo ""Cerro Rabicano"" (confusion !) / El Morro Rabicano se encuentra más al Oeste, Ver Hoja Rio Olivares (ver relato de ascension Piderit, CACH 1940)",17,459
+460,Tupungato_8,8,Ortega,4561,33° 20' 31'',69° 58' 04'',"Nombre en homenaje al famoso arriero Exequiel Ortega, (ca 1930 a 1950); Ver mapa Lliboutry;",,17,460
+461,Tupungato_10,10,Volcan Tupungato,6570,33º 21' 19'',69º 46' 08'',Cumbre fronteriza,,17,461
+462,Tupungato_11,11,Volcan Tupungatito,5550,33º 23' 14'',69º 48' 50'',"Cumbre fronteriza / Altura segun andeshandbook = 5 550m, ver eM 19.11.2006",,17,462
+463,Tupungato_12,12,Punta Meier,5908,33º 24' 45'',69º 47' 44'',"En memoria del recordado andinista Eberhard Meier; Ver AVivanco / 26 Sept 2008 (eM)
+(cumbre Norte del Nevado sin Nombre)",,17,463
+464,Tupungato_13,13,P5382,5382,33º 24' 21'',69º 50' 27'',"Nombre ? 
+(al suroeste del Volcan Tupungatito)",,17,464
+465,Tupungato_14,14,Los Negros,4520,33º 24' 28'',69º 53' 51'',Nombre segun mapa IGM,"Loa arrieros lo llaman ""Auxiliar Oveja"", es visible desde casi todo el valle de Río Colorado / Rponce/5/2009",17,465
+466,Tupungato_15,15,Museo,4196,33º 25' 52'',69º 57' 40'',Nombre segun mapa IGM,,17,466
+467,Tupungato_16,16,Nevado sin Nombre,5933,33º 25' 14'',69º 47' 44'',"Cumbre fronteriza
+Se confirma el nombre, dado por los primeros escaladores !",,17,467
+468,Tupungato_17,17,P5781,5781,33° 25' 30'',69° 49' 33'',,"Punta muy representativa del macizo del Cerro Alto, visible desde casi toda la cordillera / Rponce/5/2009",17,468
+469,Tupungato_18,18,El Barco,4547,33º 26' 57'',69º 51' 21'',"Al oeste del Cerro Alto
+Nombre segun mapa IGM",,17,469
+470,Tupungato_20,20,P5984,5984,33° 27' 06'',69° 49' 08'',Cumbre chata al norte del Cerro Alto,UL / 15 Mayo 2009,17,470
+471,Tupungato_19,19,Alto,6148,33º 27' 54'',69º 48' 47'',Cumbre fronteriza,,17,471
+472,Tupungato_22,22,Mesetas,6030,33º 28' 12'',69º 49' 18'',"Comentario R. Ponce; Ver foto 20_33;
+Cumbre a m/m un km del Alto",el nombre Mesetas es utilizado por los arrieros del sector/Rponce/5/2009,17,472
+473,Tupungato_21,21,P5838,5838,33° 28' 42'',69° 49' 40'',,"Punta en el filo Alto-Piuquenes, probablemente no sea cumbre indepediente, pero adquiere valor ya que es una de las cumbres más altas inescalada de Chile central, esto según EE./Rponce/5/2009",17,473
+474,Tupungato_24,24,P5868,5868, 33° 29' 38'', 69° 49' 48'',,"Punta en el filo Alto-Piuquenes, probablemente no sea cumbre indepediente, pero adquiere valor ya que es una de las cumbres más altas inescalada de Chile central, esto según EE./Rponce/5/2009",17,474
+475,Tupungato_23,23,Kobe,5067,33° 29' 55'',69° 56' 48'',Info de Kurt Claussen / Valparaiso,,17,475
+476,Rio Olivares_1,1,Punta Verde,4735,33º 15' 31'',70º 12' 09'',"Correccion de acuerdo a andeshandbook, mapa Grupo Plomo; cota de altura segun IGM",,18,476
+477,Rio Olivares_2,2,P4789,4789,33º 16' 45'',70º 04' 48'',"Extremo Norte de la Sierra del Coironal, y cumbre más alta del grupo",,18,477
+478,Rio Olivares_3,3,Solari,5325,33º 16' 01'',70º 02' 11'',Cumbre fronteriza,,18,478
+479,Rio Olivares_4,4,Roth,5335,33º 16' 17'',70º 02' 57'',"Luego de escalar ambas cumbres (1959) y encontrar testimonios, U. Lorber deja constancia que el cerro Roth efectivamente está al Oeste del Solari, y no al SurEste como lo indica Lliboutry (Cerro Roth es ligeramente más alto !). Ver mapa en Z. ANDINA 1959, pag 36
+Ver tambien AM 1959, pag 92
+Esta cumbre no es fronteriza !",,18,479
+480,Rio Olivares_5,5,"""Roth
+ Antecumbre Oeste""",5018,33º 16' 26'',70º 03' 49'',,,18,480
+481,Rio Olivares_6,6,P5133,5133,33º 16' 23'',70º 01' 29'',"Cumbre fronteriza, al SE del Solari, no tiene nombre;
+Lliboutry (1956) erroneamente le asigna el nombre ""Roth""",,18,481
+482,Rio Olivares_7,7,Bismarck,4650,33º 16' 02'',70º 11' 49'',"Correccion de acuerdo a andeshandbook, mapa Grupo Plomo, incl cota de altura",,18,482
+483,Rio Olivares_8,8,P4943,4943,33º 17' 57'',70º 00' 31'',Cumbre fronteriza; Nombre ?,,18,483
+484,Rio Olivares_9,9,P4692,4692,33º 17' 44'',70º 04' 36'',Sierra del Coironal,,18,484
+485,Rio Olivares_12,12,Pintor,4180,33º 17' 17'',70º 15' 00'',Coordenadas segun AHB/Grupo Plomo, 10-12-2010 / UL,18,485
+486,Rio Olivares_13,13,Cepo,4309,33º 18' 08'',70º 11' 08'',erróneamente llamado Klatt; ver testimonio encontrado en Nov 2012 en la cumbre P4182,,18,486
+487,Rio Olivares_14,14,P4720,4720,33-18-59,70º 04' 25'',Sierra del Coironal ,,18,487
+488,Rio Olivares_15,15,P4384,4384,33º 19' 54'',70º 04' 19'',"Sierra del Coironal;
+Segun IGM: ""Cerro Potrerillos""",,18,488
+489,Rio Olivares_18,18,Morro Rabicano,4897,33º 19' 49'',70º 00' 11'',"Cota conforme al mapa IGM
+Ver Lliboutry (1956) pag 269-270, y mapa
+Ver foto 15B_05","Report de Piderit (1940, primera ascension) confirma nombre y posicion de esta cumbre",18,489
+490,Rio Olivares_19,19,Lagruca,4109,33º 19' 01'',70º 10' 49'',Revision Nov 2005,,18,490
+491,Rio Olivares_20,20,Klatt,4182,33º 19' 39'',70º 10' 45'',"Testimonio encontrado Nov 2012 (primera ascension Harseim y Niehaus, 1948)",,18,491
+492,Rio Olivares_21,21,P4391,4391,33º 20' 50'',70º 04' 07'',Sierra del Coironal,,18,492
+493,Rio Olivares_22,22,P4578,4578,33º 21' 24'',70º 04' 57'',Sierra del Coironal,,18,493
+494,Rio Olivares_25,25,Bávaro,4085,33º 21' 46'',70º 10' 20'',Nombre > Cerro Bávaro (Ver AVivanco y E Atalah/2011),,18,494
+495,Rio Olivares_26,26,Laguna,4120,33º 22' 17'',70º 11' 29'',"Revision Feb 2013; Eberhard Meier en 1946 llamó a este cerro ""Laguna"", en primera ascension ! Segun IGM, la cumbre Sur es la más alta; 
+Transitoriamente se le llamó ""Manantial""",,18,495
+496,Rio Olivares_27,27,P3942,3942,33º 22' 31'',70º 10' 01'',Nombre ?,,18,496
+497,Rio Olivares_28,28,"Alto del Coironal
+(cumbre central)",4756,33º 22' 20'',70º 05' 16'',"Cumbre central de la Sierra del Coironal;
+mapa IGM muestra en este sector ""SVE"" - poca o mala definicion ! Ver item 2","Ver Fotos 15_96, 15_96B, 15B_02, 15B_10B;
+Segun Lliboutry (1956, pag 269), el acceso logico a la cumbre sería por el Este (Est. Parraguirre) (UL / Junio 2011)",18,497
+498,Rio Olivares_29,29,Alto del Chacayal,4528,33º 23' 49'',70º 05' 14'',"Sierra del Coironal, nombre segun IGM",,18,498
+499,Rio Olivares_30,30,Capitan,4157,33º 23' 13'',70º 12' 03'',"Ver panoramica en mapa-guia Sierra de Ramon, AndesHbk Dic 2006 ",,18,499
+500,Rio Olivares_31,31,Teniente,4156,33º 23' 39'',70º 11' 37'',Marzo 2006,,18,500
+501,Rio Olivares_31B,31B,Sargento Este,3792,33º 23' 33'',70º 12' 45'',"Primera ascension por Eberhard Meier, 1943
+Ver tambien Sargento Oeste","Ver fotos 15_54, 15_55, 15B_96, 15C_69",18,501
+502,Rio Olivares_32,32,Sargento Oeste,3808,33º 23' 47'',70º 12' 55'',"Primera ascension por Evelio Echevarria y Fernando Montenegro, 2001; Cota y posicion fueron modificadas (AVivanco, Octubre 2012); ver Sargento Este",Ver foto 15C_68,18,502
+503,Rio Olivares_33,33,P4056,4056,33º 24' 25'',70º 11' 29'',Nombre ?,,18,503
+504,Rio Olivares_34,34,P4389,4389,33º 24' 42'',70º 05' 15'',Sierra del Coironal,,18,504
+505,Rio Olivares_35,35,P4265,4265,33º 25' 44'',70º 04' 47'',Sierra del Coironal,,18,505
+506,Rio Olivares_36,36,P4030,4030,33º 25' 06'',70º 11' 19'',Nombre ?,,18,506
+507,Rio Olivares_37,37,P3897,3897,33º 25' 51'',70º 11' 20'',"Bonita cumbre, no tiene nombre
+Cordon del Quempo",,18,507
+508,Rio Olivares_38,38,P3830,3830,33º 26' 21'',70º 11' 05'',"Bonita cumbre, no tiene nombre
+Cordon del Quempo",,18,508
+509,Rio Olivares_39,39,"Alto del Tofo
+(Cordon El Dique)",3960,33º 26' 30'',70º 04' 50'',"Sierra del Coironal, nombre segun IGM",,18,509
+510,Farellones_1,1,Manchón,3720,33° 15' 20'',70° 18' 42'',Altura y Posicion de acuerdo a AHB; IGM posiciona esta cumbre m/m dos km más al norte (hoja Disputada);,,19,510
+511,Farellones_2,2,Carpa,2776,33° 15' 03'',70° 27' 57'',,,19,511
+512,Farellones_3,3,Conchalí,2552,33° 15' 49'',70° 28' 39'',,,19,512
+513,Farellones_4,4,Canoitas,2650,33° 17' 34'',70° 23' 04'',"Es Canoitas, no Canditas (AV)",,19,513
+514,Farellones_5,5,Parva,4047,33° 17' 52'',70° 15' 25'',,,19,514
+515,Farellones_6,6,Falsa Parva,3888,33° 18' 10'',70° 15' 53'',,,19,515
+516,Farellones_7,7,Boiniguita,2220,33° 19' 31'',70° 23' 53'',,,19,516
+517,Farellones_8,8,del Medio,2326,33° 19' 22'',70° 20' 26'',,,19,517
+518,Farellones_9,9,Loma de la Vaca,2030,33° 20' 18'',70° 25' 34'',,,19,518
+519,Farellones_10,10,Colorado,3339,33° 20' 32'',70° 16' 06'',,,19,519
+520,Farellones_11,11,Pochoco,1804,33° 21' 01'',70° 26' 57'',,,19,520
+521,Farellones_13,13,Cebolla,2470,33° 23' 54'',70° 18' 29'',,,19,521
+522,Farellones_12,12,Ñipa,2347,33° 23' 46'',70° 24' 45'',Los comentarios a favor de Ñipa (en vez de Ñipas) son convincentes ! ,,19,522
+523,Farellones_14,14,Covarrubias,2365,33° 25' 28'',70° 22' 12'',,,19,523
+524,Farellones_15,15,Provincia,2750,33° 25' 21'',70° 25' 58'',,,19,524
+525,Farellones_16,16,Morro del Tambor,2893,33° 26' 56'',70° 25' 33'',,,19,525
+526,Farellones_17,17,San Ramón,3253,33° 28' 56'',70° 26' 13'',,,19,526
+527,Farellones_18,18,Morro Abanico,2152,33° 29' 04'',70° 28' 50'',,,19,527
+528,Farellones_19,19,La Polvareda,3738,33° 16' 39'',70° 16' 47'',AV / EA / UL / 13 Enero 2011,,19,528
+529,Polleras_1,1,P5083,5083,33º 00' 08'',69º 58' 59'',"""Doris Antecumbre Sur"" (UL) / nombre provisorio",,20,529
+530,Polleras_3,3,P5215,5215,,,?,Ver Foto 07_36 - Cordon Chorrillos (lado argentino),20,530
+531,Polleras_4,4,P5300,5300,,,CAE ? / Piramidal ?,Ver Foto 07_36 - Cordon Chorrillos (lado argentino),20,531
+532,Polleras_6,6,P5160,5160,33º 02' 42'',69º 57' 00'',,Co del Gaucho 5050; - Cordon Chorrillos (lado argentino),20,532
+533,Polleras_7,7,P5082,5082,33º 03' 08'',69º 56' 46'',,Co Gredos 5070; - Cordon Chorrillos (lado argentino),20,533
+534,Polleras_8,8,P5286,5286,33º 03 58'',69º 56' 54'',,Co Tte 1o Fco Ibañez 5260; -Cordon Chorrillos (lado argentino),20,534
+535,Polleras_9,9,P5172,5172,33º 05' 18'',69º 56' 54'',,Co de la Hispanidad 5330; -Cordon Chorrillos (lado argentino),20,535
+536,Polleras_10,10,P5306,5306,33º 06' 07'',69º 57' 06'',,Co Amezúa  5350;  -Cordon Chorrillos (lado argentino),20,536
+537,Polleras_11,11,P5040,5040,33º 07' 06'',69º 56' 23'',, - Cordon Chorrillos (lado argentino),20,537
+538,Polleras_20,20,"Polleras
+AC Norte 3",4786,33º 12' 06'',69º 53' 18''," 5000 m (distancia aerea a la CP, aprox)","AC = Antecumbre, CP = Cumbre Principal",20,538
+539,Polleras_21,21,"Polleras
+AC Este 3",4781,33º 14' 00'',69º 52' 04''," 4500 m (distancia aerea a la CP, aprox)",,20,539
+540,Polleras_22,22,"Polleras
+AC Norte 2",5330,33º 13' 27'',69º 54' 20''," 2000 m (distancia aerea a la CP, aprox)",,20,540
+541,Polleras_23,23,"Polleras
+AC Oeste",5458,33º 14' 29'',69º 56' 01''," 1700 m (distancia aerea a la CP, aprox)",,20,541
+542,Polleras_24,24,"Polleras
+AC Este 1",5375,33º 14' 23'',69º 54' 10''," 1200 m (distancia aerea a la CP, aprox)",,20,542
+543,Polleras_25,25,"Polleras
+AC Este 2",5136,33º 14' 31'',69º 53' 35''," 2000 m (distancia aerea a la CP, aprox)",,20,543
+544,Polleras_26,26,"Polleras 
+Cumbre Principal",5993,33º 14' 23'',69º 54' 54'',"Riso Patron a este cerro le llamó (inicialmente) ""Gigante""",,20,544
+545,Polleras_27,27,Polleras Oeste,5970,33º 14' 32'',69º 55' 10''," 500 m (distancia aerea a la CP, aprox)",,20,545
+546,Polleras_28,28,"Polleras
+AC Norte 1",5683,33º 14' 04'',69º 54' 50'',"Altura en el mapa IGM lee 5183 (error) !
+ 600 m (distancia aerea a la CP, aprox)",,20,546
+547,Cordon Piuquenes_1,1,Mono Verde,4524,33º 00' 22'',70º 02' 52'',,,21,547
+548,Cordon Piuquenes_3,3,Alto de los Leones,5380,33º 00' 18'',70º 08' 00'',"Ascension por el lado del Rio de los Leones (lado suroeste): Ver AAJ 1980, p 598",,21,548
+549,Cordon Piuquenes_4,4,P5217,5217,33º 00' 36'',70º 07' 19'',"Ascension por Bazán, degli Esposti y Zelaya, 29 Feb 1964 (Alpinismo italiano nel Mondo, Vol II, M. Fantin), pag 774-775 (""Punta Bortolo"")",,21,549
+550,Cordon Piuquenes_5,5,P5166,5166,33º 00' 44'',70º 06' 50'',Aparentemente sin ascension,,21,550
+551,Cordon Piuquenes_6,6,Cumbre Rascacielos,4900,33º 00' 50'',70º 04' 33'',Cumbre en el filo norte del Nevado Juncal,,21,551
+552,Cordon Piuquenes_7,7,P4815,4815,33º 01' 30'',70º 03' 00'',Cumbre fronteriza; Nombre ?,,21,552
+553,Cordon Piuquenes_8,8,Valentin Ugarte,4666,33º 01' 44'',70º 01' 29'',"Reubicado, segun mapa Helbling (no fronteriza);
+Subsisten dudas respecto a posicion exacta;
+Ver mapa Suarez-Videla",,21,553
+554,Cordon Piuquenes_9,9,"Nevado Juncal
+Antecumbre Norte",5392,33º 01' 34'',70º 04' 42'',"Mirando del Oeste, se ve una doble cumbre",,21,554
+555,Cordon Piuquenes_10,10,Punta Fugaz,4265,33º 01' 08'',70º 12' 06'',"Al Noroeste del Alto del Potrero Escondido;
+Punta Fugaz  (Ver Neate pag 8)
+Ver AM 1959 pag 86","Info. Personal: Punta Fugaz, escalada en 4,5 h desde CB en Laguna del PE (3240m)
+Primera ascension en Feb 1958, KHWinter",21,555
+556,Cordon Piuquenes_11,11,"Nevado Juncal 
+Cumbre Sur",5925,33º 02' 54'',70º 05' 34'',,,21,556
+557,Cordon Piuquenes_12,12,"Nevado Juncal 
+Cumbre Chilena",5953,33º 02' 54'',70º 05' 57'',,,21,557
+558,Cordon Piuquenes_13,13,Columna,5660,33º 02' 03'',70º 06' 39'',,,21,558
+559,Cordon Piuquenes_14,14,"Negro 
+(del Juncal)",5295,33º 02' 38'',70º 03' 27'',,,21,559
+560,Cordon Piuquenes_15,15,"Nevado Juncal
+Cumbre Principal",5966,33º 02' 25'',70º 05' 01'',"Cumbre fronteriza
+Altura ""clasica"" segun R. Helbling, ver Nota al lado",Medicion hecha por Camilo Rada el 2 Dic 2010 con un GPS Geodesico arroja 5966m para la cumbre principal,21,560
+561,Cordon Piuquenes_17,17,Alto del Potrero Escondido,4986,33º 03' 09'',70º 10' 04'',,,21,561
+562,Cordon Piuquenes_18,18,"Alto del Potrero Escondido
+Cumbre Este",4810,33º 03' 11'',70º 09' 24'',,,21,562
+563,Cordon Piuquenes_19,19,"Alto del Potrero Escondido
+Cumbre Sur",4682,33º 03' 51'',70º 10' 23'',,,21,563
+564,Cordon Piuquenes_20,20,Punta Amistad,5210,33º 03' 31'',70º 04' 31'',"Al sur del portezuelo entre JCS y Nev Plomo
+Neate pag 6 habla de ""Co de la Amistad""; AAJ 1966 pag 184; Exped. Japonesa al Juncal Sur", 1.6.2011 / 7.1.2013,21,564
+565,Cordon Piuquenes_21,21,Juncal Chico CP,5617,33º 04' 00'',70º 06' 37'',"Esta cumbre, la noroeste, es la más alta",,21,565
+566,Cordon Piuquenes_22,22,"Juncal Chico
+Cumbre Central",5602,33º 04' 11'',70º 06' 34'',Esta cumbre normalmente se escala,,21,566
+567,Cordon Piuquenes_23,23,Lucia-Dinamarca,4498,33º 04' 02'',70º 11' 48'',Acceso logico por cajon Barriga; ,,21,567
+568,Cordon Piuquenes_24,24,"""Punta Policha"" ",4718,33º 04' 40'',70º 07' 36'',Nombre segun Matias Aurtenechea / Dic 2006 Nombre provisorio,,21,568
+569,Cordon Piuquenes_25,25,Nevado Olivares,5005,33º 05' 40'',70º 09' 32'',,,21,569
+570,Cordon Piuquenes_26,26,Asociacion,4775,33º 05' 52'',70º 10' 30'',,,21,570
+571,Cordon Piuquenes_27,27,El Paso,4811,33º 05' 08'',70º 07' 36'',"Primera Ascension (y Nombre) Bazan y Sneberger
+(Info de Matias Aurtenechea Dic 2006)",,21,571
+572,Cordon Piuquenes_28,28,Nevado del Plomo,6070,33º 06' 01'',70º 03' 50'',Cumbre fronteriza,,21,572
+573,Cordon Piuquenes_29,29,P4875,4875,33º 05' 22'',70º 08' 40'',Nombre ? Cumbre al NE del Nevado Olivares; acceso por Estero Barriga,,21,573
+574,Cordon Piuquenes_30,30,P4730,4730,33º 05' 24'',70º 08' 09'',Nombre ? Cumbre al NE del Nevado Olivares; acceso por Estero Barriga,,21,574
+575,Cordon Piuquenes_31,31,P4708,4708,33º 05' 32'',70º 07' 45'',Nombre ? Cumbre al NE del Nevado Olivares; acceso por Estero Barriga,,21,575
+576,Cordon Piuquenes_32,32,Nevado Barriga,4560,33º 05' 52'',70º 11' 08'',,,21,576
+577,Cordon Piuquenes_33,33,P5556,5556,33º 06' 48'',70º 04' 28'',"Cumbre al sur del Nevado del Plomo; cumbre fronteriza; nombre, ascension ?",,21,577
+578,Cordon Piuquenes_34,34,Anec,4907,33º 06' 25'',70º 11' 50'',,,21,578
+579,Cordon Piuquenes_35,35,Picarte,5060,33º 06' 32'',70º 09' 10'',,,21,579
+580,Cordon Piuquenes_36,36,Dorado,4962,33º 06' 11'',70º 09' 01'',Cumbre norte del Picarte; Ver Neate pag 8,,21,580
+581,Cordon Piuquenes_37,37,Federacion,4997,33º 07' 10'',70º 08' 45'',,,21,581
+582,Cordon Piuquenes_38,38,Bahamonde,4911,33º 07' 10'',70º 11' 55'',"Recuerda a Ruperto Bahamonde, Ingeniero
+(exploracion Alto Olivares)",,21,582
+583,Cordon Piuquenes_39,39,Punta sin Nombre,4822,33º 07' 32'',70º 13' 00'',Ver Report FEACh 1988 pags 3 y 4,,21,583
+584,Cordon Piuquenes_40,40,Alto del Moradito,4807,33º 07' 51'',70º 13' 14'',Ver Report FEACh 1988 pags 3 y 4,,21,584
+585,Cordon Piuquenes_41,41,Nevado del Rincon,5538,33º 07' 41'',70º 03' 17'',"Cumbre al norte del Riso Patron; cumbre fronteriza; Ver Magnani, Mendoza 2002, pag 143; Ver Neate 1994 pag 6; Ver San Roman 1990 # 181; Ver AAJ 1977 pag 229-230
+Segun Elvis Acevedo, Bazan le puso ""Nevado del Rincon"", Esposti ""Bologna""","Primera ascension Manuel Bazan y Giuseppe Degli Esposti, 15 Feb 1976, desde el Oeste (= lado chileno)",21,585
+586,Cordon Piuquenes_42,42,Mirador del Olivares,4416,33º 08' 14'',70º 10' 50'',Ver Report FEACh 1988 pags 3 y 4,,21,586
+587,Cordon Piuquenes_43,43,"Negro
+(de la Copa)",4928,33º 08' 10'',70º 14' 00'',,,21,587
+588,Cordon Piuquenes_44,44,Riso Patron,5720,33º 08' 50'',70º 03' 40'',"Comentario Ismael Mena Nov 2006: 
+Riso Patron es la version correcta !",,21,588
+589,Cordon Piuquenes_45,45,Barentin,4728,33º 08' 51'',70º 12' 41'',"Revision general; Ver Neate/1994 pag 8;
+Ver Report FEACh 1988 pags 3 y 4",,21,589
+590,Cordon Piuquenes_46,46,Iver,4723,33º 08' 39'',70º 13' 29'',,,21,590
+591,Cordon Piuquenes_47,47,Punta Sherpa,4581,33º 09' 08'',70º 13' 36'',"Ortografia muy variada ! Sheirap, Sheirab, Sherpa, ++
+Neate/1994 pag 8; FEACh 1988; San Roman",,21,591
+592,Cordon Piuquenes_48,48,Punta Leonor,4665,33º 09' 20'',70º 13' 43'',"Ver San Roman/1990 Tercer grupo # 114
+Ver Neate/1994 pag 9; 
+Ver Report FEACh 1988 pags 3 y 4",,21,592
+593,Cordon Piuquenes_49,49,Punta La Cuña,4582,33º 09' 44'',70º 14' 13'',"Ver San Roman / 1990, Tercer grupo # 31
+Ver Report FEACh 1988 pags 3 y 4",,21,593
+594,Cordon Piuquenes_50,50,Cerro Divisorio,3910,33º 09' 25'',70º 07' 50'',"Nombre reemplaza a ""Loma Rabona"" (contribucion de Walter Stehr / Santiago; ver tambien perrosalpinos)",,21,594
+595,Cordon Piuquenes_51,51,"AC Oeste, Riso Patron",5363,33º 09' 10'',70º 04' 45'',"""Antecumbre Oeste"" del Riso Patron; ver Foto 15_98",,21,595
+596,Cordon Piuquenes_52,52,"AC Oeste, Tronco",5290,33º 10' 32'',70º 04' 12'',"""Antecumbre Oeste"" del Tronco; ver Fotos 15_94 y 15_98",,21,596
+597,Cordon Piuquenes_53,53,Punta Amarilla,4565,33º 10' 07'',70º 14' 23'',Ver Report FEACh 1988 pags 3 y 4,,21,597
+598,Cordon Piuquenes_54,54,Francisco Chavez,4830,33º 10' 52'',70º 10' 34'',"Al noreste del Osiecki;
+ver report FEACh 1988 pags 43 y 56
+ver San Roman, Tercer grupo, # 113",,21,598
+599,Cordon Piuquenes_55,55,Altar,5180,33º 10' 55'',70º 14' 25'',,,21,599
+600,Cordon Piuquenes_56,56,Tronco,5567,33º 10' 22'',70º 03' 34'',"Tres cumbres, casi iguales; IGM indica: cumbre central = 5567m, cumbre E = 5564m, cumbre W = 5558m",,21,600
+601,Cordon Piuquenes_57,57,Morro del Fierro,4642,33º 10' 43'',70º 04' 43'',"ver Lliboutry (foto, pag 267); ver tambien fotos 15_98 y 15B_34",,21,601
+602,Cordon Piuquenes_58,58,P5130,5130,33º 11' 18'',70º 03' 30'',) ver R66,,21,602
+603,Cordon Piuquenes_59,59,Osiecki,5150,33º 11' 55'',70º 12' 16'',Cota y posicion segun andeshandbook (mapa Grupo Plomo); Sept 2006 / Lrb,,21,603
+604,Cordon Piuquenes_60,60,Fickenscher,5350,33º 12' 23'',70º 12' 40'',Cota y posicion segun andeshandbook (mapa Grupo Plomo); Sept 2006 / Lrb,,21,604
+605,Cordon Piuquenes_62,62,"Esmeralda
+Cumbre Principal",4566,33º 11' 49'',70º 08' 44'',"Segun Lliboutry (p. 269), este cordon forma un semicirculo y comprende los cerros Fickenscher, Osiecki, Francisco Chavez, 4690L, y las tres cumbres del cerro Esmeralda",,21,605
+606,Cordon Piuquenes_63,63,Esmeralda Central,4520,33º 12' 10'',70º 08' 12'',,,21,606
+607,Cordon Piuquenes_64,64,Esmeralda Sur,4555,33º 12' 39'',70º 08' 14'',,,21,607
+608,Cordon Piuquenes_65,65,Littoria,5352,33º 12' 44'',70º 13' 01'',,,21,608
+609,Cordon Piuquenes_66,66,P5070,5070,33º 12' 02'',70º 03' 43'',) Cumbres fronterizas al sur del Tronco;  Ver panoramicas 20-19 y 20_23 (desde Cerro Plomo),,21,609
+610,Cordon Piuquenes_67,67,P5055,5055,33º 12' 43'',70º 03' 22'',),,21,610
+611,Cordon Piuquenes_68,68,Cincuentenario,4987,33º 13' 23'',70º 03' 06'',Cumbre fronteriza,,21,611
+612,Cordon Piuquenes_69,69,(Cerro) Plomo,5424,33º 13' 58'',70º 12' 44'',,,21,612
+613,Cordon Piuquenes_70,70,Reichert,5286,33º 13' 55'',70º 01' 30'',Cumbre fronteriza,,21,613
+614,Cordon Piuquenes_71,71,Punta Parsifal,5370,33º 13' 42'',70º 13' 15'',"700m West, 500m Norte del Cerro Plomo
+Ver foto Perros alpinos, 15B_15",,21,614
+615,Cordon Piuquenes_72,72,Punta Santiago,5083,33º 13' 58'',70º 13' 50'',"Ver Neate, 1994, pag 9; Ver foto 15_84 (UL);
+Entre Leonera y Plomo",,21,615
+616,Cordon Piuquenes_73,73,Punta Expedicion,5000,33º 14' 23'',70º 12' 12'',"Al sureste del Plomo
+A confirmar altura y coordenadas; 
+Ver Neate, 1994, pag 9;",,21,616
+617,Cordon Piuquenes_74,74,Morro de los Castaños,4220,33º 14' 23'',70º 09' 34'',,,21,617
+618,Cordon Piuquenes_75,75,Leonera,4954,33º 14' 33'',70º 14' 25'',"en años iniciales tambien tuvo el nombre de ""Plomo Negro"" / ver AVivanco y EAcevedo (2010_12)",,21,618
+619,Cordon Piuquenes_76,76,Punta Chuncho,5073,33º 14' 33'',70º 01' 33'',"Antecumbre al sur del Reichert
+Ver Neate 1994 pag 6",,21,619
+620,Cordon Piuquenes_77,77,Punta Hermandad,4930,33º 14' 06'',70º 14' 30'',"Ver Neate, 1994, pag 9; Ver foto 15_84 (UL);
+Entre Leonera y Plomo",,21,620
+621,La Disputada_1,1,Tuquito,3990,33° 0' 59'',70° 16' 46'',,,22,621
+622,La Disputada_2,2,P4041,4041,33° 0' 03'',70° 17' 36'',,,22,622
+623,La Disputada_3,3,P4107,4107,33° 0' 48'',70° 18' 08'',,,22,623
+624,La Disputada_4,4,Yaretas,3539,33º 01' 14'',70º 25' 16'',Nombre de Cumbre segun mapa IGM (Nov 2011),,22,624
+625,La Disputada_5,5,P4034,4034,33° 2' 52'',70° 18' 50'',,,22,625
+626,La Disputada_6,6,Punta Flores,4157,33° 3' 05'',70° 16' 49'',"Sector Estero Flores, tributario del río Blanco",,22,626
+627,La Disputada_7,7,P4144,4144,33° 3' 13'',70° 18' 19'',,,22,627
+628,La Disputada_8,8,P4102,4102,33° 3' 32'',70° 18' 12'',,,22,628
+629,La Disputada_9,9,Morro Cáceres,2798,33º 03' 40'',70º 28' 02'',Nombre de Cumbre segun mapa IGM (Nov 2011),,22,629
+630,La Disputada_10,10,San Emeterio,4322,33° 3' 55'',70° 17' 46'',"En la hoja La Disputada aparece con 2 nombres, San Emeterio y Los Diamantes. Tambien hay menciones al nombre Barros Negros. El nombre San Emeterio viene del santoral del día de primera ascensión, y puede considerarse como nombre válido.",,22,630
+631,La Disputada_11,11,P4120,4120,33° 4' 22'',70° 17' 31'',,,22,631
+632,La Disputada_12,12,P4082,4082,33° 4' 56'',70° 17' 27'',Sector Laguna Betina,,22,632
+633,La Disputada_13,13,Los Azules,3643,33º 05' 05'',70º 23' 11'',Nombre de Cumbre segun mapa IGM (Nov 2011),,22,633
+634,La Disputada_14,14,Del Plomo,4025,33° 5' 36'',70° 20' 27'',Dudoso,,22,634
+635,La Disputada_15,15,P4066,4066,33° 5' 8'',70° 20' 13'',Sector Barros Negros,,22,635
+636,La Disputada_16,16,Turquesa,3905,33º 06' 20'',70º 18' 47'',Nombre de Cumbre segun mapa IGM (Nov 2011),,22,636
+637,La Disputada_17,17,Ceatoleí,4136,33° 6' 56'',70° 17' 40'',Confirmado,,22,637
+638,La Disputada_18,18,P4003,4003,33° 6' 25'',70° 15' 44'',Sector Estero Castro,,22,638
+639,La Disputada_19,19,P4115,4115,33° 7' 53'',70° 17' 40'',"Cordón de la Disputada. Al sur del cerro La Disputada
+Punta de la Perla ?? (ver FEACh pag 51 y 56 y Lliboutry)",,22,639
+640,La Disputada_20,20,Disputada,4165,33° 7' 29'',70° 17' 27'',Cordón La Disputada. Al sur del Ceatoleí,,22,640
+641,La Disputada_21,21,Ortiga,3563,33º 07' 38'',70º 21' 58'',Nombre de Cumbre segun mapa IGM (Nov 2011),,22,641
+642,La Disputada_22,22,El Choclo,3905,33º 07' 46'',70º 16' 07'',Nombre de Cumbre segun mapa IGM (Nov 2011),,22,642
+643,La Disputada_23,23,El Plomo,3535,33º 09' 30'',70º 20' 45'',Nombre de Cumbre segun mapa IGM (Nov 2011),"**  Ya hay un ""Co del Plomo"", pero 8 km más al Norte (UTM 38/75) / Eliminar uno de los dos nombres !?",22,643
+644,La Disputada_24,24,Piuquenes,3403,33º 09' 23'',70º 26' 36'',Nombre de Cumbre segun mapa IGM (Nov 2011),,22,644
+645,La Disputada_25,25,Punta Monolito,4274,33° 9' 46'',70° 15' 25'',"ver FEACh pag 51 y 56, y Lliboutry; cota segun Lliboutry; Ver comentario EAtalah/ESiques",,22,645
+646,La Disputada_26,26,Infiernillo,4040,33° 8' 46'',70° 16' 7'',Sector Los Bronces,,22,646
+647,La Disputada_27,27,del  Cobre,3820,33º 08' 19'',70º 20' 48'',Nombre de Cumbre segun mapa IGM (Nov 2011),,22,647
+648,La Disputada_28,28,Dolores,3760,33º 08' 54'',70º 18' 02'',Nombre de Cumbre segun mapa IGM (Nov 2011),,22,648
+649,La Disputada_29,29,Fortuna,4641,33° 10' 25'',70° 16' 40'',Al oeste de La Paloma y al norte del San Francisco,,22,649
+650,La Disputada_30,30,P4474,4474,33º 10' 52'',70º 16' 58'',,,22,650
+651,La Disputada_31,31,Los Angeles,3623,33° 10' 44'',70° 23' 19'',,,22,651
+652,La Disputada_32,32,La Polcura,3524,33º 10' 05'',70º 23' 34'',Nombre de Cumbre segun mapa IGM (Nov 2011),,22,652
+653,La Disputada_33,33,Paloma,4910,33° 10' 38'',70° 15' 55'',"Longitud fué ajustada a AHB; 
+Datos AHB: 4910m, 33-10-55, 70-15-55 (Datos GPS)",,22,653
+654,La Disputada_34,34,San Francisco,4270,33° 11' 51'',70° 17' 32'',Version AHB; IGM posiciona esta cumbre m/m dos km más al norte; otro dato habla de 4273m,,22,654
+655,La Disputada_35,35,P3330,3330,33° 11' 38'',70° 21' 03'',"Posicion (y nombre) sujetos a confirmacion; 
+Cortadera ?? Ver Cortadera Chico; KyF muestra al Cortadera en la posicion del Cortadera Chico",,22,655
+656,La Disputada_36,36,P4164,4164,33° 12' 31'',70° 17' 17'',"""Cerro de la canaleta""",,22,656
+657,La Disputada_37,37,Arqueado de Barrera,2898,33° 12' 51'',70° 28' 13'',,,22,657
+658,La Disputada_38,38,Altar Falso,4549,33° 12' 12'',70° 15' 21'',,,22,658
+659,La Disputada_39,39,Tornamesa,2408,33º 13' 25'',70º 24' 23'',Nombre de Cumbre segun mapa IGM (Nov 2011),,22,659
+660,La Disputada_40,40,Los Piches,4233,33° 13' 11'',70° 17' 17'',Version AHB; IGM posiciona esta cumbre m/m dos km más al norte;,,22,660
+661,La Disputada_41,41,P3873,3873,33° 13' 56'',70° 18' 22'',Manchon: ver hoja Farellones (Version AHB),,22,661
+662,La Disputada_42,42,Hotel,3163,33° 13' 25'',70° 21' 26'',,,22,662
+663,La Disputada_43,43,Cortadera Chico,3324,33° 14' 10'',70° 21' 44'',Ver item P3330,,22,663
+664,Portillo_1,1,"C° Tolosa
+Cumbre Principal",5353,32º 45' 58'',70º 01' 45'',"Cota de altura, segun IGM Argentino
+ = 5 432 / Marzo 2006 / UL (como referencia)",,23,664
+665,Portillo_2,2,C° Tolosa Oeste,5317,32º 45' 48'',70º 02' 28'',,,23,665
+666,Portillo_3,3,"C° Tres Hermanos 
+Sur",4274,32º 45' 16'',70º 07' 34'',Cumbre fronteriza; Tres Hermanos Norte y Central: ver hoja Rio de los Leones,,23,666
+667,Portillo_3E,3E,Pico Chorrillos,4159,32º 46' 20'',70º 06' 09'',"Cota 4159 corresponde a Relato AHB (GPS); Coordenadas segun AHB; 
+Cota IGM_Ch = 4142; ","Abril 2011; Ver AHB; Foto 19_63;
+Ver Pablo David Gonzalez",23,667
+668,Portillo_4B,4B,Pico Peñas Coloradas,4211,32º 46' 54'',70º 05' 56'',Cota 4211 corresponde a relato AHB,"Abril 2011; Foto 19_63;
+Ver Pablo David Gonzalez",23,668
+669,Portillo_4C,4C,Pico El Titan,4254,32º 46' 59'',70º 06' 22'',Cota 4254 corresponde a relato AHB,"Abril 2011; Foto 19_63;
+Ver Pablo David Gonzalez",23,669
+670,Portillo_5,5,Paramillos del Tolosa,,32° 46',70° 03',,,23,670
+671,Portillo_9,9,"C° Parva del Inca 
+Cumbre Principal",4831,32º 45' 18'',70º 10' 04'',Patrimonio arqueologico,,23,671
+672,Portillo_10,10,C° Parva del Inca Norte,4792,32º 45' 15'',70º 10' 10'',,,23,672
+673,Portillo_11,11,C° Varela,4093,32º 46' 21'',70º 10' 52'',,,23,673
+674,Portillo_12,12,P4281,4281,32º 46' 59'',70º 11' 54'',Nombre ? ,,23,674
+675,Portillo_13,13,P4325,4325,32º 47' 10'',70º 12' 40'',Nombre ?,,23,675
+676,Portillo_14,14,C° Manantiales de Brito,4456,32º 47' 46'',70º 14' 05'',,,23,676
+677,Portillo_15,15,C° Barile,4447,32º 47' 50'',70º 13' 59'',,,23,677
+678,Portillo_16,16,C° Bastion,4658,32º 47' 38'',70º 12' 48'',,,23,678
+679,Portillo_17,17,C° Caracoles,4465,32º 47' 45'',70º 06' 19'',Cumbre Principal del cordon Caracoles,,23,679
+680,Portillo_18,18,C° Mesetas Norte,4048,32º 47' 00'',70º 09' 21'',No es cumbre independiente,,23,680
+681,Portillo_19,19,C° Mesetas Sur,4095,32º 47' 45'',70º 09' 20'',No es cumbre independiente,,23,681
+682,Portillo_20,20,C° Aguja,4607,32º 48' 07'',70º 13' 00'',,,23,682
+683,Portillo_21,21,C° Glorieta,4413,32º 48' 05'',70º 14' 12'',,,23,683
+684,Portillo_22,22,C° Brujita,4379,32º 48' 24'',70º 14' 27'',,,23,684
+685,Portillo_23,23,C° Gloria,4479,32º 48' 50'',70º 14' 20'',,,23,685
+686,Portillo_24,24,P4323,4323,32º 48' 32'',70º 12' 35'',Nombre ? / Peñon ?,,23,686
+687,Portillo_25,25,C° Juan Olmos,4340,32º 48' 47'',70º 12' 24'',,,23,687
+688,Portillo_26,26,C° Bermejo,3873,32º 49' 58'',70º 04' 35'',,,23,688
+689,Portillo_27,27,C° Ojos de Agua,4222,32º 49' 28'',70º 09' 00'',,,23,689
+690,Portillo_28,28,C° Santa Elena Norte,4571,32º 50' 00'',70º 03' 03'',"Cumbre secundaria del Santa Elena;
+en hoja VAD solo aparece triangulo y cota, por falta de espacio",,23,690
+691,Portillo_29,29,C° Santa Elena,4595,32º 50' 09'',70º 03' 06'',Ver 28,,23,691
+692,Portillo_30,30,C° Puntudito,4157,32° 49' 43'',70° 01' 50'',,,23,692
+693,Portillo_31,31,P4596,4596,32º 50' 38'',70º 03' 06'',"Nombre = ""Santa Elenita"", ver corresp. con Jorge Hess, Abril 2007 (cumbre fronteriza)",,23,693
+694,Portillo_32,32,P4640,4640,32º 51' 11'',70º 03' 08'',Nombre ? (cumbre fronteriza),,23,694
+695,Portillo_33,33,C° Navarro,4671,32º 51' 42'',70º 02' 48'',Cumbre fronteriza,,23,695
+696,Portillo_34,34,C° Navarro Sur,4571,32º 51' 55'',70º 02' 35'',"Cumbre fronteriza; en hoja VAD solo aparece triangulo y cota, por falta de espacio",,23,696
+697,Portillo_35,35,C° Negro (del Gemelos),4445,32° 50' 59'',69° 59' 24'',,,23,697
+698,Portillo_36,36,C° Cabeza del Inca,4193,32º 51' 18'',70º 06' 31'',,,23,698
+699,Portillo_37,37,"""Cabeza del Inca Este""",4105,32º 51' 31'',70º 05' 28'',,,23,699
+700,Portillo_38,38,"""Alto Mardones""",4098,32º 51' 23'',70º 04' 57'',,,23,700
+701,Portillo_39,39,"C° Gemelos
+Cumbre Principal",5240,32º 52' 40'',70º 00' 00'',"Cumbre fronteriza; No se adopta nombre ""Tres Gemelos"", usado en Argentina",,23,701
+702,Portillo_40,40,C° Presenteseracae,4952,32º 52' 28'',70º 01' 07'',"Al Noroeste del Gemelos CP
+Nombre segun GRAM / Rosario",,23,702
+703,Portillo_41,41,Torre Virgen Oeste,5215,32º 52' 48'',69º 59' 56'',Inescalada (2003) ?,,23,703
+704,Portillo_42,42,Torre Virgen Este,5200,32º 52' 54'',69º 59' 49'',Inescalada (2003) ?,,23,704
+705,Portillo_43,43,Pico Bonito,4994,32º 52' 10'',69º 59' 20'',Grupo Gemelos,,23,705
+706,Portillo_45,45,Portezuelo Gemelos,4328,32º 53' 52'',69º 59' 15'',,,23,706
+707,Portillo_46,46,Gemelo Oeste,5122,32º 53' 10'',69º 59' 35'',"Con el Gemelo Este (5117)  forma el ""par blanco"" visible desde Laguna Horcones, y que Fitz Gerald (1897) bautizara con el nombre de ""twin peaks""; cumbre fronteriza",,23,707
+708,Portillo_47,47,Gemelo Este,5117,32º 53' 16'',69º 59' 29'',Ver Gemelo Oeste,,23,708
+709,Portillo_48,48,C° Punton Amarillo,4159,32º 53' 36'',70º 03' 05'',,,23,709
+710,Portillo_48A,48A,P4296,4296,,,Nuevo,,23,710
+711,Portillo_48B,48B,P4065,4065,32º 53' 43'',70º 02' 50'',figura listado con 4050m,,23,711
+712,Portillo_48C,48C,P3945,3945,32º 54' 10'',70º 03' 22'',,,23,712
+713,Portillo_48D,48D,C° Hornitos,3625,32º 54' 25'',70º 04' 02'',Primera ascension Daniel Perez y compañeros (2011),,23,713
+714,Portillo_48E,48E,P3669,3669,,,Nuevo,,23,714
+715,Portillo_49,49,Alto de la Posada,4260,32º 53' 14'',70º 10' 20'',,,23,715
+716,Portillo_50,50,Punta Desconocida,4360,32º 53' 35'',70º 10' 35'',"Detras (al suroeste) del Alto de la Posada;
+Primeros escaladores: Kurt Claussen y compañero;",,23,716
+717,Portillo_51,51,C° Chorrillo,4082,32º 54' 32'',70º 08' 39'',"Nombre segun mapa IGM
+Ver tambien P4178 (R63)",,23,717
+718,Portillo_52,52,C° Humberto Barrera,4569,32º 54' 17'',69º 59' 19'',Cumbre fronteriza,,23,718
+719,Portillo_53,53,C° EMA,4328,32º 54' 29'',70º 10' 45'',Abreviacion de Escuela de Montaña ASAVA,,23,719
+720,Portillo_54,54,C° Becker,4448,32º 55' 00'',70º 11' 40'',Extremo noroeste del Cordon Halcones,,23,720
+721,Portillo_55,55,C° Maite,4438,32º 54' 50'',70º 11' 41'',,,23,721
+722,Portillo_56,56,C° WIM,4352,32º 54' 57'',70º 11' 08'',"Abreviacion de: Waldo Iturriaga Muñoz, andinista porteño (de Valparaiso) de los años 1950 y 60 ",,23,722
+723,Portillo_58,58,C° Yeso,4192,32º 55' 24'',70º 01' 23'',,,23,723
+724,Portillo_59,59,C° Level,4432,32º 54' 58'',70º 10' 45'',,,23,724
+725,Portillo_60,60,C° Celsa,3935,32º 55' 58'',70º 07' 22'',"Segun FHRojas y Chr.Stange, este cerro se llama Celsa; Escaladores del Andeski le pusieron este nombre; Claussen tambien subió esta cumbre (UL, 6-3-2009)",,23,725
+726,Portillo_62,62,Rafael Saavedra,4410,32º 55' 18'',70º 10' 28'',"""Cumbre central"" del Cordon Halcones",,23,726
+727,Portillo_63,63,Gimnastico,4275,32º 55' 20'',70º 09' 57'',,,23,727
+728,Portillo_64,64,Atalaya,4100,32º 55' 14'',70º 10' 15'',Al Norte del Gimnastico / Ver foto 10_07,,23,728
+729,Portillo_65,65,Rabo de la Mona,4293,32º 55' 32'',70º 09' 28'',"Se asigna a esta cumbre el nombre ""Rabo de la Mona"", en base a una informacion de Sergio Kunstmann (Referencia de Alvaro Vivanco, Enero 2011)",Nota: Quebrada de la Mona = nombre alternativo de la Quebrada Chorrillo,23,729
+730,Portillo_66,66,Halcon Alto,4493,32º 55' 46'',70º 09' 15'',"Dos picachos rocosos de casi igual altura (4493 y 4456, segun IGM); buen punto de referencia ! Ver R67","ex CAChV ! 
+Por logica debe ser el Halcon Alto
+A confirmar",23,730
+731,Portillo_67,67,P4456,4456,32º 55' 49'',70º 09' 11'',ver R66;,,23,731
+732,Portillo_68,68,Gustavo,4792,32º 55' 13'',70º 00' 11'',"Cumbre fronteriza; identica con ""Gram Blanco"" (nombre posterior, ver report CABA 1955)",,23,732
+733,Portillo_69,69,P4714,4714,32º 55' 52'',70º 00' 09'',Nombre ? / Cumbre fronteriza,,23,733
+734,Portillo_70,70,P4178,4178,32º 55' 07'',70º 08' 51'',"Podria ser el Viento Nevado ??, ascendido en 1952 / DAV Valpso (Kurt Claussen y Otros)",,23,734
+735,Portillo_71,71,P4295,4295,32º 55' 17'',70º 11' 56'',Antecumbre Oeste del Grupo Halcones,,23,735
+736,Portillo_72,72,P5089,5089,32º 56' 32'',70º 00' 03'',Nombre ? / Cumbre fronteriza,,23,736
+737,Portillo_73,73,Vigia,4205,32º 56' 47'',70º 03' 54'',Nombre propuesto por EE,,23,737
+738,Portillo_74,74,P4365,4365,32º 56' 17'',70º 09' 04'',Cumbre Intermedia entre P4493 y CACh Valparaiso,,23,738
+739,Portillo_75,75,CAChV,4493,32º 56' 28'',70º 08' 56'',Lado sur cumbre muestra glaciacion; extremo sureste del Cordon Halcones; (CAChV = Club Andino de Chile Valparaiso),"Nuevo nombre, resultado de bajar testimonio de la primera ascension (ver AVivanco); primera ascension Eugenio Carramiñana y compañeros, 1951 (?)",23,739
+740,Portillo_76,76,P4437,4437,32º 56' 36'',70º 08' 10'',"""Antecumbre Este de CAChV""",,23,740
+741,Portillo_77,77,Punta Barraquer,4210,32º 56' 07'',70º 10' 31'',"En el filo Sur del Rafael Saavedra. 
+Apoyados en la propuesta que hicieron los andinistas del segundo ascenso, se asigna a este cerro el nombre de ""Punta Barraquer"" (Referencia: Alvaro Vivanco, Enero 2011).",,23,741
+742,Portillo_78,78,Punta de Cuchillo,4349,32º 56' 52'',70º 02' 16'',,,23,742
+743,Portillo_79,79,Parque Andino,4548,32º 57' 48'',70º 03' 43'',"Ver Relato de Primera Ascension 
+/ 22 Oct 2008 / Alvaro Vivanco;
+(nombre previo: ""Visible desde Yesera"")",,23,743
+744,Portillo_80,80,Mono Negro,4826,32º 57' 40'',70º 02' 20'',,,23,744
+745,Portillo_81,81,Mono Blanco,4772,32º 57' 55'',70º 02' 25'',,,23,745
+746,Portillo_82,82,Alto del Rio Blanco,5228,32º 57' 01'',70º 00' 24'',Cumbre fronteriza,,23,746
+747,Portillo_83,83,Leon Blanco,5188,32º 57' 30'',70º 01' 05'',,,23,747
+748,Portillo_84,84,Espinazo del Diablo,3964,32º 57' 16'',70º 12' 55'',Patrimonio arqueologico,,23,748
+749,Portillo_85,85,Punta Perdida,4047,32º 57' 50'',70º 09' 53'',Ver ZA 1959 pag 20; Posicion definida en base a una foto de cumbre con el Alto de los Leones al fondo,,23,749
+750,Portillo_85B,85B,Codo Flojo,3680,32º 58' 07'',70º 10' 42'',Cumbre presentada por Daniel Perez / CAU / Enero 2011 / Primera ascension,,23,750
+751,Portillo_86,86,Arriero Chico,4224,32º 57' 03'',70º 04' 03'',Nombre propuesto por EE,,23,751
+752,Portillo_87,87,"Yeguas Heladas
+Norte",4712,32º 57' 48'',70º 08' 32'',,,23,752
+753,Portillo_88,88,"Yeguas Heladas 
+CP",4771,32º 58' 03'',70º 08' 32'',,,23,753
+754,Portillo_89,89,"Yeguas Heladas
+Sur",4770,32º 58' 35'',70º 08' 24'',,,23,754
+755,Portillo_90,90,Leon Negro,5176,32º 58' 03'',70º 01' 32'',,,23,755
+756,Portillo_91,91,Central,5247,32º 58' 09'',69º 59' 23'',,"Ascensiones 17 Feb 64 M. Gomez / Valencia
+Ver AM 1963-67, pag 143",23,756
+757,Portillo_92,92,Don Juan,5193,32º 58' 10'',69º 59' 03'',,"Ascensiones 17 Feb 64 M. Gomez / Valencia
+Ver AM 1963-67, pag 143",23,757
+758,Portillo_93,93,Expedicion,5219,32º 58' 23'',69º 58' 45'',,"Ascensiones 17 Feb 64 M. Gomez / Valencia
+Ver AM 1963-67, pag 143",23,758
+759,Portillo_94,94,Philippe,5225,32º 58' 35'',69º 58' 34'',"Esta cumbre seria el ""Philippe"", escalado dos años antes (= 1962) de Gomez por un grupo argentino a cargo de H. Joos (Referencia Glauco Muratti / Rosario, Ulrich Lorber / Munich)","Ascensiones 17 Feb 64 M. Gomez / Valencia; Ver AM 1963-67, pag 143;
+Gomez, creyendo que esta cumbre era una primera ascension, le puso Benicadell",23,759
+760,Portillo_95,95,Marisco,4480,32º 58' 25'',70º 03' 00'',Cantidad de fósiles en la misma cumbre !,,23,760
+761,Portillo_96,96,P4835,4835,32º 58' 07'',70º 02' 06'',"Nombre ? Cola de Mono ? (Neate pag 5)
+ Ver 97 / Ver AM 1963-67 pag 143 y 
+AM 1973-77 pag 168",,23,761
+762,Portillo_97,97,P4810,4810,32º 58' 19'',70º 02' 10'',"Nombre ? Zoologico ? (Neate pag 5)
+Ver 96",,23,762
+763,Portillo_98,98,Punta Valeria,4770,32º 58' 48'',70º 02' 11'',,,23,763
+764,Portillo_99,99,"Aguja Nacimiento
+Noroeste",3796,32º 58' 47'',70º 05' 57'',,,23,764
+765,Portillo_100,100,Aguja Nacimiento,4010,32º 59' 20'',70º 05' 25'',,,23,765
+766,Portillo_101,101,Doris Norte,5181,32º 59' 02'',69º 58' 42'',,"Ascensiones 17 Feb 64 M. Gomez / Valencia
+Ver AM 1963-67, pag 143",23,766
+767,Portillo_102,102,Centro Excursionista de Valencia,5198,32º 59' 22'',69º 58' 55'',,"Ascensiones 17 Feb 64 M. Gomez / Valencia
+Ver AM 1963-67, pag 143",23,767
+768,Portillo_103,103,Doris,5241,32º 59' 36'',69º 59' 06'',,"Ascensiones 17 Feb 64 M. Gomez / Valencia
+Ver AM 1963-67, pag 143",23,768
+769,Rio Blanco_1,1,Los Cascajales,3410,32º 45' 26'',70º 22' 59'',,,24,769
+770,Rio Blanco_2,2,El Bolson,2839,32º 45' 55'',70º 19' 51'',,,24,770
+771,Rio Blanco_3,3,Los Pingos,3030,32º 47' 14'',70º 21' 19'',,,24,771
+772,Rio Blanco_4,4,Mocoen,2693,32º 47' 45'',70º 27' 48'',Patrimonio arqueologico (Petroglifos),,24,772
+773,Rio Blanco_5,5,Los Escalones,3558,32º 47' 38'',70º  16' 45'',,,24,773
+774,Rio Blanco_6,6,La Matancilla,3540,32º 50' 49'',70º 17' 33'',Patrimonio arqueologico,,24,774
+775,Rio Blanco_7,7,Las Tinajas,3137,32º 52' 33'',70º 19' 44'',,,24,775
+776,Rio Blanco_8,8,Mina de Carbon,3412,32º 52' 19'',70º 18' 41'',,,24,776
+777,Rio Blanco_9,9,La Bandera,2636,32º 52' 49'',70º 20' 56'',,,24,777
+778,Rio Blanco_10,10,Muela del Diablo,2960,32º 53' 01'',70º 18' 12'',,,24,778
+779,Rio Blanco_11,11,Negro,2348,32º 54' 29'',70º 29' 06'',,,24,779
+780,Rio Blanco_12,12,La Torre,2760,32º 55' 36'',70º 23' 20'',,,24,780
+781,Rio Blanco_13,13,Nido de Condor,2352,32º 55' 27'',70º 18' 13'',,,24,781
+782,Rio Blanco_14,14,El Pelado,3361,32º 56' 40'',70º 24' 38'',,,24,782
+783,Rio Blanco_15,15,del Diablo,2982,32º 57' 52'',70º 21' 42'',,,24,783
+784,Rio Blanco_16,16,Los Azules de Vilcuya,3446,32º 57' 43'',70º 25' 56'',Patrimonio arqueologico,,24,784
+785,Rio Blanco_17,17,Potrero Alto,3827,32º 58' 45'',70º 18' 20'',,,24,785
+786,Rio Blanco_18,18,Alto del Buitre,3719,32º 59' 31'',70º 23' 30'',Nombre alternativo (Co El Meson) fué descartado (2012_09),,24,786
+787,Rio Blanco_19,19,Laguna del Chano,3620,32º 59' 30'',70º 17' 51'',,,24,787
+788,Rio Leones_1,1,Nevado de Leiva,4653,32º 30' 48'',70º 08' 41'',,,25,788
+789,Rio Leones_2,2,Cerro Bonete,5261,32º 31' 16'',70º 03' 06'',"Este es el ""Bonete del Norte"" (Bonete sanjuanino), no confundir con el Bonete (del Sur) frente al Aconcagua",,25,789
+790,Rio Leones_3,3,P4921,4921,32º 31',70º 02',Cumbre y altura segun Lliboutry,,25,790
+791,Rio Leones_4,4,Cerro La Mano,5426,32º 31' 39'',70º 00' 31'',Altura y coordenadas segun SGIM,,25,791
+792,Rio Leones_5,5,Cerro Monjas,4506,32º 32' 00'',70º 11' 15'',"Nombre de acuerdo a AM ca 1960, Neate/1994 pags 2,3 y San Roman # 3/25",,25,792
+793,Rio Leones_6,6,Cerro Techado,4452,32º 31' 36'',70º 09' 18'',,,25,793
+794,Rio Leones_7,7,Cerro Reichert,5150,32º 32' 19'',70º 01' 00'',Altura y coordenadas segun SGIM,,25,794
+795,Rio Leones_8,8,Cerro Cupula de Guessfeldt,5350,32º 33' 28'',70º 01' 46'',Altura y coordenadas segun SGIM,,25,795
+796,Rio Leones_9,9,P4898,4898,32º 33' 11'',70º 07' 20'',Nombre ? Cumbre fronteriza,,25,796
+797,Rio Leones_10,10,Cerro Zurbriggen,5322,32º 34' 11'',70º 01' 52'',Altura y coordenadas segun SGIM,,25,797
+798,Rio Leones_11,11,Cerro Link,5100,32º 34' 34'',70º 00' 44'',Altura y coordenadas segun SGIM,,25,798
+799,Rio Leones_12,12,Cerro Piloto,5064,32º 34' 28'',70º 08' 55'',Cumbre fronteriza; tambien llamada Alejandro Castro y Pico Cuevas; Fuente: Jorge Gonzalez y Eduardo Fumagallo,,25,799
+800,Rio Leones_14,14,Cerro Alma Blanca,5175,32º 34' 19'',70º 07' 28'',"El Alma Blanca tiene dos cumbres: la principal (llamada tambien Cumbre Escuadrón 27 Gendarmeria Nacional) y la otra, Pico Brasil, ca 5 100m, escalada por el C A Carioca; ",,25,800
+801,Rio Leones_15,15,Pico Brasil,5100,32º 34' 23'',70º 07' 04'',Ver Alma Blanca,,25,801
+802,Rio Leones_17,17,Cerro del Portezuelo del Norte,5016,32º 35' 27'',70º 05' 47'',"Gentileza de G. Muratti, Rosario",,25,802
+803,Rio Leones_18,18,Cerro Mar,4890,32º 35' 19'',70º 09' 28'',"Datos brindados por Eduardo Fumagallo y Gabriel Piotto de Rosario, y Jorge Gonzalez / Cordoba",,25,803
+804,Rio Leones_20,20,Cerro Gino Pertile,4852,32º 35' 58'',70º 09' 41'',"Datos brindados por Eduardo Fumagallo y Gabriel Piotto de Rosario, yJorge Gonzalez",,25,804
+805,Rio Leones_22,22,Cerro del Avion,4530,32º 37' 38'',70º 09' 15'',"Fuente: G. Muratti, Rosario",,25,805
+806,Rio Leones_29,29,Cerro Tordillo,4670,32º 35' 23'',70º 13' 00'',,,25,806
+807,Rio Leones_30,30,Cerro Falso Tordillo,4583,32º 35' 45'',70º 14' 20'',,,25,807
+808,Rio Leones_31,31,P4487,4487,32º 36' 22'',70º 13' 10'',Nombre ?,,25,808
+809,Rio Leones_32,32,P4866,4866,32º 36' 16'',70º 09' 48'',Nombre ? Cumbre fronteriza,,25,809
+810,Rio Leones_33,33,Punta Consuelo,5171,32º 36' 16'',70º 02' 47'',"Info. personal de Heinz Koch / Valparaiso
+Abril 2008 (Proyecto Aconcagua (intento) Enero 1954) / Altura y coordenadas segun SGIM",,25,810
+811,Rio Leones_34,34,Cerro Fitz Gerald,5357,32º 36' 50'',70º 00' 54'',Altura y coordenadas segun SGIM,,25,811
+812,Rio Leones_35,35,Cerro Ameghino,5883,32º 37',69º 59',Cota segun IGM_A,,25,812
+813,Rio Leones_36,36,Cerro Horcones,5432,32º 37' 06'',70º 05' 10'',,,25,813
+814,Rio Leones_37,37,Cerro Pan de Azucar,5277,32º 37' 12'',70º 06' 50'',,,25,814
+815,Rio Leones_39,39,Punta Hartmut,5408,32º 37' 05'',70º 04' 39'',"En memoria del recordado y excelente deportista Hartmut Schmidt / Valparaiso, que escalara esta cumbre (presuntamente en primera ascension), luego el Aconcagua, y falleciera a los pocos dias en un accidente de trafico (1958) / Altura y coordenadas segun IGM-Ch",,25,815
+816,Rio Leones_40,40,Cerro Cuerno,5510,32º 37' 17'',70º 03' 38'',,,25,816
+817,Rio Leones_41,41,Cerro Punton de Mancilla,4610,32º 37' 43'',70º 10' 22'',,,25,817
+818,Rio Leones_42,42,Cerro Potrero Escondido,3955,32º 38' 00'',70º 12' 02'',,,25,818
+819,Rio Leones_43,43,Cerro Capucha Blanca,4413,32º 38' 25'',70º 10' 44'',,,25,819
+820,Rio Leones_44,44,Cerro Don Damasio,4521,32º 38' 22'',70º 08' 58'',Cumbre fronteriza,,25,820
+821,Rio Leones_45,45,Cerro Catedral,5308,32º 38' 35'',70º 04' 56'',,,25,821
+822,Rio Leones_46,46,Morro del Catedral,5041,32º 38' 42'',70º 04' 21'',,,25,822
+823,Rio Leones_47,47,Cerro Manso,5557,32º 38' 15'',70º 02' 12'',Altura y coordenadas segun SGIM,,25,823
+824,Rio Leones_49,49,Cerro Aconcagua,6959,32º 39' 12'',70º 00' 41'',"Altura segun SGIM; 
+coordenadas segun Meridies/2005",,25,824
+825,Rio Leones_50,50,"Cerro Aconcagua
+Cumbre Sur",6930,32º 39' 36'',70º 01' 07'',"Altura segun SGIM; 
+coordenadas segun Meridies/2005",,25,825
+826,Rio Leones_51,51,"Cerro Bonete
+(del Sur)",5077,32º 39' 20'',70º 05' 10'',"Hay otro Bonete, cerca del Paso de Leiva (latitud 32° -30')",,25,826
+827,Rio Leones_52,52,Punta Walter Schiller,4930,32º 39' 23'',70º 04' 40'',,,25,827
+828,Rio Leones_54,54,Cerro Albino,4254,32º 39' 08'',70º 10' 45'',,,25,828
+829,Rio Leones_55,55,Cerro Riscado,4437,32º 39' 05'',70º 08' 49'',Entre paso y portezuelo Contrabandistas; Cumbre fronteriza,,25,829
+830,Rio Leones_56,56,Cerro Molina,4263,32º 39' 35'',70º 11' 05'',,,25,830
+831,Rio Leones_58,58,Cerro Tres Valles,5006,32º 41' 03'',70º 05' 37'',"Altura y coordenadas segun IGM-Ch
+Gentileza de Dario Bracali (QEPD)",,25,831
+832,Rio Leones_59,59,Cerro Piramidal,5700,32º 41' 02'',70º 01' 28'',Altura y Coordenadas segun Meridies/2005,,25,832
+833,Rio Leones_60,60,Mirador,5511,32º 41' 54'',70º 00' 06'',Altura y Coordenadas segun Meridies/2005,,25,833
+834,Rio Leones_61,61,Cerro Loma Amarilla,3805,32º 40' 58'',70º 12' 10'',,,25,834
+835,Rio Leones_62,62,Cerro Los Toldos,3970,32º 41' 04'',70-10-57,,,25,835
+836,Rio Leones_63,63,Cerro Dedos (Nuevo),5026,"32º 41' 08""",70º 04' 28'',"Reposicionado mas al Norte, de acuerdo a mapa Meridies / Gentileza de Dario Bracali (QEPD) / Altura y coordenadas segun IGM-Ch / Ver # 69",,25,836
+837,Rio Leones_64,64,Morro Trigo,3427,32º 42' 34'',70º 11' 25'',,,25,837
+838,Rio Leones_65,65,P4587,4587,32º 42' 33'',70º 08' 38'',Nombre ? Cumbre fronteriza,,25,838
+839,Rio Leones_66,66,Morro Promontorio,4917,32º 42' 51'',69º 59' 16'',Altura y Coordenadas segun Meridies/2005,,25,839
+840,Rio Leones_67,67,Nevado Matienzo,5044,32º 42' 28'',70º 05' 19'',,,25,840
+841,Rio Leones_69,69,Cerro Dedos (Original),5044,32º 43' 11'',70º 03' 50'',Este es el Cerro Dedos original / Gentileza de G. Muratti / Ver # 63,,25,841
+842,Rio Leones_70,70,Cerro Guardian del Portillo,4532,32º 43' 30'',70º 08' 48'',Cumbre fronteriza,,25,842
+843,Rio Leones_71,71,"Cerro Tres Hermanos
+Norte",4751,32º 43' 45'',70º 08' 09'',,,25,843
+844,Rio Leones_72,72,"Cerro Tres Hermanos
+Central",4595,32º 44' 25'',70º 07' 53'',,,25,844
+845,Rio Leones_73,73,P4491,4491,32º 44' 25'',70º 09' 50'',Nombre ?,,25,845
+846,Rio Leones_74,74,Cerro Mexico,5158,32º 44' 36'',70º 02' 42'',,,25,846
+847,Rio Colorado_1,1,Sin Nombre,3773,32º 31' 04'',70º 19' 16'',Cordon Norte de La Cruz del Padre,,26,847
+848,Rio Colorado_2,2,Sin Nombre,3835,32º 31' 50'',70º 19' 46'',Cordon Norte de La Cruz del Padre,,26,848
+849,Rio Colorado_3,3,Mancilla,4057,32º 33' 36'',70º 15' 42'',,,26,849
+850,Rio Colorado_4,4,La Gringa,3970,32º 33' 33'',70º 16' 28'',,,26,850
+851,Rio Colorado_5,5,Llaretal Norte,3428,32º 33' 54'',70º 28' 54'',,,26,851
+852,Rio Colorado_6,6,Llaretal Sur,3370,32º 34' 42'',70º 28' 53'',,,26,852
+853,Rio Colorado_7,7,"Cruz del Padre
+Norte",3805,32º 33' 21'',70º 20' 31'',,,26,853
+854,Rio Colorado_8,8,"Cruz del Padre
+Centro",3807,32º 34' 07'',70º 20' 53'',,,26,854
+855,Rio Colorado_9,9,"Cruz del Padre
+Sur",3754,32º 35' 15'',70º 21' 55'',,,26,855
+856,Rio Colorado_10,10,Molina,3607,32º 34' 34'',70º 25' 20'',,,26,856
+857,Rio Colorado_11,11,Bocon,4071,32º 37' 29'',70º 15' 37'',,,26,857
+858,Rio Colorado_12,12,El Padre,4085,32º 37' 12'',70º 22' 08'',,,26,858
+859,Rio Colorado_13,13,Sin Nombre,3742,32º 37' 24'',70-27-07,,,26,859
+860,Rio Colorado_14,14,Sin Nombre,3968,32º 38' 46'',70º 21' 57'',,,26,860
+861,Rio Colorado_15,15,Morro La Laguna,3780,32º 39' 13'',70º 27' 00'',,,26,861
+862,Rio Colorado_16,16,Llaretas,4015,32º 39' 23'',70º 15' 24'',,,26,862
+863,Rio Colorado_17,17,Alto del Cobre,3632,32º 40' 25'',70º 27' 58'',,,26,863
+864,Rio Colorado_18,18,Sin Nombre,3855,32º 39' 56'',70º 21' 37'',,,26,864
+865,Rio Colorado_19,19,Sin Nombre,3751,32º 40' 54'',70º 22' 02'',C° Bonito ?! (Quebrada),falta en el mapa,26,865
+866,Rio Colorado_20,20,Corral de Piedra,3493,32º 41' 25'',70º 26' 59'',Patrimonio arqueologico (Petroglifos),,26,866
+867,Rio Colorado_21,21,Sin Nombre,3778,32º 40' 33'',70º 15' 54'',,C° Tordillo !? (Cordón),26,867
+868,Rio Colorado_22,22,Sin Nombre,3682,32º 41' 48'',70º 15' 48'',C° Potrero Alto ?! (al lado),falta en el mapa,26,868
+869,Rio Colorado_23,23,El Azufre,3344,32º 42' 44'',70º 16' 29'',,,26,869
+870,Rio Colorado_24,24,Piedras Negras,3776,32º 43' 08'',70º 22' 10'',Patrimonio arqueologico,,26,870
+871,Rio Colorado_25,25,Alto de las Minas,3622,32º 44' 42'',70º 22' 18'',,,26,871
+872,Rio Colorado_26,26,Morro El Paico,2330,32º 43' 20'',70º 26' 40'',,,26,872
+873,Rio Colorado_27,27,La Torre,2831,32º 44' 14'',70º 17' 12'',,,26,873
+874,Paso Las Leñas_1,1,Alto de la Mamá,4867,34º 15' 05'',70º 06' 49'',,,27,874
+875,Paso Las Leñas_2,2,Punta Mistral,4641,34º 15' 54'',70º 06' 44'',Nombre = info Elvis Acevedo / 8Ene2009,,27,875
+876,Paso Las Leñas_3,3,Alto de la Engorda,4072,"34° 15' 15,2''","70° 11' 41,3''",Ver perrosalpinos/relatos/exped. zona de Pangal y Foto 24_18B,"Rev 17 Jun 2009/UL 
+Ver item 34",27,876
+877,Paso Las Leñas_4,4,"Picos del Barroso
+cumbre central",5174,34º 16' 58'',70º 01' 53'',"Cumbre fronteriza, la más alta",,27,877
+878,Paso Las Leñas_5,5,"PdB
+cumbre chilena",5135,34º 16' 35'',70º 02' 57'',,,27,878
+879,Paso Las Leñas_6,6,"PdB
+cumbre argentina",5165,34º 16' 54'',70º 00' 14'',,,27,879
+880,Paso Las Leñas_7,7,"PdB
+cumbre oeste",5113,34º 16' 52'',70º 03' 37'',,,27,880
+881,Paso Las Leñas_8,8,Corona de Don Manuel,4493,34º 16' 40'',70º 08' 26'',Nombre = info Elvis Acevedo / 8Ene2009,,27,881
+882,Paso Las Leñas_9,9,"Punta de Don Manuel
+Este",4380,34º 16' 42'',70º 07' 58'',,,27,882
+883,Paso Las Leñas_10,10,"Punta de Don Manuel
+Sur",4225,34º 17' 28'',70º 08' 06'',,,27,883
+884,Paso Las Leñas_11,11,P4872,4872,34º 17' 22'',70º 03' 51'',,Elvis Acevedo / U Lorber / Agosto 2009,27,884
+885,Paso Las Leñas_12,12,P4130,4130,34º 17' 07'',70º 11' 41'',,,27,885
+886,Paso Las Leñas_13,13,Aguja,4612,34º 18' 03'',70º 03' 59'',"Nombre de acuerdo a Club Andino Rancagua, Expedicion Cajon Cachapoal 1961 (A. Figueroa); Ver esquema",Elvis Acevedo / U Lorber / Agosto 2009,27,886
+887,Paso Las Leñas_14,14,P4595,4595,34º 18' 40'',70º 04' 02'',Nombre ?,,27,887
+888,Paso Las Leñas_15,15,P4153,4153,34º 20' 02'',70º 05' 54'',"Nombre ?
+Cerro Las Vegas ?",,27,888
+889,Paso Las Leñas_17,17,Paja Grande,4446,34º 22' 13'',70º 01' 21'',Cumbre fronteriza,,27,889
+890,Paso Las Leñas_18,18,Cruceros,3748,34º 25' 27'',70º 06' 12'',,,27,890
+891,Paso Las Leñas_19,19,Morro del Atravieso,4590,34º 26' 45'',70º 03' 13'',,,27,891
+892,Paso Las Leñas_20,20,Kiñewen,4120,34º 27' 45'',70º 04' 36'',Cumbre fronteriza; Ver Nota en andeshandbook,,27,892
+893,Paso Las Leñas_21,21,Bayo,4430,34º 28' 19'',70º 06' 46'',Cumbre fronteriza,,27,893
+894,Paso Las Leñas_22,22,Aguja Rucaray,4103,34º 15' 58'',70º 05' 18'',2.8.2011 / EAR / UL,entre Alto de la Mamá y Picos del Barroso,27,894
+895,Paso Las Leñas_23,23,Mirador de la Caleria,4034,34º 16' 01'',70º 05' 05'',2.8.2011 / EAR / UL,entre Alto de la Mamá y Picos del Barroso,27,895
+896,Paso Las Leñas_24,24,P4237,4237,34º 16' 07'',70º 04' 32'',2.8.2011 / EAR / UL,entre Alto de la Mamá y Picos del Barroso,27,896
+897,Paso Las Leñas_25,25,P3511,3511,34º 22' 49'',70º 13' 05'',,,27,897
+898,Paso Las Leñas_26,26,Fragüita,3856,34º 22' 58'',70º 11' 18'',,,27,898
+899,Paso Las Leñas_27,27,Gato Negro,3767,34º 17' 50'',70º 14' 34'',Cordon los Metalitos,,27,899
+900,Paso Las Leñas_28,28,P3935,3935,34º 17' 36'',70º 13' 53'',Cordon los Metalitos,,27,900
+901,Paso Las Leñas_29,29,P3992,3992,34º 17' 03'',70º 12' 31'',Cordon los Metalitos,,27,901
+902,Paso Las Leñas_30,30,Socavones,3788,34º 25' 41'',70º 14' 45'',Ver Lliboutry,,27,902
+903,Paso Las Leñas_31,31,Placilla,3996,34º 23' 35'',70º 07' 05'',,,27,903
+904,Paso Las Leñas_32,32,P4116,4116,34º 15' 28'',70º 10' 36'',"Alto de la Engorda # 2
+Ver item 3 de esta hoja",,27,904
+905,Paso Las Leñas_33,33,P4013,4013,34º 15' 39'',70º 09' 45'',Antecumbre del grupo Don Manuel,,27,905
+906,Paso Las Leñas_34,34,P4050,4050,34º 16' 06'',70º 09' 07'',Antecumbre del grupo Don Manuel,,27,906

@@ -1,0 +1,89 @@
+<%= form_with(model: ascent, local: true) do |form| %>
+  
+  <div class="mb-3">
+    <%= form.label :route_name, "Nombre de la ruta", :class => "form-label" %><br>
+    <%= form.text_field :route_name, placeholder: @basic_route.name, :readonly => true, :tabindex => "-1", :class => "form-control disabled" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :name, "Nombre/Descripción del ascenso", :class => "form-label" %><br>
+    <%= form.text_field :name, :class => "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :ascent_date, "Fecha de ascenso", :class => "form-label" %><br>
+    <%= form.date_field :ascent_date, :value => Time.now.strftime('%Y-%m-%d'), :class => "form-control"  %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :andinist_existent, "Andinistas que hicieron cumbre (ya cargados en la página)", :class => "form-label" %><br>
+    
+    <%= form.select :andinist_existent, andinists_for_select, {}, {:class => "form-select", :multiple => true} %>
+  </div>
+
+  <script>
+    new SlimSelect({
+      select: '#ascent_andinist_existent'
+    })
+
+    </script>
+
+
+<div class="accordion mb-3" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <i class="fas fa-plus"></i>  Agregar nuevos andinistas que hicieron cumbre
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="row g-3">
+          <!-- Pendiente: Agregar dinámicamente nuevos andinistas 
+                1. Tener un botón para activar esta sección
+                2. Al agregar andinista, agregar a la base de datos y actualizar select anterior, dejando seleccionado al andinista creado
+                3. Al hacer eso, notificar el éxito y limpiar campos para poder agregar otros andinistas-->
+          <div class="col-md-3">
+            <label for="inputCity" class="form-label">Nombre 1</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-3">
+            <label for="inputCity" class="form-label">Apellido 1</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-3">
+            <label for="inputCity" class="form-label">Club 1</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-3">
+            <label for="inputCity" class="form-label">País 1</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <%= form.hidden_field :route_id, :value => @basic_route.id %>
+
+  <% if ascent.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ascent.errors.count, "error") %> prohibited this ascent from being saved:</h2>
+
+      <ul>
+        <% ascent.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit "Guardar", :class => "btn btn-primary"  %>
+  </div>
+<% end %>

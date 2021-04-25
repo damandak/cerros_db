@@ -1,0 +1,12 @@
+<h1>Editing Ascent</h1>
+
+<%= render 'form', ascent: @ascent %>
+
+<%= link_to 'Show', @ascent %> |
+
+
+<% if mountain %>
+	<%= link_to ['Volver a', mountain.fullname].join(" "), mountain_path(mountain) %>
+<% else %>
+	<%= link_to 'Back', ascents_path %>
+<% end %>

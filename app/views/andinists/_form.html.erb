@@ -1,0 +1,37 @@
+<%= form_with(model: andinist, local: true) do |form| %>
+  <div class="mb-3">
+    <%= form.label :name, :class => "form-label" %><br>
+    <%= form.text_field :name, :class => "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :surname, :class => "form-label" %><br>
+    <%= form.text_field :surname, :class => "form-control"  %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :club, :class => "form-label" %><br>
+    <%= form.text_field :club, :class => "form-control"  %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :country, :class => "form-label" %><br>
+    <%= form.text_field :country, :class => "form-control"  %>
+  </div>
+
+  <% if andinist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(andinist.errors.count, "error") %> no permitió que guardáramos los cambios en este andinista</h2>
+
+      <ul>
+        <% andinist.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit "Guardar", :class => "btn btn-primary"  %>
+  </div>
+<% end %>

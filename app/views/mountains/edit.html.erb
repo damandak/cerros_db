@@ -1,0 +1,6 @@
+<h1>Editar <%= @mountain.fullname %></h1>
+
+<%= render 'form', mountain: @mountain %>
+
+<%= link_to ['Volver a ', @mountain.fullname].join(" "), @mountain %> |
+<%= link_to 'Volver a Cerros', mountains_path %>

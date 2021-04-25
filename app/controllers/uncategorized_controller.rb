@@ -1,0 +1,2 @@
+class UncategorizedController < ApplicationController  
+end  
