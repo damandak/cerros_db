@@ -2,7 +2,11 @@
   
   <div class="mb-3">
     <%= form.label :route_name, "Nombre de la ruta", :class => "form-label" %><br>
-    <%= form.text_field :route_name, placeholder: @basic_route.name, :readonly => true, :tabindex => "-1", :class => "form-control disabled" %>
+    <% if @basic_route then %>
+      <%= form.text_field :route_name, placeholder: @basic_route.name, :readonly => true, :tabindex => "-1", :class => "form-control disabled" %>
+    <% else %>
+      <%= form.select :route_name, routes_for_select(ascent.route.mountain), {}, {:class => "form-select"} %>
+    <% end %>
   </div>
 
   <div class="mb-3">
@@ -24,6 +28,9 @@
   <script>
     new SlimSelect({
       select: '#ascent_andinist_existent'
+    })
+    new SlimSelect({
+      select: '#ascent_route_name'
     })
 
     </script>
@@ -47,21 +54,26 @@
                 2. Al agregar andinista, agregar a la base de datos y actualizar select anterior, dejando seleccionado al andinista creado
                 3. Al hacer eso, notificar el éxito y limpiar campos para poder agregar otros andinistas-->
           <div class="col-md-3">
-            <label for="inputCity" class="form-label">Nombre 1</label>
+            <label for="inputCity" class="form-label">Nombres 1</label>
             <input type="text" class="form-control" id="inputCity">
           </div>
           <div class="col-md-3">
-            <label for="inputCity" class="form-label">Apellido 1</label>
+            <label for="inputCity" class="form-label">Apellidos 1</label>
             <input type="text" class="form-control" id="inputCity">
           </div>
-          <div class="col-md-3">
+          <div class="col-md-2">
+            <label for="inputCity" class="form-label">Género</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-2">
             <label for="inputCity" class="form-label">Club 1</label>
             <input type="text" class="form-control" id="inputCity">
           </div>
-          <div class="col-md-3">
+          <div class="col-md-2">
             <label for="inputCity" class="form-label">País 1</label>
             <input type="text" class="form-control" id="inputCity">
           </div>
+
         </div>
       </div>
     </div>
@@ -69,7 +81,9 @@
 
 </div>
 
+<% if @basic_route then %>
   <%= form.hidden_field :route_id, :value => @basic_route.id %>
+<% end %>
 
   <% if ascent.errors.any? %>
     <div id="error_explanation">

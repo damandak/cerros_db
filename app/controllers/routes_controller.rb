@@ -13,6 +13,9 @@ class RoutesController < ApplicationController
   # GET /routes/new
   def new
     @route = Route.new
+    if params[:mountain]
+      @mountain = Mountain.find(params[:mountain])
+    end
   end
 
   # GET /routes/1/edit
@@ -64,6 +67,6 @@ class RoutesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def route_params
-      params.fetch(:route, {})
+      params.require(:route).permit(:name)
     end
 end

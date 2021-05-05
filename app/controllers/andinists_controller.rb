@@ -25,7 +25,7 @@ class AndinistsController < ApplicationController
 
     respond_to do |format|
       if @andinist.save
-        format.html { redirect_to @andinist, notice: "Andinist was successfully created." }
+        format.html { redirect_to @andinist, notice: "Se creó a " + @andinist.fullname }
         format.json { render :show, status: :created, location: @andinist }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class AndinistsController < ApplicationController
   def update
     respond_to do |format|
       if @andinist.update(andinist_params)
-        format.html { redirect_to @andinist, notice: "Andinist was successfully updated." }
+        format.html { redirect_to @andinist, notice: "Se actualizaron los datos de " + @andinist.fullname }
         format.json { render :show, status: :ok, location: @andinist }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class AndinistsController < ApplicationController
   def destroy
     @andinist.destroy
     respond_to do |format|
-      format.html { redirect_to andinists_url, notice: "Andinist was successfully destroyed." }
+      format.html { redirect_to andinists_url, notice: "Se eliminó a " + @andinist.fullname }
       format.json { head :no_content }
     end
   end
@@ -64,6 +64,6 @@ class AndinistsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def andinist_params
-      params.require(:andinist).permit(:name, :surname, :country)
+      params.require(:andinist).permit(:name, :surname, :country, :club, :gender)
     end
 end

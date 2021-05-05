@@ -16,6 +16,11 @@
     <%= form.number_field :altitude, in: 0..7000, :class => "form-control"  %>
   </div>
 
+  <div class="mb-5 form-check">
+    <%= form.check_box :previously_ascended, :type => "radio", :class => "form-check-input"  %>
+    <%= form.label :previously_ascended, "Primer ascenso no registrado", :class => "form-check-label" %><br>
+  </div>
+  
   <div class="mb-3">
     <%= form.label :latitude, "Latitud Sur (WGS84)", :class => "form-label" %><br>
     <%= form.text_field :latitude, :class => "form-control"  %>
@@ -25,6 +30,8 @@
     <%= form.label :longitude, "Longitud Oeste (WGS84)", :class => "form-label" %><br>
     <%= form.text_field :longitude, :class => "form-control"  %>
   </div>
+
+
 
   <div class="mb-3">
     <%= form.label :nom_id, "ID Proyecto Nomenclatura", :class => "form-label" %><br>

@@ -7,19 +7,11 @@
 	</div>
 
 
-<table class="table table-sm table-striped">
+<table class="table table-striped">
   	<tbody>
-  		<tr>
-    		<th>ID</th>
-    		<td><%= @mountain.id %></th>
-    	</tr>
-    	<tr>
-    		<th>Tipo</th>
-    		<td><%= @mountain.prefix %></th>
-    	</tr>
     	<tr>
     		<th>Nombre</th>
-    		<td><%= @mountain.name %></th>
+    		<td><%= @mountain.fullname %></th>
     	</tr>
     	<tr>
     		<th>Altura</th>
@@ -38,43 +30,62 @@
 
 <h3 class="mt-3"> Ubicación </h3>
 
-	<p>
-	<%= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=17&size=400x300&center=#{@mountain.latitude},#{@mountain.longitude}&key=#{Rails.application.credentials.google_maps_api_key}", alt: "Map" %>
-	</p>
-	<p>
-	<%= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=17&size=400x300&center=#{51.477222},#{0}&key=#{Rails.application.credentials.google_maps_api_key}", alt: "Map" %>
-	</p>
+	<script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const cerro = { lat: <%= @mountain.latitude %>, lng: <%= @mountain.longitude %> };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: cerro,
+          mapTypeId: 'satellite'
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: cerro,
+          map: map,
+
+        });
+      }
+	</script>
+	<div id="map"></div>
+
+<p>Cercanas:
+	<% @mountain.near_mountains.each do |near| %>
+
+		<%= link_to near.fullname, mountain_path(near) %> , 
+
+	<% end %>
+		
+</p>
 
 
-<h3> Rutas existentes </h3>
+<h3 class="mt-3"> Rutas existentes </h3>
 
 <% @mountain.routes.each do |route| %>
 
 	<p><%= route.name %></p>
 
 <% end %>
-<%= link_to 'Crear Ruta', new_route_path, class: "btn btn-primary btn-sm my-2"  %>
+<%= link_to 'Crear Ruta', new_route_path(:mountain => @mountain), class: "btn btn-primary btn-sm my-2"  %>
 
 <h3 class="mt-3"> Ascensos Destacados</h3>
 
 <% if @mountain.ascents.count > 0 %>
-	<table class="table table-striped">
+	<table class="table table-sm table-striped">
 	  	<thead>
 	    	<tr>
-	    		<th>ID</th>
+	    		<th style="min-width: 120px">Fecha</th>
 	    		<th>Ruta</th>
 	    		<th>Descripción</th>
 	      		<th>Ascensionistas</th>
-				<th>Día</th>
-				<th>Mes</th>
-				<th>Año</th>
-				<th>Referencias</th>
 	    	</tr>
 	  	</thead>
 	  	<tbody>
 	    	<% @mountain.ascents.each do |ascent| %>
 				<tr>
-					<th> <%= ascent.id %> </th>
+					<td> <%= ascent.fulldate %> </td>
 					<td> <%= ascent.route.name %> </td>
 					<td> <%= ascent.name %> </td>
 					<td> 
@@ -85,10 +96,6 @@
 							<% cont += 1 %>
 						<% end %>
 					</td>
-					<td> <%= ascent.day %> </td>
-					<td> <%= ascent.month %></td>
-					<td> <%= ascent.year %></td>
-					<td> <%= "not yet" %></td>
 				</tr>
 	    	<% end %>
 	 	</tbody>
@@ -140,3 +147,6 @@
 	</table>
 
 <% end %>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCakFWS-TejUPvZ-OHO1rM4yehU4AWb5tQ&callback=initMap&libraries=&v=weekly" async="false"></script>

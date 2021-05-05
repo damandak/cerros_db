@@ -1,5 +1,6 @@
 const { environment } = require('@rails/webpacker')
 
+
 const customConfig = require('./custom'); // agregado para probar problema jquery
 
 
@@ -12,6 +13,8 @@ environment.plugins.append('Provide',
 	})
 	);
 environment.config.merge(customConfig);
+
+
 
 module.exports = environment
 

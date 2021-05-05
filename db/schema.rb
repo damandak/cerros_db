@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_15_204146) do
+ActiveRecord::Schema.define(version: 2021_05_04_042356) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,6 +43,12 @@ ActiveRecord::Schema.define(version: 2021_04_15_204146) do
     t.index ["route_id"], name: "index_ascents_on_route_id"
   end
 
+  create_table "countries", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "igm_rectangles", force: :cascade do |t|
     t.string "name"
     t.string "file_id"
@@ -54,12 +60,18 @@ ActiveRecord::Schema.define(version: 2021_04_15_204146) do
     t.string "name"
     t.string "prefix"
     t.integer "altitude"
-    t.string "latitude"
-    t.string "longitude"
     t.string "nom_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "ahb_id"
+    t.string "ahb"
+    t.string "alternative_name_prefix"
+    t.string "alternative_name"
+    t.integer "secondary_altitude"
+    t.string "secondary_altitude_name"
+    t.boolean "previously_ascended"
+    t.float "latitude"
+    t.float "longitude"
   end
 
   create_table "nomenclatura_objects", force: :cascade do |t|

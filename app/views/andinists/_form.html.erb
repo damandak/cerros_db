@@ -1,22 +1,27 @@
 <%= form_with(model: andinist, local: true) do |form| %>
   <div class="mb-3">
-    <%= form.label :name, :class => "form-label" %><br>
+    <%= form.label :name, "Nombres", :class => "form-label" %><br>
     <%= form.text_field :name, :class => "form-control" %>
   </div>
 
   <div class="mb-3">
-    <%= form.label :surname, :class => "form-label" %><br>
+    <%= form.label :surname, "Apellidos", :class => "form-label" %><br>
     <%= form.text_field :surname, :class => "form-control"  %>
   </div>
 
   <div class="mb-3">
-    <%= form.label :club, :class => "form-label" %><br>
-    <%= form.text_field :club, :class => "form-control"  %>
+    <%= form.label :country, "País",  :class => "form-label" %><br>
+    <%= form.text_field :country, :class => "form-control"  %>
   </div>
 
   <div class="mb-3">
-    <%= form.label :country, :class => "form-label" %><br>
-    <%= form.text_field :country, :class => "form-control"  %>
+    <%= form.label :club, "Club",  :class => "form-label" %><br>
+    <%= form.text_field :club, :class => "form-control"  %>
+  </div>
+
+    <div class="mb-3">
+    <%= form.label :gender, "Género (Masculino, Femenino u otro)",  :class => "form-label" %><br>
+    <%= form.text_field :gender, :class => "form-control"  %>
   </div>
 
   <% if andinist.errors.any? %>

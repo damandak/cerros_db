@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   resources :mountains, :andinists, :ascents, :routes
   get "uncategorized/index"
   get "uncategorized/nomenclatura"
+  get "uncategorized/about"
   root to: "uncategorized#index"
 end

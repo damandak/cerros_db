@@ -3,7 +3,7 @@ class MountainsController < ApplicationController
 
   # GET /mountains or /mountains.json
   def index
-    @mountains = Mountain.page params[:page]
+    @mountains = Mountain.all
   end
 
   # GET /mountains/1 or /mountains/1.json

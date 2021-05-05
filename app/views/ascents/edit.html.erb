@@ -5,7 +5,7 @@
 <%= link_to 'Show', @ascent %> |
 
 
-<% if mountain %>
+<% if @mountain then %>
 	<%= link_to ['Volver a', mountain.fullname].join(" "), mountain_path(mountain) %>
 <% else %>
 	<%= link_to 'Back', ascents_path %>
