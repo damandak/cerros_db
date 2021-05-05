@@ -28,6 +28,8 @@
  	</tbody>
 </table>
 
+<% if @mountain.latitude %>
+
 <h3 class="mt-3"> Ubicación </h3>
 
 	<script>
@@ -51,14 +53,15 @@
 	</script>
 	<div id="map"></div>
 
-<p>Cercanas:
-	<% @mountain.near_mountains.each do |near| %>
+	<p>Cercanas:
+		<% @mountain.near_mountains.each do |near| %>
 
-		<%= link_to near.fullname, mountain_path(near) %> , 
+			<%= link_to near.fullname, mountain_path(near) %> , 
 
-	<% end %>
-		
-</p>
+		<% end %>
+			
+	</p>
+<% end %>
 
 
 <h3 class="mt-3"> Rutas existentes </h3>
