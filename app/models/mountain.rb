@@ -7,7 +7,11 @@ class Mountain < ApplicationRecord
   after_commit :create_unknown_route, on:[ :create ]
   
   def fullname
-    return [self.prefix,self.name].join(" ")
+    return [self.prefix, self.name].join(" ")
+  end
+
+  def fullname_alt
+    return [self.alternative_name_prefix, self.alternative_name].join(" ")
   end
 
   def ascended

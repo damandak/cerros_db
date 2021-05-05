@@ -13,9 +13,15 @@
     		<th>Nombre</th>
     		<td><%= @mountain.fullname %></th>
     	</tr>
+    	<% if @mountain.fullname_alt then %>
+	    	<tr>
+	    		<th>Nombre alternativo</th>
+	    		<td><%= @mountain.fullname_alt %></th>
+	    	</tr>
+	    <% end %>
     	<tr>
     		<th>Altura</th>
-    		<td><%= @mountain.altitude %></th>
+    		<td><%= @mountain.altitude %> <%= @mountain.secondary_altitude ? "(" + @mountain.secondary_altitude.to_s + " según " + @mountain.secondary_altitude_name + ")" : "" %></th>
     	</tr>
     	<tr>
     		<th>Latitud Sur</th>

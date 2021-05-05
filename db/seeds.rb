@@ -31,6 +31,10 @@ csv.each do |row|
   mount.altitude = row['altitude']
   mount.latitude = row['latitude']
   mount.longitude = row['longitude']
+  mount.alternative_name_prefix = row['alternative_name_prefix']
+  mount.alternative_name = row['alternative_name']
+  mount.secondary_altitude = row['secondary_altitude']
+  mount.secondary_altitude_name = row['secondary_altitude_name']
   mount.save!
   # puts "#{mount.name} saved"
 end
