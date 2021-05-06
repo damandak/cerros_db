@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<% if notice then %>
+  <div class="alert alert-primary" role="alert"><%= notice %></div>
+<% end %>
 
 <h2> <%= @andinist.fullname %> </h2>
 	<div class="btn-group" role="group" aria-label="Acciones">
