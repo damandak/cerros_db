@@ -89,6 +89,7 @@
 	    		<th>Ruta</th>
 	    		<th>Descripción</th>
 	      		<th>Ascensionistas</th>
+	      		<th>Acciones</th>
 	    	</tr>
 	  	</thead>
 	  	<tbody>
@@ -103,6 +104,11 @@
 							<%= cont == 0 ? "" :', '%>
 							<%= link_to andinist.fullname, andinist_path(andinist) %>
 							<% cont += 1 %>
+						<% end %>
+					</td>
+					<td>
+						<%= link_to edit_ascent_path(ascent, :mountain => @mountain) do %>
+							<i class="fa fa-edit"></i>
 						<% end %>
 					</td>
 				</tr>

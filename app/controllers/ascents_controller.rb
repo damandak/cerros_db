@@ -21,6 +21,9 @@ class AscentsController < ApplicationController
 
   # GET /ascents/1/edit
   def edit
+    if params[:mountain]
+      @mountain = Mountain.find(params[:mountain])
+    end
   end
 
   # POST /ascents or /ascents.json
@@ -46,7 +49,7 @@ class AscentsController < ApplicationController
   def update
     respond_to do |format|
       if @ascent.update(ascent_params)
-        format.html { redirect_to @ascent, notice: "Se actualizó el ascenso." }
+        format.html { redirect_to @ascent.route.mountain, notice: "Se actualizó el ascenso." }
         format.json { render :show, status: :ok, location: @ascent }
       else
         format.html { render :edit, status: :unprocessable_entity }
