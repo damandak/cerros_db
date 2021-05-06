@@ -20,6 +20,9 @@ class RoutesController < ApplicationController
 
   # GET /routes/1/edit
   def edit
+    if params[:mountain]
+      @mountain = Mountain.find(params[:mountain])
+    end
   end
 
   # POST /routes or /routes.json
@@ -28,7 +31,7 @@ class RoutesController < ApplicationController
 
     respond_to do |format|
       if @route.save
-        format.html { redirect_to @route, notice: "Route was successfully created." }
+        format.html { redirect_to @route.mountain, notice: "La ruta fue creada exitosamente." }
         format.json { render :show, status: :created, location: @route }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -41,7 +44,7 @@ class RoutesController < ApplicationController
   def update
     respond_to do |format|
       if @route.update(route_params)
-        format.html { redirect_to @route, notice: "Route was successfully updated." }
+        format.html { redirect_to @route.mountain, notice: "La ruta fue editada exitosamente." }
         format.json { render :show, status: :ok, location: @route }
       else
         format.html { render :edit, status: :unprocessable_entity }

@@ -1,12 +1,8 @@
 <%= form_with(model: ascent, local: true) do |form| %>
   
   <div class="mb-3">
-    <%= form.label :route_name, "Nombre de la ruta", :class => "form-label" %><br>
-    <% if @basic_route then %>
-      <%= form.text_field :route_name, placeholder: @basic_route.name, :readonly => true, :tabindex => "-1", :class => "form-control disabled" %>
-    <% else %>
-      <%= form.select :route_name, routes_for_select(ascent.route.mountain), {}, {:class => "form-select"} %>
-    <% end %>
+    <%= form.label :route_id, "Nombre de la ruta", :class => "form-label" %><br>
+    <%= form.select :route_id, routes_for_select(@mountain) , {}, {:class => "form-select"} %>
   </div>
 
   <div class="mb-3">
@@ -30,7 +26,7 @@
       select: '#ascent_andinist_ids'
     })
     new SlimSelect({
-      select: '#ascent_route_name'
+      select: '#ascent_route_id'
     })
 
     </script>

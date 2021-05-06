@@ -76,6 +76,6 @@ class AscentsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def ascent_params
       params.fetch(:ascent, {})
-      params.require(:ascent).permit(:name, :year, :month, :day, :route_name, :route_id, :andinist_nonexistent, :ascent_date, :andinist_ids => [])
+      params.require(:ascent).permit(:name, :year, :month, :day, :route_id, :andinist_nonexistent, :ascent_date, :andinist_ids => [])
     end
   end
