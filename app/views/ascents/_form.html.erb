@@ -20,14 +20,14 @@
   </div>
 
   <div class="mb-3">
-    <%= form.label :andinist_existent, "Andinistas que hicieron cumbre (ya cargados en la página)", :class => "form-label" %><br>
+    <%= form.label :andinist_ids, "Andinistas que hicieron cumbre (ya cargados en la página)", :class => "form-label" %><br>
     
-    <%= form.select :andinist_existent, andinists_for_select, {}, {:class => "form-select", :multiple => true} %>
+    <%= form.select :andinist_ids, andinists_for_select, {}, {:class => "form-select", :multiple => true} %>
   </div>
 
   <script>
     new SlimSelect({
-      select: '#ascent_andinist_existent'
+      select: '#ascent_andinist_ids'
     })
     new SlimSelect({
       select: '#ascent_route_name'

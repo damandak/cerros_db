@@ -30,10 +30,10 @@ class AscentsController < ApplicationController
     params[:ascent][:day] = ascent_params[:ascent_date].to_date.day
 
     @ascent = Ascent.new(ascent_params)
-
+    
     respond_to do |format|
       if @ascent.save
-        format.html { redirect_to @ascent, notice: "El ascenso fue creado satisfactoriamente." }
+        format.html { redirect_to @ascent.route.mountain, notice: "El ascenso fue creado satisfactoriamente." }
         format.json { render :show, status: :created, location: @ascent }
       else
         format.html { render :new, status: :unprocessable_entity, notice: "No se pudo crear Ascenso" }
@@ -73,6 +73,6 @@ class AscentsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def ascent_params
       params.fetch(:ascent, {})
-      params.require(:ascent).permit(:name, :year, :month, :day, :route_name, :route_id, :andinist_existent, :andinist_nonexistent, :ascent_date)
+      params.require(:ascent).permit(:name, :year, :month, :day, :route_name, :route_id, :andinist_nonexistent, :ascent_date, :andinist_ids => [])
     end
   end
