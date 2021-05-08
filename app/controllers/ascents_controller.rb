@@ -15,25 +15,35 @@ class AscentsController < ApplicationController
     @ascent = Ascent.new
     if params[:mountain]
       @mountain = Mountain.find(params[:mountain])
-      @basic_route = Mountain.find(params[:mountain]).routes.first
     end
   end
 
   # GET /ascents/1/edit
   def edit
+    if params[:mountain]
+      @mountain = Mountain.find(params[:mountain])
+    end
   end
 
   # POST /ascents or /ascents.json
   def create
     params[:ascent][:year] = ascent_params[:ascent_date].to_date.year
-    params[:ascent][:month] = ascent_params[:ascent_date].to_date.month
-    params[:ascent][:day] = ascent_params[:ascent_date].to_date.day
+    if !ascent_params[:no_month] and !ascent_params[:no_day] then
+      params[:ascent][:month] = ascent_params[:ascent_date].to_date.month
+      params[:ascent][:day] = ascent_params[:ascent_date].to_date.day
+    elsif !ascent_params[:no_month] then
+      params[:ascent][:month] = ascent_params[:ascent_date].to_date.month
+      params[:ascent][:day] = nil
+    else
+      params[:ascent][:month] = nil
+      params[:ascent][:day] = nil
+    end
 
     @ascent = Ascent.new(ascent_params)
-
+    
     respond_to do |format|
       if @ascent.save
-        format.html { redirect_to @ascent, notice: "El ascenso fue creado satisfactoriamente." }
+        format.html { redirect_to @ascent.route.mountain, notice: "El ascenso fue creado satisfactoriamente." }
         format.json { render :show, status: :created, location: @ascent }
       else
         format.html { render :new, status: :unprocessable_entity, notice: "No se pudo crear Ascenso" }
@@ -44,9 +54,22 @@ class AscentsController < ApplicationController
 
   # PATCH/PUT /ascents/1 or /ascents/1.json
   def update
+
+    params[:ascent][:year] = ascent_params[:ascent_date].to_date.year
+    if !ascent_params[:no_month] and !ascent_params[:no_day] then
+      params[:ascent][:month] = ascent_params[:ascent_date].to_date.month
+      params[:ascent][:day] = ascent_params[:ascent_date].to_date.day
+    elsif !ascent_params[:no_month] then
+      params[:ascent][:month] = ascent_params[:ascent_date].to_date.month
+      params[:ascent][:day] = nil
+    else
+      params[:ascent][:month] = nil
+      params[:ascent][:day] = nil
+    end
+
     respond_to do |format|
       if @ascent.update(ascent_params)
-        format.html { redirect_to @ascent, notice: "Se actualizó el ascenso." }
+        format.html { redirect_to @ascent.route.mountain, notice: "Se actualizó el ascenso." }
         format.json { render :show, status: :ok, location: @ascent }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -73,6 +96,6 @@ class AscentsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def ascent_params
       params.fetch(:ascent, {})
-      params.require(:ascent).permit(:name, :year, :month, :day, :route_name, :route_id, :andinist_existent, :andinist_nonexistent, :ascent_date)
+      params.require(:ascent).permit(:name, :year, :month, :day, :route_id, :andinist_nonexistent, :ascent_date, :no_month, :no_day, :andinist_ids => [])
     end
   end

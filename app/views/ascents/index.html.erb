@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<% if notice then %>
+  <div class="alert alert-primary" role="alert"><%= notice %></div>
+<% end %>
 
 <table id="ascent-table" class="table table-striped table-sm" role="datatable">
   <thead class="thead-dark">

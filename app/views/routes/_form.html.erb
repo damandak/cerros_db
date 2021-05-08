@@ -1,15 +1,13 @@
 <%= form_with(model: route, local: true) do |form| %>
 
-  <% if @mountain then %>
-    <%= form.text_field :mountain_id, placeholder: @mountain.fullname, :readonly => true, :tabindex => "-1", :class => "form-control disabled mb-3" %>
-  <% end %>
+
 
   <div class="mb-3">
     <%= form.label :name, "Nombre de la ruta", :class => "form-label" %><br>
     <%= form.text_field :name, :class => "form-control" %>
   </div>
 
-
+  <%= form.hidden_field :mountain_id, :value => @mountain.id %>  
 
 
   <% if route.errors.any? %>

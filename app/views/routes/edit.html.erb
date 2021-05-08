@@ -1,6 +1,7 @@
-<h1>Editar Ruta</h1>
+<h1>Editar <%= @route.name %> </h1>
 
 <%= render 'form', route: @route %>
 
-<%= link_to 'Volver a montaña', mountain_path(@mountain) %>
+<%= link_to 'Volver a ' + @mountain.fullname, mountain_path(@mountain) %><br>
+<%= link_to 'Volver a ' + @route.name, route_path(@route) %><br>
 <%= link_to 'Volver a rutas', routes_path() %>

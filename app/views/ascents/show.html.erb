@@ -1,6 +1,7 @@
-<p id="notice"><%= notice %></p>
+<% if notice then %>
+  <div class="alert alert-primary" role="alert"><%= notice %></div>
+<% end %>
 
-wena
 
 <%= link_to 'Edit', edit_ascent_path(@ascent) %> |
 <%= link_to 'Back', ascents_path %>
