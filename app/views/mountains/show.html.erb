@@ -74,11 +74,39 @@
 
 <h3 class="mt-3"> Rutas existentes </h3>
 
-<% @mountain.routes.each do |route| %>
+<table class="table table-sm table-striped">
+	  	<thead>
+	    	<tr>
+	    		<th>Ruta</th>
+	    		<th>Primeros ascensionistas</th>
+	      		<th>Año primer ascenso</th>
+	    	</tr>
+	  	</thead>
+	  	<tbody>
+	    	<% @mountain.routes.sort_by(&:first_ascent_fulldate).each do |route| %>
+				<tr>
+					<td> <%= link_to route.name, route_path(route, :mountain => @mountain) %> </td>
+					<td>
+						<% if route.ascents.count > 0 then %>
+							<% cont = 0 %>
+							<% route.ascents.sort_by(&:fulldate).first.andinists.each do |andinist| %>
+								<%= cont == 0 ? "" :', '%>
+								<%= link_to andinist.fullname, andinist_path(andinist) %>
+								<% cont += 1 %>
+							<% end %>
+						<% end %>
+					</td>
+					<td>
+						<% if route.ascents.count > 0 then %>
+							<%= route.ascents.sort_by(&:fulldate).first.year %>
+						<% end %>
+					</td>
+				</tr>
+	    	<% end %>
+	 	</tbody>
+	</table>
 
-	<p><%= route.name %></p>
 
-<% end %>
 <%= link_to 'Crear Ruta', new_route_path(:mountain => @mountain), class: "btn btn-primary btn-sm my-2"  %>
 
 <h3 class="mt-3"> Ascensos Destacados</h3>

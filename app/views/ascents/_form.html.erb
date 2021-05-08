@@ -10,9 +10,27 @@
     <%= form.text_field :name, :class => "form-control" %>
   </div>
 
-  <div class="mb-3">
+  <div class="mb-1">
     <%= form.label :ascent_date, "Fecha de ascenso", :class => "form-label" %><br>
-    <%= form.date_field :ascent_date, :value => Time.now.strftime('%Y-%m-%d'), :class => "form-control"  %>
+    <%= form.date_field :ascent_date, :value => (form.object.new_record? ? Time.now.strftime('%Y-%m-%d') : form.object.fulldate_for_form), :class => "form-control"  %>
+  </div>
+
+  <div class="form-check form-check-inline mb-4">
+    <% checkbox_value = false %>
+    <% if !form.object.new_record? and !form.object.month then %>
+      <% checkbox_value = true %> 
+    <% end %>
+    <%= form.check_box :no_month, {:type => "radio", :class => "form-check-input", :checked => checkbox_value}, true, false %>
+    <%= form.label :no_month, "Sin Mes", :class => "form-check-label" %>
+  </div>
+
+  <div class="form-check form-check-inline mb-4">
+    <% checkbox_value = false %>
+    <% if !form.object.new_record? and !form.object.month then %>
+      <% checkbox_value = true %> 
+    <% end %>
+    <%= form.check_box :no_day, {:type => "radio", :class => "form-check-input", :checked => checkbox_value}, true, false %>
+    <%= form.label :no_day, "Sin Día", :class => "form-check-label" %>
   </div>
 
   <div class="mb-3">
