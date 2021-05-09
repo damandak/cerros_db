@@ -22,6 +22,18 @@ class Mountain < ApplicationRecord
     end
   end
 
+  def first_absolute
+    return self.ascents.sort_by(&:fulldate).first
+  end
+
+  def first_winter_absolute
+    winter_ascents = self.ascents.where('month = 7')
+    winter_ascents += self.ascents.where('month = 8')
+    winter_ascents += self.ascents.where('month = 6').where('day > 20')
+    winter_ascents += self.ascents.where('month = 9').where('day < 22')
+    return winter_ascents.sort_by(&:fulldate).first
+  end
+
   def solo_ascent
     self.ascents.all.each do |ascent|
       if ascent.andinists.count == 1 then

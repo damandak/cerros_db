@@ -15,7 +15,7 @@
     		<th>Nombre</th>
     		<td><%= @mountain.fullname %></th>
     	</tr>
-    	<% if @mountain.fullname_alt then %>
+    	<% if @mountain.fullname_alt and @mountain.fullname_alt != " " then %>
 	    	<tr>
 	    		<th>Nombre alternativo</th>
 	    		<td><%= @mountain.fullname_alt %></th>
@@ -32,6 +32,26 @@
     	<tr>
     		<th>Longitud Oeste</th>
     		<td><%= @mountain.longitude %></th>
+    	</tr>
+    	<tr>
+    		<th>Primer Ascenso</th>
+    		<td>
+    			<% if @mountain.first_absolute then %>
+	    			<%= @mountain.first_absolute.fulldate %> ,
+	    			<% not_first = false %>
+	    			<% @mountain.first_absolute.andinists.each do |andinist| %>
+	    				<% if not_first then %>
+	    					<%= ", " %>
+	    				<% else %>
+	    					<% not_first = true %>
+	    				<% end %>
+						<%= link_to andinist.fullname, andinist_path(andinist) %>
+					<% end %>
+	    			por
+	    			<%= link_to @mountain.first_absolute.route.name , route_path(@mountain.first_absolute.route.name) %>
+	    		<% else %>
+	    			Sin ascensos registrados
+	    		<% end %>
     	</tr>
  	</tbody>
 </table>
@@ -78,15 +98,15 @@
 	  	<thead>
 	    	<tr>
 	    		<th>Ruta</th>
-	    		<th>Primeros ascensionistas</th>
+	    		<!--<th>Primeros ascensionistas</th>-->
 	      		<th>Año primer ascenso</th>
 	    	</tr>
 	  	</thead>
 	  	<tbody>
 	    	<% @mountain.routes.sort_by(&:first_ascent_fulldate).each do |route| %>
 				<tr>
-					<td> <%= link_to route.name, route_path(route, :mountain => @mountain) %> </td>
-					<td>
+					<th> <%= link_to route.name, route_path(route) %> </th>
+					<!--<td>
 						<% if route.ascents.count > 0 then %>
 							<% cont = 0 %>
 							<% route.ascents.sort_by(&:fulldate).first.andinists.each do |andinist| %>
@@ -95,7 +115,7 @@
 								<% cont += 1 %>
 							<% end %>
 						<% end %>
-					</td>
+					</td>-->
 					<td>
 						<% if route.ascents.count > 0 then %>
 							<%= route.ascents.sort_by(&:fulldate).first.year %>
@@ -105,7 +125,6 @@
 	    	<% end %>
 	 	</tbody>
 	</table>
-
 
 <%= link_to 'Crear Ruta', new_route_path(:mountain => @mountain), class: "btn btn-primary btn-sm my-2"  %>
 
@@ -119,6 +138,7 @@
 	    		<th>Ruta</th>
 	    		<th>Descripción</th>
 	      		<th>Ascensionistas</th>
+	      		<th>Honores</th>
 	      		<th>Acciones</th>
 	    	</tr>
 	  	</thead>
@@ -127,7 +147,8 @@
 				<tr>
 					<td> <%= ascent.fulldate %> </td>
 					<td> <%= ascent.route.name %> </td>
-					<td> <%= ascent.name %> </td>
+					<td>
+						<%= ascent.name %> </td>
 					<td> 
 						<% cont = 0  %>
 						<% ascent.andinists.each do |andinist| %>
@@ -137,9 +158,33 @@
 						<% end %>
 					</td>
 					<td>
+						<% if ascent == @mountain.first_absolute then %>
+							<span class="badge badge-pill badge-dark" data-toggle="tooltip" data-placement="top" title="Primer Ascenso Absoluto">
+								<i class="fa fa-medal"></i>
+							</span>
+						<% end %>
+						<% if ascent == @mountain.first_winter_absolute then %>
+							<span class="badge badge-pill badge-info" data-toggle="tooltip" data-placement="top" title="Primer Ascenso Invernal Absoluto">
+								<i class="fa fa-snowflake"></i>
+							</span>
+						<% end %>
+						<% if ascent == ascent.route.first_ascent then %>
+							<span class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="top" title="Apertura de Ruta">
+								<i class="fa fa-medal"></i>
+							</span>
+						<% end %>
+						<% if ascent == ascent.route.first_winter_ascent then %>
+							<span class="badge badge-pill badge-secondary" data-toggle="tooltip" data-placement="top" title="Primera Invernal a esta Ruta">
+								<i class="fa fa-snowflake "></i>
+							</span>
+						<% end %>
+					</td>
+					<td style="text-align: center">
+
 						<%= link_to edit_ascent_path(ascent, :mountain => @mountain) do %>
 							<i class="fa fa-edit"></i>
 						<% end %>
+
 					</td>
 				</tr>
 	    	<% end %>
@@ -193,5 +238,9 @@
 
 <% end %>
 
-
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCakFWS-TejUPvZ-OHO1rM4yehU4AWb5tQ&callback=initMap&libraries=&v=weekly" async="false"></script>
