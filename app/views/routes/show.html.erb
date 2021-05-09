@@ -4,10 +4,10 @@
 
 <h2> <%= @route.name %>   </h2>
 <h5> <%= @route.mountain.fullname %> </h5>
-	<div class="btn-group" role="group" aria-label="Acciones">
-		<%= link_to ['Editar', @route.name].join(" "), edit_route_path(@route, :mountain => @route.mountain), class: "btn btn-primary my-2"  %> 
-		<%= link_to 'Volver a ' + @route.mountain.fullname , mountain_path(@route.mountain), class: "btn btn-secondary my-2"  %>
-	</div>
+<div class="btn-group mb-3" role="group" aria-label="Acciones">
+	<%= link_to ['Editar', @route.name].join(" "), edit_route_path(@route, :mountain => @route.mountain), class: "btn btn-primary my-2"  %> 
+	<%= link_to 'Volver a ' + @route.mountain.fullname , mountain_path(@route.mountain), class: "btn btn-secondary my-2"  %>
+</div>
 
 
 
