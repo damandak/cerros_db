@@ -4,8 +4,22 @@ class Mountain < ApplicationRecord
   has_one :nomenclatura_object
   validates :name, presence: true
 
+  scope :ascended_mountain, -> { joins(:ascents).group("mountains.id") }
+
   after_commit :create_unknown_route, on:[ :create ]
   
+  def ascended?
+    if self.ascents.count > 0 or self.previously_ascended then
+      return true
+    else
+      return false
+    end
+  end
+
+  def self.ascended
+    where ascended: true
+  end
+
   def fullname
     return [self.prefix, self.name].join(" ")
   end
@@ -14,8 +28,8 @@ class Mountain < ApplicationRecord
     return [self.alternative_name_prefix, self.alternative_name].join(" ")
   end
 
-  def ascended
-    if self.ascents.count > 0 or self.previously_ascended
+  def ascended_str
+    if self.ascended? then
       return "Sí"
     else
       return "No"
@@ -72,6 +86,15 @@ class Mountain < ApplicationRecord
     nears = nears.where("longitude > ?", lon_min).where("longitude < ?", lon_max)
     nears = nears.where.not(id: self.id)
     return nears
+  end
+
+  def self.search(search)
+    if search
+      mountains = Mountain.ascended_mountain
+      return mountains
+    else
+      Mountain.all
+    end
   end
 
   private
