@@ -4,10 +4,14 @@
     <title>Cerrosdb</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- Webpacker css application pack -->
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
+    <!-- Webpacker javascript application pack -->
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet"></link>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.24/datatables.min.css"/>
@@ -33,7 +37,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <%= link_to "Nosotros", uncategorized_about_path, class: "nav-link active"%>
             </li>
@@ -69,12 +73,13 @@
             <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
+            -->
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" data-behavior="autocomplete">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
-        -->
+
+          <%= form_tag(mountains_path, :class => "form-inline my-2 my-lg-0", method: "get") do %>
+            <input name=mountain[:similar_fullname], class="form-control col m-1" type="text" placeholder="Nombre">
+            <%= submit_tag "Buscar", :class => "form-control btn btn-outline-success my-2 my-sm-0"  %>
+          <% end %>
         </div>
       </div>
     </nav>

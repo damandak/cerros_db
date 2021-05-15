@@ -3,7 +3,7 @@ class MountainsController < ApplicationController
 
   # GET /mountains or /mountains.json
   def index
-    @mountains = Mountain.all
+    @mountains = Mountain.search(params[:mountain])
   end
 
   # GET /mountains/1 or /mountains/1.json
@@ -64,6 +64,6 @@ class MountainsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def mountain_params
-      params.require(:mountain).permit(:prefix, :name, :altitude, :latitude, :longitude)
+      params.require(:mountain).permit(:prefix, :name, :altitude, :latitude, :longitude, :search_type)
     end
 end
