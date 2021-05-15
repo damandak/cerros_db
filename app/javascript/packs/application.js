@@ -15,6 +15,7 @@ import "../stylesheets/application";
 
 // CSS
 import 'stylesheets/application.scss'
+import 'stylesheets/my_styles.css'
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
