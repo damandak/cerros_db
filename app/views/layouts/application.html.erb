@@ -76,11 +76,10 @@
             -->
           </ul>
 
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar en la página" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-          </form>
-
+          <%= form_tag(mountains_path, :class => "form-inline my-2 my-lg-0", method: "get") do %>
+            <input name=mountain[:similar_fullname], class="form-control col m-1" type="text" placeholder="Nombre">
+            <%= submit_tag "Buscar", :class => "form-control btn btn-outline-success my-2 my-sm-0"  %>
+          <% end %>
         </div>
       </div>
     </nav>
