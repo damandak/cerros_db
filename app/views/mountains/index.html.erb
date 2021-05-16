@@ -3,56 +3,67 @@
 <% end %>
 
 <h1>Cerros</h1>
+
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Filtros de Búsqueda
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        <%= form_tag(mountains_path, :class => "form-inline", method: "get") do %>
+          <select name=mountain[:prefix], class = "form_control custom-select col-3 m-1">
+            <option value = "None">- Prefijo -</option>
+            <option value = "Punta">Punta</option>
+            <option value = "Cerro">Cerro</option>
+            <option value = "Morro">Morro</option>
+            <option value = "Nevado">Nevado</option>
+            <option value = "Innominado">Innominado</option>
+            <option value = "Volcán">Volcán</option>
+          </select>
+          <input name=mountain[:similar_fullname], class="form-control col m-1" type="text" placeholder="Nombre">
+          <select  name=mountain[:country], class = "form_control custom-select col m-1">
+            <option value = "None">- País -</option>
+            <%= options_for_select(countries_for_select()) %>
+          </select>
+          <select name=mountain[:min_height], class = "form_control custom-select col-3 m-1">
+            <option value = "None">- Altura Mínima -</option>
+            <option value = 1000>1000</option>
+            <option value = 2000>2000</option>
+            <option value = 3000>3000</option>
+            <option value = 4000>4000</option>
+            <option value = 5000>5000</option>
+            <option value = 6000>6000</option>
+          </select>
+          <select name=mountain[:max_height], class = "form_control custom-select col-3 m-1">
+            <option value = "None">- Altura Máxima -</option>
+            <option value = 1000>1000</option>
+            <option value = 2000>2000</option>
+            <option value = 3000>3000</option>
+            <option value = 4000>4000</option>
+            <option value = 5000>5000</option>
+            <option value = 6000>6000</option>
+          </select>
+          <select name=mountain[:ascended], class = "form_control custom-select col-3 m-1">
+            <option value = "None">- Ascendido -</option>
+            <option value = "Sí">Sí</option>
+            <option value = "No">No</option>
+          </select>
+
+          <%= submit_tag "Filtrar", :class => "form-control btn btn-primary col-12 m-1"  %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="mb-3 row">
-  <%= form_tag(mountains_path, :class => "form-inline", method: "get") do %>
-
-    <select name=mountain[:prefix], class = "form_control custom-select col m-1">
-      <option value = "None">- Prefijo -</option>
-      <option value = "Punta">Punta</option>
-      <option value = "Cerro">Cerro</option>
-      <option value = "Morro">Morro</option>
-      <option value = "Nevado">Nevado</option>
-      <option value = "Innominado">Innominado</option>
-      <option value = "Volcán">Volcán</option>
-    </select>
-
-    <input name=mountain[:similar_fullname], class="form-control col m-1" type="text" placeholder="Nombre">
-
-    <select  name=mountain[:country], class = "form_control custom-select col m-1">
-      <option value = "None">- País -</option>
-      <%= options_for_select(countries_for_select()) %>
-    </select>
-
-
-
-    <select name=mountain[:min_height], class = "form_control custom-select col m-1">
-      <option value = "None">- Altura Mínima -</option>
-      <option value = 1000>1000</option>
-      <option value = 2000>2000</option>
-      <option value = 3000>3000</option>
-      <option value = 4000>4000</option>
-      <option value = 5000>5000</option>
-      <option value = 6000>6000</option>
-    </select>
-
-    <select name=mountain[:max_height], class = "form_control custom-select col m-1">
-      <option value = "None">- Altura Máxima -</option>
-      <option value = 1000>1000</option>
-      <option value = 2000>2000</option>
-      <option value = 3000>3000</option>
-      <option value = 4000>4000</option>
-      <option value = 5000>5000</option>
-      <option value = 6000>6000</option>
-    </select>
-
-    <select name=mountain[:ascended], class = "form_control custom-select col m-1">
-      <option value = "None">- Ascendido -</option>
-      <option value = "Sí">Sí</option>
-      <option value = "No">No</option>
-    </select>
-
-    <%= submit_tag "Filtrar", :class => "form-control btn btn-primary col-12 m-1"  %>
-  <% end %>
+  
 </div>
 
 
