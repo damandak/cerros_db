@@ -3,7 +3,7 @@
 
   <div class="mb-3">
     <%= form.label :prefix, "Tipo", :class => "form-label" %><br>
-    <%= form.text_field :prefix, :class => "form-control" %>
+    <%= form.select :prefix, prefix_for_select(), {}, {:class => "form-control custom-select"} %>
   </div>
 
   <div class="mb-3">
