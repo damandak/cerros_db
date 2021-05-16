@@ -18,11 +18,12 @@
 
     <input name=mountain[:similar_fullname], class="form-control col m-1" type="text" placeholder="Nombre">
 
-    <select disabled name=mountain[:max_height], class = "form_control custom-select col m-1">
+    <select  name=mountain[:country], class = "form_control custom-select col m-1">
       <option value = "None">- País -</option>
-      <option value = 1> Chile </option>
-      <option value = 2> Argentina </option>
+      <%= options_for_select(countries_for_select()) %>
     </select>
+
+
 
     <select name=mountain[:min_height], class = "form_control custom-select col m-1">
       <option value = "None">- Altura Mínima -</option>
@@ -73,7 +74,17 @@
       <tr>
         <td> <%= mountain.id %> </th>
         <td> <%= link_to mountain.fullname, mountain_path(mountain) %> </td>
-        <td>  </td> 
+        <td>
+          <% not_first = false %>
+          <% mountain.countries.each do |country| %>
+            <% if not_first then %>
+              <%= "- " %>
+            <% else %>
+              <% not_first = true %>
+            <% end %>
+              <%= country.name %>
+          <% end %>
+        </td>
         <td> <%= mountain.altitude ? mountain.altitude : "-" %> </td> 
         <td> <%= mountain.latitude ? sprintf("%.4f",(mountain.latitude)) : "-" %> </td> 
         <td> <%= mountain.longitude ? sprintf("%.4f",(mountain.longitude)) : "-" %> </td>
@@ -98,5 +109,9 @@
 $("[data-toggle=tooltip").tooltip();
   </script>
 
-<%= link_to 'Crear Cerro', new_mountain_path %>
+<div class="btn-group" role="group" aria-label="Acciones">
+
+    <%= link_to 'Crear Cerro', new_mountain_path, :class => "btn btn-primary my-2"%>
+  </div>
+
 

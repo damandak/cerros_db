@@ -20,7 +20,7 @@
     	</tr>
     	<tr>
     		<th>Nacionalidad</th>
-    		<td><%= @andinist.country %></th>
+    		<td><%= @andinist.countries.first.name %></th>
     	</tr>
     	<tr>
     		<th>Club</th>
@@ -45,6 +45,7 @@
                 <th>Ruta</th>
                 <th>Descripción</th>
                 <th>Ascensionistas</th>
+                <th>Honores</th>
             </tr>
         </thead>
         <tbody>
@@ -62,6 +63,28 @@
                             <% cont += 1 %>
                         <% end %>
                     </td>
+                    <td>
+                        <% if ascent == ascent.route.mountain.first_absolute then %>
+                            <span class="badge badge-pill badge-dark" data-toggle="tooltip" data-placement="top" title="Primer Ascenso Absoluto">
+                                <i class="fa fa-medal"></i>
+                            </span>
+                        <% end %>
+                        <% if ascent == ascent.route.mountain.first_winter_absolute then %>
+                            <span class="badge badge-pill badge-info" data-toggle="tooltip" data-placement="top" title="Primer Ascenso Invernal Absoluto">
+                                <i class="fa fa-snowflake"></i>
+                            </span>
+                        <% end %>
+                        <% if ascent == ascent.route.first_ascent then %>
+                            <span class="badge badge-pill badge-success" data-toggle="tooltip" data-placement="top" title="Apertura de Ruta">
+                                <i class="fa fa-medal"></i>
+                            </span>
+                        <% end %>
+                        <% if ascent == ascent.route.first_winter_ascent then %>
+                            <span class="badge badge-pill badge-secondary" data-toggle="tooltip" data-placement="top" title="Primera Invernal a esta Ruta">
+                                <i class="fa fa-snowflake "></i>
+                            </span>
+                        <% end %>
+                    </td>
                 </tr>
             <% end %>
         </tbody>
@@ -71,3 +94,9 @@
 <% end %>
 
 <%= link_to 'Volver a Andinistas', andinists_path %>
+
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>

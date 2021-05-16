@@ -23,7 +23,7 @@
       <tr>
         <th> <%= andinist.id %> </th>
         <th> <%= link_to andinist.fullname, andinist_path(andinist) %> </td>
-        <td> <%= andinist.country %> </td> 
+        <td> <%= andinist.countries.first ? andinist.countries.first.name : "" %> </td> 
         <td> <%= andinist.club %> </td>
         <td> Not Yet </td>
         <td> <%= andinist.ascents.count %></td>

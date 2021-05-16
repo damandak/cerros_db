@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_04_042356) do
+ActiveRecord::Schema.define(version: 2021_05_16_022251) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,13 @@ ActiveRecord::Schema.define(version: 2021_05_04_042356) do
     t.index ["ascent_id"], name: "index_andinists_ascents_on_ascent_id"
   end
 
+  create_table "andinists_countries", force: :cascade do |t|
+    t.bigint "country_id"
+    t.bigint "andinist_id"
+    t.index ["andinist_id"], name: "index_andinists_countries_on_andinist_id"
+    t.index ["country_id"], name: "index_andinists_countries_on_country_id"
+  end
+
   create_table "ascents", force: :cascade do |t|
     t.integer "year"
     t.integer "month"
@@ -47,6 +54,13 @@ ActiveRecord::Schema.define(version: 2021_05_04_042356) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "countries_mountains", force: :cascade do |t|
+    t.bigint "country_id"
+    t.bigint "mountain_id"
+    t.index ["country_id"], name: "index_countries_mountains_on_country_id"
+    t.index ["mountain_id"], name: "index_countries_mountains_on_mountain_id"
   end
 
   create_table "igm_rectangles", force: :cascade do |t|

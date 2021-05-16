@@ -21,6 +21,16 @@ csv.each do |row|
 end
 puts "IGM OK"
 
+# Country Objects
+csv_text = File.read(Rails.root.join('lib', 'seeds', 'country.csv'))
+csv = CSV.parse(csv_text, :headers => true, :encoding => 'UTF-8')
+csv.each do |row|
+  country = Country.new
+  country.name = row['name']
+  country.save!
+end
+puts "Countries OK"
+
 # Mountain Objects
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'mountain.csv'))
 csv = CSV.parse(csv_text, :headers => true, :encoding => 'UTF-8')
@@ -35,6 +45,17 @@ csv.each do |row|
   mount.alternative_name = row['alternative_name']
   mount.secondary_altitude = row['secondary_altitude']
   mount.secondary_altitude_name = row['secondary_altitude_name']
+  if row['country_a'] != "" then
+    if country = Country.where(:id => row['country_a']).first
+      mount.country_ids = mount.country_ids << country.id
+    end
+  end
+  if row['country_b'] != "" then
+    if country = Country.where(:id => row['country_b']).first
+      mount.country_ids = mount.country_ids << country.id
+    end
+  end
+
   mount.save!
   # puts "#{mount.name} saved"
 end
@@ -81,7 +102,11 @@ csv.each do |row|
   andi = Andinist.new
   andi.name = row['name']
   andi.surname = row['surname']
-  andi.country = row['country']
+  if row['country'] != "" then
+    if country = Country.where(:id => row['country']).first
+      andi.country_ids = andi.country_ids << country.id
+    end
+  end
   andi.gender = row['genero']
   andi.club = row['club']
   andi.save!

@@ -25,7 +25,7 @@ class MountainsController < ApplicationController
 
     respond_to do |format|
       if @mountain.save
-        format.html { redirect_to @mountain, notice: "Mountain was successfully created." }
+        format.html { redirect_to @mountain, notice: "El cerro fue creado satisfactoriamente." }
         format.json { render :show, status: :created, location: @mountain }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MountainsController < ApplicationController
   def update
     respond_to do |format|
       if @mountain.update(mountain_params)
-        format.html { redirect_to @mountain, notice: "Mountain was successfully updated." }
+        format.html { redirect_to @mountain, notice: "El cerro fue editado satisfactoriamente" }
         format.json { render :show, status: :ok, location: @mountain }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class MountainsController < ApplicationController
   def destroy
     @mountain.destroy
     respond_to do |format|
-      format.html { redirect_to mountains_url, notice: "Mountain was successfully destroyed." }
+      format.html { redirect_to mountains_url, notice: "El cerro fue eliminado satisfactoriamente." }
       format.json { head :no_content }
     end
   end
