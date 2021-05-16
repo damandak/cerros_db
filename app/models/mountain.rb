@@ -1,6 +1,7 @@
 class Mountain < ApplicationRecord
   has_many :routes
   has_many :ascents, through: :routes
+  has_and_belongs_to_many :countries
   has_one :nomenclatura_object
   validates :name, presence: true
 
@@ -12,6 +13,9 @@ class Mountain < ApplicationRecord
   }
   scope :similar_fullname, ->(lookup){
     self.where("(lower(prefix) || ' ' || lower(mountains.name)) LIKE ?", "%#{lookup.downcase}%" )
+  }
+  scope :in_country, ->(country){
+    self.joins(:countries).where(countries: {id: country})
   }
 
   after_commit :create_unknown_route, on:[ :create ]
@@ -118,6 +122,9 @@ class Mountain < ApplicationRecord
       end
       if search[:":prefix"] and search[:":prefix"][","] != "None" then
         mountains = mountains.where("prefix = ? ", search[:":prefix"][","])
+      end
+      if search[:":country"] and search[:":country"][","] != "None" then
+        mountains = mountains.in_country(search[:":country"][","])
       end
       return mountains
     else

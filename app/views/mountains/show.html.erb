@@ -26,6 +26,21 @@
     		<td><%= @mountain.altitude %> <%= @mountain.secondary_altitude ? "(" + @mountain.secondary_altitude.to_s + " según " + @mountain.secondary_altitude_name + ")" : "" %></th>
     	</tr>
     	<tr>
+    		<th><%= if @mountain.countries.count > 1 then "Países" else "País" end %></th>
+    		<td><% if @mountain.countries.count > 0 then %>
+    				<% not_first = false %>
+      				<% @mountain.countries.each do |country| %>
+        				<% if not_first then %>
+          					<%= "- " %>
+        				<% else %>
+          					<% not_first = true %>
+        				<% end %>
+          				<%= country.name %>
+      				<% end %>
+    			<% end %>
+    		</td>
+    	</tr>
+    	<tr>
     		<th>Latitud Sur</th>
     		<td><%= @mountain.latitude %></th>
     	</tr>
