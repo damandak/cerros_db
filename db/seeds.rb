@@ -102,6 +102,29 @@ csv.each do |row|
   andi = Andinist.new
   andi.name = row['name']
   andi.surname = row['surname']
+
+  if row['club'] then
+    if Club.all.where(:name => row['club']).count > 0 then
+      club = Club.all.where(:name => row['club']).first
+    else
+      club = Club.new
+      club.name = row['club']
+      club.save!
+    end
+    andi.club_ids = andi.club_ids << club.id
+  end
+
+  if row['otro_club'] then
+    if Club.all.where(:name => row['otro_club']).count > 0 then
+      club = Club.all.where(:name => row['otro_club']).first
+    else
+      club = Club.new
+      club.name = row['otro_club']
+      club.save!
+    end
+    andi.club_ids = andi.club_ids << club.id
+  end
+
   if row['country'] != "" then
     if country = Country.where(:id => row['country']).first
       andi.country_ids = andi.country_ids << country.id

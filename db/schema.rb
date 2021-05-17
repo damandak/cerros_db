@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_16_022251) do
+ActiveRecord::Schema.define(version: 2021_05_17_030247) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,13 @@ ActiveRecord::Schema.define(version: 2021_05_16_022251) do
     t.index ["ascent_id"], name: "index_andinists_ascents_on_ascent_id"
   end
 
+  create_table "andinists_clubs", force: :cascade do |t|
+    t.bigint "andinist_id"
+    t.bigint "club_id"
+    t.index ["andinist_id"], name: "index_andinists_clubs_on_andinist_id"
+    t.index ["club_id"], name: "index_andinists_clubs_on_club_id"
+  end
+
   create_table "andinists_countries", force: :cascade do |t|
     t.bigint "country_id"
     t.bigint "andinist_id"
@@ -48,6 +55,12 @@ ActiveRecord::Schema.define(version: 2021_05_16_022251) do
     t.bigint "route_id", null: false
     t.string "name"
     t.index ["route_id"], name: "index_ascents_on_route_id"
+  end
+
+  create_table "clubs", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "countries", force: :cascade do |t|

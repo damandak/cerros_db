@@ -24,7 +24,14 @@
         <th> <%= andinist.id %> </th>
         <th> <%= link_to andinist.fullname, andinist_path(andinist) %> </td>
         <td> <%= andinist.countries.first ? andinist.countries.first.name : "" %> </td> 
-        <td> <%= andinist.club %> </td>
+        <td> 
+          <% cont = 0  %>
+          <% andinist.clubs.each do |club| %>
+              <%= cont == 0 ? "" :', '%>
+              <%= club.name %>
+              <% cont += 1 %>
+          <% end %>
+        </td>
         <td> Not Yet </td>
         <td> <%= andinist.ascents.count %></td>
         <td> <%= andinist.ascents.count %></td>

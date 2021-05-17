@@ -20,11 +20,25 @@
     	</tr>
     	<tr>
     		<th>Nacionalidad</th>
-    		<td><%= @andinist.countries.first.name %></th>
+    		<td>
+                <% cont = 0  %>
+                <% @andinist.countries.each do |country| %>
+                    <%= cont == 0 ? "" : ", "%>
+                    <%= country.name %>
+                    <% cont += 1 %>
+                <% end %>
+            </th>
     	</tr>
     	<tr>
     		<th>Club</th>
-    		<td><%= @andinist.club %></th>
+    		<td>
+                <% cont = 0  %>
+                <% @andinist.clubs.each do |club| %>
+                    <%= cont == 0 ? "" : ', '%>
+                    <%= club.name %>
+                    <% cont += 1 %>
+                <% end %>
+            </td>
     	</tr>
     	<tr>
     		<th>Género</th>
