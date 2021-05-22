@@ -103,7 +103,7 @@ csv.each do |row|
   andi.name = row['name']
   andi.surname = row['surname']
 
-  if row['club'] then
+  if row['club'] and row['club'] != "" then
     if Club.all.where(:name => row['club']).count > 0 then
       club = Club.all.where(:name => row['club']).first
     else
@@ -114,7 +114,7 @@ csv.each do |row|
     andi.club_ids = andi.club_ids << club.id
   end
 
-  if row['otro_club'] then
+  if row['otro_club'] and row['otro_club'] != ""  then
     if Club.all.where(:name => row['otro_club']).count > 0 then
       club = Club.all.where(:name => row['otro_club']).first
     else
@@ -131,7 +131,6 @@ csv.each do |row|
     end
   end
   andi.gender = row['genero']
-  andi.club = row['club']
   andi.save!
   # puts "#{andi.name} saved"
 end

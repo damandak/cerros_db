@@ -1,5 +1,6 @@
 class AndinistsController < ApplicationController
   before_action :set_andinist, only: %i[ show edit update destroy ]
+  attr_accessor :first_club, :second_club, :third_club
 
   # GET /andinists or /andinists.json
   def index
@@ -22,9 +23,39 @@ class AndinistsController < ApplicationController
   # POST /andinists or /andinists.json
   def create
     @andinist = Andinist.new(andinist_params)
+    if andinist_params[:first_club] then
+      if andinist_params[:first_club] != "" then
+        @club_one = Club.where(:name => andinist_params[:first_club]).first
+      end
+    end
+    if andinist_params[:second_club] then
+      if andinist_params[:second_club] != "" then
+        @club_two = Club.where(:name => andinist_params[:second_club]).first
+      end
+    end
+    if andinist_params[:third_club] then
+      if andinist_params[:third_club] != "" then
+        if Club.where(:name => andinist_params[:third_club]).count > 0 then
+          @club_three = Club.where(:name => andinist_params[:third_club]).first
+        else
+          @club_three = Club.new
+          @club_three.name = andinist_params[:third_club]
+          @club_three.save!
+        end
+      end
+    end
 
     respond_to do |format|
       if @andinist.save
+        if @club_one then
+          @andinist.clubs << @club_one
+        end
+        if @club_two then
+          @andinist.clubs << @club_two
+        end
+        if @club_three then
+          @andinist.clubs << @club_three
+        end
         format.html { redirect_to @andinist, notice: "Se creó a " + @andinist.fullname }
         format.json { render :show, status: :created, location: @andinist }
       else
@@ -36,8 +67,45 @@ class AndinistsController < ApplicationController
 
   # PATCH/PUT /andinists/1 or /andinists/1.json
   def update
+    if andinist_params[:first_club] then
+      if andinist_params[:first_club] != "" then
+        @club_one = Club.where(:name => andinist_params[:first_club]).first
+      end
+    end
+    if andinist_params[:second_club] then
+      if andinist_params[:second_club] != "" then
+        @club_two = Club.where(:name => andinist_params[:second_club]).first
+      end
+    end
+    if andinist_params[:third_club] then
+      if andinist_params[:third_club] != "" then
+        if Club.where(:name => andinist_params[:third_club]).count > 0 then
+          @club_three = Club.where(:name => andinist_params[:third_club]).first
+        else
+          @club_three = Club.new
+          @club_three.name = andinist_params[:third_club]
+          @club_three.save!
+        end
+      end
+    end
+
     respond_to do |format|
       if @andinist.update(andinist_params)
+        @andinist.clubs.each do |club|
+          if club != @club_one and club != @club_two and club != @club_three then
+            @andinist.clubs.delete(club)
+          end
+        end 
+        if @club_one and not @andinist.clubs.exists?(@club_one.id) then
+          @andinist.clubs << @club_one
+        end
+        if @club_two and not @andinist.clubs.exists?(@club_two.id) then
+          @andinist.clubs << @club_two
+        end
+        if @club_three and not @andinist.clubs.exists?(@club_three.id) then
+          @andinist.clubs << @club_three
+        end
+
         format.html { redirect_to @andinist, notice: "Se actualizaron los datos de " + @andinist.fullname }
         format.json { render :show, status: :ok, location: @andinist }
       else
@@ -64,6 +132,6 @@ class AndinistsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def andinist_params
-      params.require(:andinist).permit(:name, :surname, :country, :club, :gender)
+      params.require(:andinist).permit(:name, :surname, :country, :gender, :first_club, :second_club, :third_club)
     end
 end
