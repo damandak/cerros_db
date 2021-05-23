@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_17_030247) do
+ActiveRecord::Schema.define(version: 2021_05_23_153136) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -101,6 +101,13 @@ ActiveRecord::Schema.define(version: 2021_05_17_030247) do
     t.float "longitude"
   end
 
+  create_table "mountains_sectors", force: :cascade do |t|
+    t.bigint "mountain_id"
+    t.bigint "sector_id"
+    t.index ["mountain_id"], name: "index_mountains_sectors_on_mountain_id"
+    t.index ["sector_id"], name: "index_mountains_sectors_on_sector_id"
+  end
+
   create_table "nomenclatura_objects", force: :cascade do |t|
     t.string "nom_id"
     t.string "revision_code"
@@ -124,6 +131,15 @@ ActiveRecord::Schema.define(version: 2021_05_17_030247) do
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "mountain_id", null: false
     t.index ["mountain_id"], name: "index_routes_on_mountain_id"
+  end
+
+  create_table "sectors", force: :cascade do |t|
+    t.string "name"
+    t.string "category"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.text "img_url"
+    t.string "description"
   end
 
   add_foreign_key "ascents", "routes"

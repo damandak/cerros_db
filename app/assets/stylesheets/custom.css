@@ -6,12 +6,12 @@
 }
 
 .badge {
-     font-size: 13px !important;
-     padding: .575rem .5625rem !important;
-     font-weight: normal
+    font-size: 13px !important;
+    padding: .575rem .5625rem !important;
+    font-weight: normal
 
  }
 
  .badge.badge-pill {
-     border-radius: 0.5rem !important;
+    border-radius: 0.5rem !important;
  }

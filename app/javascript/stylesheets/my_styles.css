@@ -15,3 +15,33 @@
  .badge.badge-pill {
      border-radius: 0.5rem !important;
  }
+
+ .sector_cover_image {
+ 	width: 100%;
+ 	max-height: 500px;
+ 	object-fit: cover;
+ }
+
+ .sector_no_cover_image {
+ 	width: 100%;
+ 	max-height: 300px;
+ 	object-fit: cover;
+ }
+
+ .sector_thumbnail_image {
+ 	height: 250px;
+ 	max-width: 100%;
+ 	object-fit: cover;
+
+ }
+ .sector_no_thumbnail_image{
+ 	height: 250px;
+ 	max-width: 100%;
+ 	object-fit: cover;
+ }
+
+ .border-cover-image{
+ 	border-width: 20px;
+    border-color: #efefef;
+    border-style: solid;
+ }

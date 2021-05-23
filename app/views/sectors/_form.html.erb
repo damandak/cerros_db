@@ -1,0 +1,48 @@
+<%= form_with(model: sector, local: true) do |form| %>
+  <% if sector.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sector.errors.count, "error") %> no permitió que guardáramos los cambios en este sector</h2>
+
+      <ul>
+        <% sector.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="mb-3">
+    <%= form.label :name, "Nombre del sector", :class => "form-label" %><br>
+    <%= form.text_field :name, :class => "form-control" %>
+  </div>
+
+  <div class="mb-3">
+      <%= form.label :category, "Categoría",  :class => "form-label" %><br>
+      <%= form.select :category, sectors_categories_for_select, {}, {:class => "form-control custom-select"} %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :img_url, "Link externo a imagen", :class => "form-label" %><br>
+    <%= form.text_field :img_url, :class => "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :description, "Descripción breve del sector", :class => "form-label" %><br>
+    <%= form.text_field :description, :class => "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :mountain_ids, "Montañas del sector", :class => "form-label" %><br>
+    <%= form.select :mountain_ids, mountains_for_select, {}, {:class => "form-select", :multiple => true} %>
+  </div>
+
+  <script>
+    new SlimSelect({
+      select: '#sector_mountain_ids'
+    })
+  </script>
+
+  <div class="actions">
+    <%= form.submit "Guardar", :class => "btn btn-primary"  %>
+  </div>
+<% end %>

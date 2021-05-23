@@ -2,6 +2,7 @@ class Mountain < ApplicationRecord
   has_many :routes
   has_many :ascents, through: :routes
   has_and_belongs_to_many :countries
+  has_and_belongs_to_many :sectors
   has_one :nomenclatura_object
   validates :name, presence: true
 

@@ -149,3 +149,25 @@ csv.each do |row|
 end
 puts "AndinistsAscents OK"
 
+rm = Sector.new
+rv = Sector.new
+rvi = Sector.new
+rvii = Sector.new
+rm.name = "Región Metropolitana"
+rv.name = "Región de Valparaíso"
+rvi.name = "Región del Libertador General Bernardo O'Higgins"
+rvii.name = "Región del Maule"
+rm.category = "Regiones de Chile"
+rv.category = "Regiones de Chile"
+rvi.category = "Regiones de Chile"
+rvii.category = "Regiones de Chile"
+rm.img_url = "https://www.elperiscopio.cl/wp-content/uploads/2020/03/1547470176156-820x385.jpg"
+rvi.img_url = "https://www.sextanoticias.cl/wp-content/uploads/2020/09/Sector-Cortaderal_2.jpg"
+rvii.img_url = "https://farm3.staticflickr.com/2742/4311871839_b992a3b355_b.jpg"
+rv.img_url = "http://conociendochile.com/wp-content/uploads/2018/03/region-de-Valparaiso-4.jpg"
+rm.save
+rv.save
+rvi.save
+rvii.save
+
+

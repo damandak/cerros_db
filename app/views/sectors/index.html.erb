@@ -1,0 +1,28 @@
+<% if @category and @sectors.where(category: @category).count > 0 then %>
+
+  <p id="notice"><%= notice %></p>
+
+  <h1><%= @category %></h1>
+  
+  <div class="row mb-3 mt-3">
+    <% @sectors.where(category: @category).each do |sector| %>
+      <div class="card col-3">
+        <% if sector.img_url then %>
+          <%= image_tag sector.img_url, class: "sector_thumbnail_image card-img-top mt-3" %>
+        <% else %>
+          <%= image_tag "https://lh3.googleusercontent.com/proxy/MTrC5X9clf3-nbjGIcSSFIG7OZGT1NFheZGjQ7EhejxCZZ1nev96UuCpNMEzQvcSkq_Nf986vtttkAaUjlZ7iqtFKSjWF1Uo7MJT-VUMhgv-O4xxzJ7oKFH2PK4Vm5hR", class: "sector_no_thumbnail_image card-img-top mt-3" %>
+        <% end %>
+        <div class="card-body">
+          <h5 class="card-title"> <%= sector.name %> </h5>
+          <p class="card-text"><%= sector.description %></p>
+          <%= link_to "Ver más", sector_path(sector), class: "btn btn-primary" %> 
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+<%= link_to ['Nuevo Sector en', @category].join(" "), new_sector_path, class: "btn btn-secondary mt-5" %>
+
+<% else %>
+  <p> No se encuentra la página </p>
+<% end %>
