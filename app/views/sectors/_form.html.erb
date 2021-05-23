@@ -27,6 +27,11 @@
   </div>
 
   <div class="mb-3">
+    <%= form.label :img_author, "Autor de la foto", :class => "form-label" %><br>
+    <%= form.text_field :img_author, :class => "form-control" %>
+  </div>
+
+  <div class="mb-3">
     <%= form.label :description, "Descripción breve del sector", :class => "form-label" %><br>
     <%= form.text_field :description, :class => "form-control" %>
   </div>

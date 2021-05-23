@@ -28,7 +28,7 @@ class SectorsController < ApplicationController
 
     respond_to do |format|
       if @sector.save
-        format.html { redirect_to @sector, notice: "Sector was successfully created." }
+        format.html { redirect_to @sector, notice: "El sector fue creado satisfactoriamente." }
         format.json { render :show, status: :created, location: @sector }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -41,7 +41,7 @@ class SectorsController < ApplicationController
   def update
     respond_to do |format|
       if @sector.update(sector_params)
-        format.html { redirect_to @sector, notice: "Sector was successfully updated." }
+        format.html { redirect_to @sector, notice: "El sector fue editado satisfactoriamente." }
         format.json { render :show, status: :ok, location: @sector }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -54,7 +54,7 @@ class SectorsController < ApplicationController
   def destroy
     @sector.destroy
     respond_to do |format|
-      format.html { redirect_to sectors_url, notice: "Sector was successfully destroyed." }
+      format.html { redirect_to sectors_url, notice: "El sector fue eliminado satisfactoriamente." }
       format.json { head :no_content }
     end
   end
@@ -67,6 +67,6 @@ class SectorsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def sector_params
-      params.require(:sector).permit(:name, :category, :img_url, :description, :mountain_ids => [])
+      params.require(:sector).permit(:name, :category, :img_url, :description, :img_author, :mountain_ids => [])
     end
 end

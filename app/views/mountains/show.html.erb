@@ -3,6 +3,9 @@
 <% end %>
 
 <h2> <%= @mountain.fullname %> </h2>
+<% if Mountain.where(id: @mountain.parent_id).count > 0 then %>
+	<h6> Cumbre secundaria de <%= link_to Mountain.where(id: @mountain.parent_id).first.fullname, mountain_path(Mountain.where(id: @mountain.parent_id).first) %> </h6>
+<% end %>
 	<div class="btn-group" role="group" aria-label="Acciones">
 		<%= link_to ['Editar', @mountain.fullname].join(" "), edit_mountain_path(@mountain), class: "btn btn-primary my-2"  %> 
 		<%= link_to 'Volver a Cerros', mountains_path, class: "btn btn-secondary my-2"  %>

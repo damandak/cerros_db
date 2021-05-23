@@ -3,6 +3,6 @@ module MountainsHelper
   		Mountain.all.order(:prefix).pluck(:prefix).uniq
 	end
 	def mountains_for_select
-  		Mountain.all.collect { |a| [a.fullname, a.id] }
+  		Mountain.all.order(:name).collect { |a| [a.fullname, a.id] }
 	end
 end

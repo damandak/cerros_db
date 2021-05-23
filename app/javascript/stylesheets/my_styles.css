@@ -45,3 +45,11 @@
     border-color: #efefef;
     border-style: solid;
  }
+.image-container{
+	position:relative;
+}
+ .image-container p{
+ 	position:absolute;
+ 	botton: 8px;
+ 	right: 16px;
+ }

@@ -12,6 +12,17 @@
   </div>
 
   <div class="mb-3">
+    <%= form.label :parent_id, "Cumbre Principal", :class => "form-label" %><br>
+    <% if mountain.has_parent? then %>
+      <%= form.select :parent_id, @mountain.near_mountains.order(:name).collect { |a| [a.fullname, a.id] }, {:include_blank => true}, {:class => "form-label"} %>
+    <% elsif mountain.id then %>
+      <%= form.select :parent_id, options_for_select(@mountain.near_mountains.order(:name).collect { |a| [a.fullname, a.id] } ), {:include_blank => true}, {:class => "form-label"} %>
+    <% else %>
+      <%= form.select :parent_id, options_for_select(mountains_for_select(), :parent_id), {:include_blank => true}, {:class => "form-label"} %>
+    <% end %>
+  </div>
+
+  <div class="mb-3">
     <%= form.label :altitude, "Altitud (metros)", :class => "form-label" %><br>
     <%= form.number_field :altitude, in: 0..7000, :class => "form-control"  %>
   </div>
@@ -31,14 +42,16 @@
     <%= form.text_field :longitude, :class => "form-control"  %>
   </div>
 
-
-
   <div class="mb-3">
     <%= form.label :nom_id, "ID Proyecto Nomenclatura", :class => "form-label" %><br>
     <%= form.text_field :nom_id, :class => "form-control"  %>
   </div>
 
-
+  <script>
+    new SlimSelect({
+      select: '#mountain_parent_id'
+    })
+  </script>
 
   <% if mountain.errors.any? %>
     <div id="error_explanation">

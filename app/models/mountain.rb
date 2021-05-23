@@ -5,6 +5,7 @@ class Mountain < ApplicationRecord
   has_and_belongs_to_many :sectors
   has_one :nomenclatura_object
   validates :name, presence: true
+  has_ancestry
 
   scope :with_ascents, -> {
     self.joins(:ascents).distinct
