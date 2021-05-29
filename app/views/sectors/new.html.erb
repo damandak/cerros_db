@@ -1,5 +1,9 @@
-<h1>New Sector</h1>
+<% if can? :manage, Sector %>
+	<h1>Nuevo Sector</h1>
 
-<%= render 'form', sector: @sector %>
+	<%= render 'form', sector: @sector %>
 
-<%= link_to 'Back', sectors_path %>
+	<%= link_to 'Volver', sectors_path %>
+<% else %>
+	<p> No tienes acceso a este sitio </p>
+<% end %>

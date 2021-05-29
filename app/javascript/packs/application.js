@@ -10,6 +10,7 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+global.toastr = require("toastr")
 
 import "../stylesheets/application";
 

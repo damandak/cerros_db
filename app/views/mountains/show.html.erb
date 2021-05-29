@@ -7,7 +7,9 @@
 	<h6> Cumbre secundaria de <%= link_to Mountain.where(id: @mountain.parent_id).first.fullname, mountain_path(Mountain.where(id: @mountain.parent_id).first) %> </h6>
 <% end %>
 	<div class="btn-group" role="group" aria-label="Acciones">
-		<%= link_to ['Editar', @mountain.fullname].join(" "), edit_mountain_path(@mountain), class: "btn btn-primary my-2"  %> 
+		<% if user_signed_in? %>
+			<%= link_to ['Editar', @mountain.fullname].join(" "), edit_mountain_path(@mountain), class: "btn btn-primary my-2"  %>
+		<% end %>
 		<%= link_to 'Volver a Cerros', mountains_path, class: "btn btn-secondary my-2"  %>
 	</div>
 
@@ -144,7 +146,11 @@
 	 	</tbody>
 	</table>
 
-<%= link_to 'Crear Ruta', new_route_path(:mountain => @mountain), class: "btn btn-primary btn-sm my-2"  %>
+<% if user_signed_in? %>
+  <div class="btn-group" role="group" aria-label="Acciones">
+		<%= link_to 'Crear Ruta', new_route_path(:mountain => @mountain), class: "btn btn-primary btn-sm my-2"  %>
+	</div>
+<% end %>
 
 <h3 class="mt-3"> Ascensos Destacados</h3>
 
@@ -157,7 +163,9 @@
 	    		<th>Descripción</th>
 	      		<th>Ascensionistas</th>
 	      		<th>Honores</th>
-	      		<th>Acciones</th>
+	      		<% if user_signed_in? %>
+	      			<th>Acciones</th>
+	      		<% end %>
 	    	</tr>
 	  	</thead>
 	  	<tbody>
@@ -197,13 +205,13 @@
 							</span>
 						<% end %>
 					</td>
-					<td style="text-align: center">
-
-						<%= link_to edit_ascent_path(ascent, :mountain => @mountain) do %>
-							<i class="fa fa-edit"></i>
-						<% end %>
-
-					</td>
+					<% if user_signed_in? %>
+						<td style="text-align: center">
+							<%= link_to edit_ascent_path(ascent, :mountain => @mountain) do %>
+								<i class="fa fa-edit"></i>
+							<% end %>
+						</td>
+					<% end %>
 				</tr>
 	    	<% end %>
 	 	</tbody>
@@ -211,7 +219,12 @@
 <% else %>
 	<p>Sin Ascensos Registrados</p>
 <% end %>
-<%= link_to 'Crear Ascenso Destacado', new_ascent_path(:mountain => @mountain), class: "btn btn-primary btn-sm my-2"  %>
+
+<% if user_signed_in? %>
+  <div class="btn-group" role="group" aria-label="Acciones">
+		<%= link_to 'Crear Ascenso Destacado', new_ascent_path(:mountain => @mountain), class: "btn btn-primary btn-sm my-2"  %>
+	</div>
+<% end %>
 
 <% if @mountain.nomenclatura_object != nil %>
 	<h3 class="mt-3"> Información levantada en Proyecto Nomenclatura</h3>

@@ -109,4 +109,8 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
+  
+  # For authentication with devise, not sure if include https://
+  config.action_mailer.default_url_options = { host: 'salty-woodland-81379.herokuapp.com/'}
+
 end

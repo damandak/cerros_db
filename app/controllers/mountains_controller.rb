@@ -1,6 +1,7 @@
 class MountainsController < ApplicationController
   before_action :set_mountain, only: %i[ show edit update destroy ]
-
+  skip_before_action :authenticate_user!, :only => %i[ index show ]
+  
   # GET /mountains or /mountains.json
   def index
     @mountains = Mountain.search(params[:mountain])

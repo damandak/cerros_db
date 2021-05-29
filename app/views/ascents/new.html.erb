@@ -1,17 +1,20 @@
+<% if can? :manage, Ascent  %>
+	<% if @mountain %>
+		<h1>Registrar ascenso de <%= Mountain.find(@mountain.id).fullname %></h1>
 
-<% if @mountain %>
-	<h1>Registrar ascenso de <%= Mountain.find(@mountain.id).fullname %></h1>
+		<%= render 'form', ascent: @ascent %>
 
-	<%= render 'form', ascent: @ascent %>
+	<% else %>
 
+		<h1>Ascenso debe estar vinculado a montaña</h1>
+
+	<% end %>
+
+	<% if @mountain then %>
+		<%= link_to ['Volver a', @mountain.fullname].join(" "), mountain_path(@mountain), class: "btn btn-secondary my-2" %>
+	<% else %>
+		<%= link_to 'Volver a ascensos', ascents_path, class: "btn btn-secondary my-2" %>
+	<% end %>
 <% else %>
-
-	<h1>Ascenso debe estar vinculado a montaña</h1>
-
-<% end %>
-
-<% if @mountain then %>
-	<%= link_to ['Volver a', @mountain.fullname].join(" "), mountain_path(@mountain), class: "btn btn-secondary my-2" %>
-<% else %>
-	<%= link_to 'Volver a ascensos', ascents_path, class: "btn btn-secondary my-2" %>
+	<p> No tienes acceso a este sitio </p>
 <% end %>

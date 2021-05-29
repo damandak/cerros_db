@@ -1,5 +1,6 @@
 class AndinistsController < ApplicationController
   before_action :set_andinist, only: %i[ show edit update destroy ]
+  skip_before_action :authenticate_user!, :only => %i[ index show ]
   attr_accessor :first_club, :second_club, :third_club
 
   # GET /andinists or /andinists.json

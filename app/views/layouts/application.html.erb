@@ -42,7 +42,7 @@
               <%= link_to "Nosotros", uncategorized_about_path, class: "nav-link active"%>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Sectores
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -63,16 +63,45 @@
             <li class="nav-item">
               <%= link_to "Rutas", routes_path, class: "nav-link active"%>
             </li>
+
           </ul>
 
           <%= form_tag(mountains_path, :class => "form-inline my-2 my-lg-0", method: "get") do %>
             <input name=mountain[:similar_fullname], class="form-control col m-1" type="text" placeholder="Nombre">
             <%= submit_tag "Buscar", :class => "form-control btn btn-outline-success my-2 my-sm-0"  %>
           <% end %>
+          <ul class="navbar-nav">
+            <% if current_user.nil? %>
+              <li class="nav-item">
+                <%= link_to "Entrar", new_user_session_path, class: "nav-link active login-button" %>
+              </li>
+            <% else %>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Mi Cuenta
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <%= link_to('Mis datos', edit_user_registration_path, class: 'nav-link active') %>
+                  <%= link_to "Dashboard?", uncategorized_nomenclatura_path, class: 'nav-link active login-button' %>
+                  <%= link_to "Cerrar Sesión", destroy_user_session_path, method: :delete, class: 'nav-link active' %>
+                </div>
+              </li>
+            <% end %>
+          </ul>
         </div>
       </div>
     </nav>
     <div class="container mt-5">
+
+      <% unless flash.empty? %>
+        <script type="text/javascript">
+          <% flash.each do |f| %>
+            <% type = f[0].to_s.gsub('alert', 'error').gsub('notice', 'info') %>
+            toastr['<%= type %>']('<%= f[1] %>');
+          <% end %>
+        </script>
+      <% end %>
+
       <%= yield %>
     </div>
   </body>

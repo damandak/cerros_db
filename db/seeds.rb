@@ -169,5 +169,12 @@ rm.save
 rv.save
 rvi.save
 rvii.save
+puts "Sectors OK"
 
-
+u = User.new
+u.email = "admin@admin.com"
+u.superadmin_role = true
+u.password = "123456789"
+u.password_confirmation = "123456789"
+u.save!
+puts "Users OK"

@@ -1,6 +1,10 @@
-<h1>Editar <%= @mountain.fullname %></h1>
+<% if can? :manage, Mountain %>
+	<h1>Editar <%= @mountain.fullname %></h1>
 
-<%= render 'form', mountain: @mountain %>
+	<%= render 'form', mountain: @mountain %>
 
-<%= link_to ['Volver a ', @mountain.fullname].join(" "), @mountain %> |
-<%= link_to 'Volver a Cerros', mountains_path %>
+	<%= link_to ['Volver a ', @mountain.fullname].join(" "), @mountain %> |
+	<%= link_to 'Volver a Cerros', mountains_path %>
+<% else %>
+	<p> No tienes acceso a este sitio </p>
+<% end %>
