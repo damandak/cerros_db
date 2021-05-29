@@ -1,9 +1,13 @@
-<h1>Editando ascenso</h1>
+<% if can? :manage, Ascent  %>
+	<h1>Editando ascenso</h1>
 
-<%= render 'form', ascent: @ascent %>
+	<%= render 'form', ascent: @ascent %>
 
-<% if @mountain then %>
-	<%= link_to ['Volver a', @mountain.fullname].join(" "), mountain_path(@mountain), class: "btn btn-secondary my-2" %>
+	<% if @mountain then %>
+		<%= link_to ['Volver a', @mountain.fullname].join(" "), mountain_path(@mountain), class: "btn btn-secondary my-2" %>
+	<% else %>
+		<%= link_to 'Volver a ascensos', ascents_path, class: "btn btn-secondary my-2" %>
+	<% end %>
 <% else %>
-	<%= link_to 'Volver a ascensos', ascents_path, class: "btn btn-secondary my-2" %>
+	<p> No tienes acceso a este sitio </p>
 <% end %>

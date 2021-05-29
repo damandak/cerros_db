@@ -3,10 +3,12 @@
 <% end %>
 
 <h2> <%= @andinist.fullname %> </h2>
+
+<% if user_signed_in? %>
 	<div class="btn-group" role="group" aria-label="Acciones">
 		<%= link_to ['Editar', @andinist.fullname].join(" "), edit_andinist_path(@andinist), class: "btn btn-primary my-2"  %> 
 	</div>
-
+<% end %>
 
 <table class="table table-striped mb-5">
   	<tbody>
@@ -107,7 +109,10 @@
     <p>Sin Ascensos Registrados</p>
 <% end %>
 
-<%= link_to 'Volver a Andinistas', andinists_path %>
+
+<div class="btn-group" role="group" aria-label="Acciones">
+    <%= link_to 'Volver a Andinistas', andinists_path %>
+</div>
 
 <script>
 $(function () {

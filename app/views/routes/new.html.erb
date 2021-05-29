@@ -1,5 +1,9 @@
-<h1>Nueva ruta en <%= @mountain.fullname %></h1>
+<% if can? :manage, Route %>
+	<h1>Nueva ruta en <%= @mountain.fullname %></h1>
 
-<%= render 'form', route: @route %>
+	<%= render 'form', route: @route %>
 
-<%= link_to 'Volver', mountain_path(@mountain) %>
+	<%= link_to 'Volver', mountain_path(@mountain) %>
+<% else %>
+	<p> No tienes acceso a este sitio </p>
+<% end %>

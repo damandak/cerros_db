@@ -1,7 +1,11 @@
-<h1>Editar <%= @route.name %> </h1>
+<% if can? :manage, Route %>
+	<h1>Editar <%= @route.name %> </h1>
 
-<%= render 'form', route: @route %>
+	<%= render 'form', route: @route %>
 
-<%= link_to 'Volver a ' + @mountain.fullname, mountain_path(@mountain) %><br>
-<%= link_to 'Volver a ' + @route.name, route_path(@route) %><br>
-<%= link_to 'Volver a rutas', routes_path() %>
+	<%= link_to 'Volver a ' + @mountain.fullname, mountain_path(@mountain) %><br>
+	<%= link_to 'Volver a ' + @route.name, route_path(@route) %><br>
+	<%= link_to 'Volver a rutas', routes_path() %>
+<% else %>
+	<p> No tienes acceso a este sitio </p>
+<% end %>

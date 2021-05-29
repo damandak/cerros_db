@@ -21,7 +21,11 @@
     <% end %>
   </div>
 
-<%= link_to ['Nuevo Sector en', @category].join(" "), new_sector_path, class: "btn btn-secondary mt-5" %>
+<% if user_signed_in? %>
+  <div class="btn-group" role="group" aria-label="Acciones">
+    <%= link_to ['Nuevo Sector en', @category].join(" "), new_sector_path, class: "btn btn-secondary mt-5" %>
+  </div>
+<% end %>
 
 <% else %>
   <p> No se encuentra la página </p>

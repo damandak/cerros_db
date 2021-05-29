@@ -1,5 +1,10 @@
-<h1>Nuevo Andinista</h1>
+<% if can? :manage, Andinist %>
+	<h1>Nuevo Andinista</h1>
 
-<%= render 'form', andinist: @andinist %>
+	<%= render 'form', andinist: @andinist %>
 
-<%= link_to 'Volver a Andinistas', andinists_path %>
+	<%= link_to 'Volver a Andinistas', andinists_path %>
+
+<% else %>
+	<p> No tienes acceso a este sitio </p>
+<% end %>

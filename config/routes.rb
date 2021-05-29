@@ -7,4 +7,10 @@ Rails.application.routes.draw do
   get "uncategorized/nomenclatura"
   get "uncategorized/about"
   root to: "uncategorized#index"
+
+  devise_for :users, controllers: {
+    sessions: 'users/sessions',
+    passwords: 'users/passwords',
+    registrations: 'users/registrations'
+	}
 end
