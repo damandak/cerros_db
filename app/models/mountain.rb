@@ -4,6 +4,7 @@ class Mountain < ApplicationRecord
   has_and_belongs_to_many :countries
   has_and_belongs_to_many :sectors
   has_one :nomenclatura_object
+  has_many :sources, as: :referenceable
   validates :name, presence: true
   has_ancestry
 

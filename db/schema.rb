@@ -148,8 +148,11 @@ ActiveRecord::Schema.define(version: 2021_05_30_183650) do
   create_table "sources", force: :cascade do |t|
     t.text "name"
     t.text "link"
+    t.string "referenceable_type"
+    t.bigint "referenceable_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["referenceable_type", "referenceable_id"], name: "index_sources_on_referenceable_type_and_referenceable_id"
   end
 
   create_table "users", force: :cascade do |t|

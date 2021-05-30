@@ -1,6 +1,8 @@
 class Ascent < ApplicationRecord
 	belongs_to :route
 	has_and_belongs_to_many :andinists
+	has_many :sources, as: :referenceable
+	
 	attr_accessor :ascent_date, :no_month, :no_day
 
 	def fulldate
