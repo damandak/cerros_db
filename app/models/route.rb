@@ -1,6 +1,7 @@
 class Route < ApplicationRecord
 	belongs_to :mountain
 	has_many :ascents
+	has_many :sources, as: :referenceable
 
 	def first_ascent
 		return self.ascents.sort_by(&:fulldate).first

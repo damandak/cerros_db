@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_27_224551) do
+ActiveRecord::Schema.define(version: 2021_05_31_023110) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -100,6 +100,8 @@ ActiveRecord::Schema.define(version: 2021_05_27_224551) do
     t.float "latitude"
     t.float "longitude"
     t.string "ancestry"
+    t.text "img_url"
+    t.string "img_author"
   end
 
   create_table "mountains_sectors", force: :cascade do |t|
@@ -142,6 +144,16 @@ ActiveRecord::Schema.define(version: 2021_05_27_224551) do
     t.text "img_url"
     t.string "description"
     t.string "img_author"
+  end
+
+  create_table "sources", force: :cascade do |t|
+    t.text "name"
+    t.text "link"
+    t.string "referenceable_type"
+    t.bigint "referenceable_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["referenceable_type", "referenceable_id"], name: "index_sources_on_referenceable_type_and_referenceable_id"
   end
 
   create_table "users", force: :cascade do |t|

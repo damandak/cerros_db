@@ -1,0 +1,30 @@
+<%= form_with(model: source, local: true) do |form| %>
+  <% if source.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(source.errors.count, "error") %> prohibited this source from being saved:</h2>
+
+      <ul>
+        <% source.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="mb-3">
+    <%= form.label :name, "Nombre / Descripción", :class => "form-label"  %>
+    <%= form.text_area :name, :class => "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :link, "Enlace", :class => "form-label"  %>
+    <%= form.text_area :link, :class => "form-control"  %>
+  </div>
+
+<%= form.hidden_field :referenceable_id, :value => @referenceable.id %>
+<%= form.hidden_field :referenceable_type, :value => @referenceable.class.to_s %>
+
+  <div class="actions">
+    <%= form.submit "Guardar", :class => "btn btn-primary"  %>
+  </div>
+<% end %>

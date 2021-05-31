@@ -65,6 +65,6 @@ class MountainsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def mountain_params
-      params.require(:mountain).permit(:prefix, :name, :altitude, :latitude, :longitude, :search_type, :parent_id)
+      params.require(:mountain).permit(:prefix, :name, :altitude, :latitude, :longitude, :search_type, :parent_id, :img_url, :img_author)
     end
 end

@@ -1,0 +1,15 @@
+<% if not @referenceable %>
+	<h1> Acá no hay nada </h1>
+<% else %>
+	<% if @referenceable.is_a?(Mountain) or @referenceable.is_a?(Andinist) %>
+		<h1>Editar Referencia para <%= @referenceable.fullname %> </h1>
+	<% else %>
+		<h1>Editar Referencia para <%= @referenceable.name %> </h1>
+	<% end %>
+
+	<%= render 'form', source: @source %>
+
+	<%= link_to 'Mostrar', @source %> |
+	<%= link_to 'Volver', sources_path %>
+
+<% end %>

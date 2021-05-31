@@ -89,16 +89,16 @@
 	 	</tbody>
 	</table>
 <% else %>
-	<p>Sin Ascensos Registrados</p>
+	<p class="mb-3">Sin Ascensos Registrados</p>
 <% end %>
 
 <% if user_signed_in? %>
-	<%= link_to 'Crear Ascenso Destacado', new_ascent_path(:mountain => @route.mountain), class: "btn btn-primary btn-sm my-2"  %>
+	<%= link_to 'Crear Ascenso Destacado', new_ascent_path(:mountain => @route.mountain), class: "btn btn-primary btn-sm my-2 mb-3"  %>
 <% end %>
 
 <% if @route.mountain.routes.count > 1 then %>
-	<h3> Otras rutas </h3>
-	<table class="table table-striped">
+	<h3 class="mt-3"> Otras rutas </h3>
+	<table class="table table-sm table-striped mb-5">
 	  	<tbody>
 	    	<tr>
 	    		<th>Ruta</th>
@@ -114,6 +114,48 @@
 		    <% end %>
 	 	</tbody>
 	</table>
+<% end %>
+
+<h3 class="mt-3 mb-3"> Referencias </h3>
+<% if @route.sources.count > 0 %>
+    <table class="table table-sm table-striped mb-3">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Referencia</th>
+                <th>Enlace</th>
+                <% if user_signed_in? %>
+	      			<th>Acciones</th>
+	      		<% end %>
+            </tr>
+        </thead>
+        <tbody>
+            <% @route.sources.each do |source| %>
+                <tr>
+                    <td> <%= source.id %> </td>
+                    <td> <%= source.name %> </td>
+                    <td> <%= link_to source.link, "http://#{source.link}" %> </td>
+                    <% if user_signed_in? %>
+						<td style="text-align: center">
+							<%= link_to edit_source_path(source, :route => @route) do %>
+								<i class="fa fa-edit"></i>
+							<% end %>
+							<%= link_to source_path(source), :confirm => "¿Estás seguro?", :method => :delete do %>
+								<i class="fa fa-trash-alt text-danger"></i>
+							<% end %>
+						</td>
+					<% end %>
+
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+<% else %>
+	<p class="mb-3">Sin Referencias</p>
+<% end %>
+
+<% if user_signed_in? %>
+	<%= link_to 'Agregar Referencia', new_source_path(:route => @route), class: "btn btn-primary btn-sm my-2 mb-3"  %>
 <% end %>
 
 <script>
