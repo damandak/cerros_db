@@ -12,6 +12,15 @@
   </div>
 
   <div class="mb-3">
+    <%= form.label :img_url, "Link a imagen", :class => "form-label" %><br>
+    <%= form.text_area :img_url, :class => "form-control"  %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :img_author, "Autor imagen", :class => "form-label" %><br>
+    <%= form.text_field :img_author, :class => "form-control"  %>
+  </div>
+  <div class="mb-3">
     <%= form.label :parent_id, "Cumbre Principal", :class => "form-label" %><br>
     <% if mountain.has_parent? then %>
       <%= form.select :parent_id, @mountain.near_mountains.order(:name).collect { |a| [a.fullname, a.id] }, {:include_blank => true}, {:class => "form-label"} %>

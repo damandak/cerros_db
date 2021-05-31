@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_30_183650) do
+ActiveRecord::Schema.define(version: 2021_05_31_023110) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -101,6 +101,7 @@ ActiveRecord::Schema.define(version: 2021_05_30_183650) do
     t.float "longitude"
     t.string "ancestry"
     t.text "img_url"
+    t.string "img_author"
   end
 
   create_table "mountains_sectors", force: :cascade do |t|
