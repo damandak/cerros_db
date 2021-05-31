@@ -11,17 +11,20 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_area :name %>
+  <div class="mb-3">
+    <%= form.label :name, "Nombre / Descripción", :class => "form-label"  %>
+    <%= form.text_area :name, :class => "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :link %>
-    <%= form.text_area :link %>
+  <div class="mb-3">
+    <%= form.label :link, "Enlace", :class => "form-label"  %>
+    <%= form.text_area :link, :class => "form-control"  %>
   </div>
+
+<%= form.hidden_field :referenceable_id, :value => @referenceable.id %>
+<%= form.hidden_field :referenceable_type, :value => @referenceable.class.to_s %>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Guardar", :class => "btn btn-primary"  %>
   </div>
 <% end %>

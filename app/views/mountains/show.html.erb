@@ -101,7 +101,7 @@
 	</script>
 	<div id="map"></div>
 
-	<p>Cercanas:
+	<p class="mb-5">Cercanas:
 		<% @mountain.near_mountains.each do |near| %>
 
 			<%= link_to near.fullname, mountain_path(near) %> , 
@@ -114,7 +114,7 @@
 
 <h3 class="mt-3"> Rutas existentes </h3>
 
-<table class="table table-sm table-striped">
+<table class="table table-sm table-striped mb-3">
 	  	<thead>
 	    	<tr>
 	    		<th>Ruta</th>
@@ -155,7 +155,7 @@
 <h3 class="mt-3"> Ascensos Destacados</h3>
 
 <% if @mountain.ascents.count > 0 %>
-	<table class="table table-sm table-striped">
+	<table class="table table-sm table-striped mb-3">
 	  	<thead>
 	    	<tr>
 	    		<th style="min-width: 120px">Fecha</th>
@@ -217,13 +217,54 @@
 	 	</tbody>
 	</table>
 <% else %>
-	<p>Sin Ascensos Registrados</p>
+	<p class="mb-5">Sin Ascensos Registrados</p>
 <% end %>
 
 <% if user_signed_in? %>
   <div class="btn-group" role="group" aria-label="Acciones">
 		<%= link_to 'Crear Ascenso Destacado', new_ascent_path(:mountain => @mountain), class: "btn btn-primary btn-sm my-2"  %>
 	</div>
+<% end %>
+
+<h3 class="mt-3 mb-3"> Referencias </h3>
+<% if @mountain.sources.count > 0 %>
+    <table class="table table-sm table-striped mb-5">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Referencia</th>
+                <th>Enlace</th>
+                <% if user_signed_in? %>
+	      			<th>Acciones</th>
+	      		<% end %>
+            </tr>
+        </thead>
+        <tbody>
+            <% @mountain.sources.each do |source| %>
+                <tr>
+                    <td> <%= source.id %> </td>
+                    <td> <%= source.name %> </td>
+                    <td> <%= link_to source.link, "http://#{source.link}" %> </td>
+                    <% if user_signed_in? %>
+						<td style="text-align: center">
+							<%= link_to edit_source_path(source, :mountain => @mountain) do %>
+								<i class="fa fa-edit"></i>
+							<% end %>
+							<%= link_to source_path(source), :confirm => "¿Estás seguro?", :method => :delete do %>
+								<i class="fa fa-trash-alt text-danger"></i>
+							<% end %>
+						</td>
+					<% end %>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+<% else %>
+	<p class="mb-3">Sin Referencias</p>
+<% end %>
+
+<% if user_signed_in? %>
+	<%= link_to 'Agregar Referencia', new_source_path(:mountain => @mountain), class: "btn btn-primary btn-sm my-2 mb-3"  %>
 <% end %>
 
 <% if @mountain.nomenclatura_object != nil %>
