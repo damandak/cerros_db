@@ -41,7 +41,7 @@
 					addMarker({
 						coords:{lat: <%= m.latitude %>, lng: <%= m.longitude %>},
 						iconImage: image_main,
-						content: '<h3><%= link_to m.fullname, mountain_path(m) %></h3>',
+						content: '<h6><%= link_to m.fullname, mountain_path(m) %></h6>',
 					});
 				<% end %>
 			<% end %>
