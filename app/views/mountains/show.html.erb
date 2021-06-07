@@ -2,6 +2,7 @@
   <div class="alert alert-primary" role="alert"><%= notice %></div>
 <% end %>
 
+
 <h2> <%= @mountain.fullname %> </h2>
 <% if Mountain.where(id: @mountain.parent_id).count > 0 then %>
 	<h6> Cumbre secundaria de <%= link_to Mountain.where(id: @mountain.parent_id).first.fullname, mountain_path(Mountain.where(id: @mountain.parent_id).first) %> </h6>
@@ -80,7 +81,7 @@
 	<% if @mountain.img_url then %>
 		<%= image_tag @mountain.img_url, class: "img-fluid sector_cover_image  border-cover-image" %>
 	<% else %>
-		<%= image_tag "https://lh3.googleusercontent.com/proxy/MTrC5X9clf3-nbjGIcSSFIG7OZGT1NFheZGjQ7EhejxCZZ1nev96UuCpNMEzQvcSkq_Nf986vtttkAaUjlZ7iqtFKSjWF1Uo7MJT-VUMhgv-O4xxzJ7oKFH2PK4Vm5hR", class: "img-fluid sector_no_cover_image border border-info"%>
+		<%= image_tag "https://i.stack.imgur.com/y9DpT.jpg", class: "img-fluid sector_no_cover_image border border-info"%>
 	<% end %>
 	<% if @mountain.img_url then %> <p style="text-align: right; font-size: 13px"> Foto: <%= @mountain.img_author %> </p> <% end %>
 </div>
@@ -91,22 +92,47 @@
 
 	<script>
       // Initialize and add the map
-      function initMap() {
-        // The location of Uluru
-        const cerro = { lat: <%= @mountain.latitude %>, lng: <%= @mountain.longitude %> };
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 12,
-          center: cerro,
-          mapTypeId: 'satellite'
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-          position: cerro,
-          map: map,
+      	function initMap() {
+	        const cerro = { lat: <%= @mountain.latitude %>, lng: <%= @mountain.longitude %> };
+	        const map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 13,
+				center: cerro,
+				mapTypeId: 'satellite'
+			});
+			const image = '<%= image_path("icon_cerro.png") %>';
+			const image_main = '<%= image_path("icon_cerro_main.png") %>';
+			<% Mountain.all.each do |m| %>
+				<% if m.latitude and m.longitude %>
+					<% if m == @mountain then %>
+						addMarker({
+							coords:{lat: <%= m.latitude %>, lng: <%= m.longitude %>},
+							iconImage: image,
+							content: '<h3><%= link_to m.fullname, mountain_path(m) %></h3>',
+						});
+					<% else %>
+						addMarker({
+							coords:{lat: <%= m.latitude %>, lng: <%= m.longitude %>},
+							iconImage: image_main,
+							content: '<h3><%= link_to m.fullname, mountain_path(m) %></h3>',
+						});
+					<% end %>
+				<% end %>
+			<% end %>
+			function addMarker(props){
+	      		var marker = new google.maps.Marker({
+	      			position: props.coords,
+					map: map,
+					icon: props.iconImage,
+	      		});
+	      		var infoWindow = new google.maps.InfoWindow({
+	      			content:props.content,
+	      		});
+	      		marker.addListener('click', function(){
+	      			infoWindow.open(map, marker);
+	      		});
+      		};
+      	};
 
-        });
-      }
 	</script>
 	<div id="map"></div>
 
