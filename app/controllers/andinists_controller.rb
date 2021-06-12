@@ -202,6 +202,6 @@ class AndinistsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def andinist_params
-      params.require(:andinist).permit(:name, :surname, :gender, :first_club, :second_club, :third_club, :first_country, :second_country, :third_country)
+      params.require(:andinist).permit(:name, :surname, :gender, :first_club, :second_club, :third_club, :first_country, :second_country, :third_country, :img_url, :img_author)
     end
 end

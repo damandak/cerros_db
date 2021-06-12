@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_31_023110) do
+ActiveRecord::Schema.define(version: 2021_06_12_225358) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 2021_05_31_023110) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "club"
     t.string "gender"
+    t.text "img_url"
+    t.string "img_author"
   end
 
   create_table "andinists_ascents", id: false, force: :cascade do |t|

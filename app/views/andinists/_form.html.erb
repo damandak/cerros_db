@@ -9,6 +9,16 @@
     <%= form.text_field :surname, :class => "form-control"  %>
   </div>
 
+  <div class="mb-3">
+    <%= form.label :img_url, "Link a imagen", :class => "form-label" %><br>
+    <%= form.text_area :img_url, :class => "form-control"  %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :img_author, "Autor imagen", :class => "form-label" %><br>
+    <%= form.text_field :img_author, :class => "form-control"  %>
+  </div>
+
   <div class="row">
     <div class="mb-3 col-4">
       <%= form.label :first_club, "Club",  :class => "form-label" %><br>
