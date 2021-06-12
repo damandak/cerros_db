@@ -2,6 +2,7 @@ class AndinistsController < ApplicationController
   before_action :set_andinist, only: %i[ show edit update destroy ]
   skip_before_action :authenticate_user!, :only => %i[ index show ]
   attr_accessor :first_club, :second_club, :third_club
+  attr_accessor :first_country, :second_country, :third_country
 
   # GET /andinists or /andinists.json
   def index
@@ -46,6 +47,28 @@ class AndinistsController < ApplicationController
       end
     end
 
+    if andinist_params[:first_country] then
+      if andinist_params[:first_country] != "" then
+        @country_one = Country.where(:name => andinist_params[:first_country]).first
+      end
+    end
+    if andinist_params[:second_country] then
+      if andinist_params[:second_country] != "" then
+        @country_two = Country.where(:name => andinist_params[:second_country]).first
+      end
+    end
+    if andinist_params[:third_country] then
+      if andinist_params[:third_country] != "" then
+        if Country.where(:name => andinist_params[:third_country]).count > 0 then
+          @country_three = Country.where(:name => andinist_params[:third_country]).first
+        else
+          @country_three = Country.new
+          @country_three.name = andinist_params[:third_country]
+          @country_three.save!
+        end
+      end
+    end
+
     respond_to do |format|
       if @andinist.save
         if @club_one then
@@ -56,6 +79,15 @@ class AndinistsController < ApplicationController
         end
         if @club_three then
           @andinist.clubs << @club_three
+        end
+        if @country_one then
+          @andinist.countries << @country_one
+        end
+        if @country_two then
+          @andinist.countries << @country_two
+        end
+        if @country_three then
+          @andinist.countries << @country_three
         end
         format.html { redirect_to @andinist, notice: "Se creó a " + @andinist.fullname }
         format.json { render :show, status: :created, location: @andinist }
@@ -90,6 +122,28 @@ class AndinistsController < ApplicationController
       end
     end
 
+    if andinist_params[:first_country] then
+      if andinist_params[:first_country] != "" then
+        @country_one = Country.where(:name => andinist_params[:first_country]).first
+      end
+    end
+    if andinist_params[:second_country] then
+      if andinist_params[:second_country] != "" then
+        @country_two = Country.where(:name => andinist_params[:second_country]).first
+      end
+    end
+    if andinist_params[:third_country] then
+      if andinist_params[:third_country] != "" then
+        if Country.where(:name => andinist_params[:third_country]).count > 0 then
+          @country_three = Country.where(:name => andinist_params[:third_country]).first
+        else
+          @country_three = Country.new
+          @country_three.name = andinist_params[:third_country]
+          @country_three.save!
+        end
+      end
+    end
+
     respond_to do |format|
       if @andinist.update(andinist_params)
         @andinist.clubs.each do |club|
@@ -105,6 +159,21 @@ class AndinistsController < ApplicationController
         end
         if @club_three and not @andinist.clubs.exists?(@club_three.id) then
           @andinist.clubs << @club_three
+        end
+
+        @andinist.countries.each do |country|
+          if country != @country_one and country != @country_two and country != @country_three then
+            @andinist.countries.delete(country)
+          end
+        end 
+        if @country_one and not @andinist.countries.exists?(@country_one.id) then
+          @andinist.countries << @country_one
+        end
+        if @country_two and not @andinist.countries.exists?(@country_two.id) then
+          @andinist.countries << @country_two
+        end
+        if @country_three and not @andinist.countries.exists?(@country_three.id) then
+          @andinist.countries << @country_three
         end
 
         format.html { redirect_to @andinist, notice: "Se actualizaron los datos de " + @andinist.fullname }
@@ -133,6 +202,6 @@ class AndinistsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def andinist_params
-      params.require(:andinist).permit(:name, :surname, :country, :gender, :first_club, :second_club, :third_club)
+      params.require(:andinist).permit(:name, :surname, :gender, :first_club, :second_club, :third_club, :first_country, :second_country, :third_country)
     end
 end

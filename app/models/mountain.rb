@@ -8,6 +8,8 @@ class Mountain < ApplicationRecord
   validates :name, presence: true
   has_ancestry
 
+  attr_accessor :first_country, :second_country, :third_country
+
   scope :with_ascents, -> {
     self.joins(:ascents).distinct
   }
@@ -90,17 +92,21 @@ class Mountain < ApplicationRecord
   end
 
   def near_mountains
-    dist = 0.04
-    lat = self.latitude
-    lat_max = lat + dist
-    lat_min = lat - dist
-    lon = self.longitude
-    lon_max = lon + dist
-    lon_min = lon - dist
-    nears = Mountain.where("latitude > ?", lat_min).where("latitude < ?", lat_max)
-    nears = nears.where("longitude > ?", lon_min).where("longitude < ?", lon_max)
-    nears = nears.where.not(id: self.id)
-    return nears
+    if self.latitude and self.longitude then
+      dist = 0.04
+      lat = self.latitude
+      lat_max = lat + dist
+      lat_min = lat - dist
+      lon = self.longitude
+      lon_max = lon + dist
+      lon_min = lon - dist
+      nears = Mountain.where("latitude > ?", lat_min).where("latitude < ?", lat_max)
+      nears = nears.where("longitude > ?", lon_min).where("longitude < ?", lon_max)
+      nears = nears.where.not(id: self.id)
+      return nears
+    else
+      return Mountain.where(name: "Nada")
+    end
   end
 
   def self.search(search)

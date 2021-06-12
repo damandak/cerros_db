@@ -5,6 +5,7 @@ class Andinist < ApplicationRecord
   has_many :sources, as: :referenceable
 
   attr_accessor :first_club, :second_club, :third_club
+  attr_accessor :first_country, :second_country, :third_country
 
 
   def fullname
