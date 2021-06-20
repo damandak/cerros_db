@@ -4,10 +4,16 @@ class Route < ApplicationRecord
 	has_many :sources, as: :referenceable
 
 	def first_ascent
+		if self.unregistered_sport_ascent then
+			return nil
+		end
 		return self.ascents.sort_by(&:fulldate).first
 	end
 
 	def first_winter_ascent
+		if self.unregistered_sport_ascent then
+			return nil
+		end
 		winter_ascents = self.ascents.where('month = 7')
 		winter_ascents += self.ascents.where('month = 8')
 		winter_ascents += self.ascents.where('month = 6').where('day > 20')
@@ -16,6 +22,9 @@ class Route < ApplicationRecord
 	end
 
 	def first_ascent_fulldate
+		if self.unregistered_sport_ascent then
+			return "9999"
+		end
 		return self.first_ascent ? self.first_ascent.fulldate : "9999"
 	end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_12_225358) do
+ActiveRecord::Schema.define(version: 2021_06_20_021222) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -104,6 +104,8 @@ ActiveRecord::Schema.define(version: 2021_06_12_225358) do
     t.string "ancestry"
     t.text "img_url"
     t.string "img_author"
+    t.boolean "unregistered_non_sport_ascent"
+    t.boolean "unregistered_sport_ascent"
   end
 
   create_table "mountains_sectors", force: :cascade do |t|
@@ -135,6 +137,8 @@ ActiveRecord::Schema.define(version: 2021_06_12_225358) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "mountain_id", null: false
+    t.boolean "unregistered_non_sport_ascent"
+    t.boolean "unregistered_sport_ascent"
     t.index ["mountain_id"], name: "index_routes_on_mountain_id"
   end
 

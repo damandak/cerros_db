@@ -16,6 +16,26 @@
 
 
 <table class="table table-striped">
+	<% if @mountain.unregistered_non_sport_ascent and @mountain.unregistered_sport_ascent then %>
+		<tfoot>
+			<tr><td colspan="2"><small>
+				* Tiene ascensos no deportivos (precolombinos, arrieros, pirquineros) o deportivos
+			</small></td></tr>
+		</tfoot>
+	<% elsif @mountain.unregistered_non_sport_ascent then %>
+		<tfoot>
+			<tr><td colspan="2"><small>
+				* Tiene ascensos no deportivos previos (precolombinos, arrieros, pirquineros)
+			</small></td></tr>
+		</tfoot>
+	<% elsif @mountain.unregistered_sport_ascent then %>
+		<tfoot>
+			<tr><td colspan="2"><small>
+				* Tiene ascensos deportivos previos
+			</small></td></tr>
+		</tfoot>
+	<% end %>
+
   	<tbody>
     	<tr>
     		<th>Nombre</th>
@@ -55,7 +75,7 @@
     		<td><%= @mountain.longitude %></th>
     	</tr>
     	<tr>
-    		<th>Primer Ascenso</th>
+    		<th>Primer Ascenso<%= " Deportivo" if @mountain.unregistered_non_sport_ascent %> </th>
     		<td>
     			<% if @mountain.first_absolute then %>
 	    			<%= @mountain.first_absolute.fulldate %> ,
@@ -73,18 +93,19 @@
 	    		<% else %>
 	    			Sin ascensos registrados
 	    		<% end %>
+	    		<%= " *" if @mountain.unregistered_non_sport_ascent || @mountain.unregistered_sport_ascent %>
     	</tr>
  	</tbody>
 </table>
 
-<div class="row mt-3 image-container">
-	<% if @mountain.img_url then %>
+<% if @mountain.img_url and not @mountain.img_url == "" then %>
+	<div class="row mt-3 image-container">
 		<%= image_tag @mountain.img_url, class: "img-fluid sector_cover_image  border-cover-image" %>
-	<% else %>
-		<%= image_tag "https://i.stack.imgur.com/y9DpT.jpg", class: "img-fluid sector_no_cover_image border border-info"%>
-	<% end %>
-	<% if @mountain.img_url then %> <p style="text-align: right; font-size: 13px"> Foto: <%= @mountain.img_author %> </p> <% end %>
-</div>
+		<p style="text-align: right; font-size: 13px">
+			Foto: <%= @mountain.img_author %>
+		</p>
+	</div>
+<% end %>
 
 <% if @mountain.latitude %>
 
@@ -220,12 +241,12 @@
 					</td>
 					<td>
 						<% if ascent == @mountain.first_absolute then %>
-							<span class="badge badge-pill badge-dark" data-toggle="tooltip" data-placement="top" title="Primer Ascenso Absoluto">
+							<span class="badge badge-pill badge-dark" data-toggle="tooltip" data-placement="top" title="Primer Ascenso Deportivo">
 								<i class="fa fa-medal"></i>
 							</span>
 						<% end %>
 						<% if ascent == @mountain.first_winter_absolute then %>
-							<span class="badge badge-pill badge-info" data-toggle="tooltip" data-placement="top" title="Primer Ascenso Invernal Absoluto">
+							<span class="badge badge-pill badge-info" data-toggle="tooltip" data-placement="top" title="Primer Ascenso Invernal">
 								<i class="fa fa-snowflake"></i>
 							</span>
 						<% end %>

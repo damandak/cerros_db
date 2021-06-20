@@ -13,6 +13,25 @@
 </div>
 
 <table class="table table-striped">
+	<% if @route.unregistered_non_sport_ascent and @route.unregistered_sport_ascent then %>
+		<tfoot>
+			<tr><td colspan="2"><small>
+				* Tiene ascensos no deportivos (precolombinos, arrieros, pirquineros) o deportivos
+			</small></td></tr>
+		</tfoot>
+	<% elsif @route.unregistered_non_sport_ascent then %>
+		<tfoot>
+			<tr><td colspan="2"><small>
+				* Tiene ascensos no deportivos previos (precolombinos, arrieros, pirquineros)
+			</small></td></tr>
+		</tfoot>
+	<% elsif @route.unregistered_sport_ascent then %>
+		<tfoot>
+			<tr><td colspan="2"><small>
+				* Tiene ascensos deportivos previos
+			</small></td></tr>
+		</tfoot>
+	<% end %>
   	<tbody>
     	<tr>
     		<th>Cerro</th>
@@ -21,6 +40,28 @@
     	<tr>
     		<th>Ruta</th>
     		<td> <%= @route.name %> </th>
+    	</tr>
+    	<tr>
+    		<th>Primer Ascenso</th>
+    		<td>
+    			<% if @route.first_ascent then %>
+	    			<%= @route.first_ascent.fulldate %> ,
+	    			<% not_first = false %>
+	    			<% @route.first_ascent.andinists.each do |andinist| %>
+	    				<% if not_first then %>
+	    					<%= ", " %>
+	    				<% else %>
+	    					<% not_first = true %>
+	    				<% end %>
+						<%= link_to andinist.fullname, andinist_path(andinist) %>
+					<% end %>
+	    			por
+	    			<%= link_to @route.first_ascent.route.name , route_path(@route.first_ascent.route.name) %>
+	    		<% else %>
+	    			Sin ascensos registrados
+	    		<% end %>
+	    		<%= " *" if @route.unregistered_non_sport_ascent || @route.unregistered_sport_ascent %>
+	    	</th>
     	</tr>
  	</tbody>
 </table>
@@ -57,12 +98,12 @@
 					</td>
 					<td>
                         <% if ascent == @route.mountain.first_absolute then %>
-                            <span class="badge badge-pill badge-dark" data-toggle="tooltip" data-placement="top" title="Primer Ascenso Absoluto">
+                            <span class="badge badge-pill badge-dark" data-toggle="tooltip" data-placement="top" title="Primer Ascenso Deportivo">
                                 <i class="fa fa-medal"></i>
                             </span>
                         <% end %>
                         <% if ascent == @route.mountain.first_winter_absolute then %>
-                            <span class="badge badge-pill badge-info" data-toggle="tooltip" data-placement="top" title="Primer Ascenso Invernal Absoluto">
+                            <span class="badge badge-pill badge-info" data-toggle="tooltip" data-placement="top" title="Primer Ascenso Invernal">
                                 <i class="fa fa-snowflake"></i>
                             </span>
                         <% end %>

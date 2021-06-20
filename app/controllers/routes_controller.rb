@@ -71,6 +71,6 @@ class RoutesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def route_params
-      params.require(:route).permit(:name, :mountain_id)
+      params.require(:route).permit(:name, :mountain_id, :unregistered_non_sport_ascent, :unregistered_sport_ascent)
     end
 end
