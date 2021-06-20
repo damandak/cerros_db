@@ -2,9 +2,19 @@
 
 
 
-  <div class="mb-3">
+  <div class="mb-4">
     <%= form.label :name, "Nombre de la ruta", :class => "form-label" %><br>
     <%= form.text_field :name, :class => "form-control" %>
+  </div>
+
+  <div class="mb-3 form-check">
+    <%= form.check_box :unregistered_non_sport_ascent, :type => "radio", :class => "form-check-input"  %>
+    <%= form.label :unregistered_non_sport_ascent, "Tiene ascensos no-deportivos anteriores no registrados (precolombinos, arrieros, pirquineros, etc)", :class => "form-check-label" %><br>
+  </div>
+
+  <div class="mb-4 form-check">
+    <%= form.check_box :unregistered_sport_ascent, :type => "radio", :class => "form-check-input"  %>
+    <%= form.label :unregistered_sport_ascent, "Tiene ascensos deportivos anteriores no registrados", :class => "form-check-label" %><br>
   </div>
 
   <%= form.hidden_field :mountain_id, :value => @mountain.id %>  

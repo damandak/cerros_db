@@ -10,6 +10,15 @@
 	</div>
 <% end %>
 
+<div class="row mt-3 mb-3 image-container">
+    <% if @andinist.img_url then %>
+        <%= image_tag @andinist.img_url, class: "img-fluid sector_cover_image  border-cover-image" %>
+    <% else %>
+        <%= image_tag "https://i.stack.imgur.com/y9DpT.jpg", class: "img-fluid sector_no_cover_image border border-info"%>
+    <% end %>
+    <% if @andinist.img_url then %> <p style="text-align: right; font-size: 13px"> Foto: <%= @andinist.img_author %> </p> <% end %>
+</div>
+
 <table class="table table-striped mb-5">
   	<tbody>
     	<tr>

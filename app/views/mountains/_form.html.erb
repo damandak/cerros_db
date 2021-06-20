@@ -36,9 +36,21 @@
     <%= form.number_field :altitude, in: 0..7000, :class => "form-control"  %>
   </div>
 
-  <div class="mb-5 form-check">
-    <%= form.check_box :previously_ascended, :type => "radio", :class => "form-check-input"  %>
-    <%= form.label :previously_ascended, "Primer ascenso no registrado", :class => "form-check-label" %><br>
+  <div class="row">
+    <div class="mb-3 col-4">
+       <%= form.label :first_country, "País",  :class => "form-label" %><br>
+      <% country_one = if @mountain.countries.count > 0 then @mountain.countries[0].name else "" end %>
+      <%= form.select :first_country, options_for_select(countries_for_select(), country_one), {:include_blank => true}, {:class => "form-control custom-select"} %>
+    </div>
+    <div class="mb-3 col-4">
+      <%= form.label :second_country, "País",  :class => "form-label" %><br>
+      <% country_two = if @mountain.countries.count > 1 then @mountain.countries[1].name else "" end %>
+      <%= form.select :second_country, options_for_select(countries_for_select(), country_two), {:include_blank => true}, {:class => "form-control custom-select"} %>
+    </div>
+    <div class="mb-3 col-4">
+      <%= form.label :third_country, "País (si no está en las opciones)",  :class => "form-label" %><br>
+      <%= form.text_field :third_country, :class => "form-control"  %>
+    </div>
   </div>
   
   <div class="mb-3">
@@ -51,9 +63,19 @@
     <%= form.text_field :longitude, :class => "form-control"  %>
   </div>
 
-  <div class="mb-3">
+  <div class="mb-5">
     <%= form.label :nom_id, "ID Proyecto Nomenclatura", :class => "form-label" %><br>
     <%= form.text_field :nom_id, :class => "form-control"  %>
+  </div>
+
+  <div class="mb-3 form-check">
+    <%= form.check_box :unregistered_non_sport_ascent, :type => "radio", :class => "form-check-input"  %>
+    <%= form.label :unregistered_non_sport_ascent, "Tiene ascensos no-deportivos anteriores no registrados (precolombinos, arrieros, pirquineros, etc)", :class => "form-check-label" %><br>
+  </div>
+
+  <div class="mb-5 form-check">
+    <%= form.check_box :unregistered_sport_ascent, :type => "radio", :class => "form-check-input"  %>
+    <%= form.label :unregistered_sport_ascent, "Tiene ascensos deportivos anteriores no registrados", :class => "form-check-label" %><br>
   </div>
 
   <script>

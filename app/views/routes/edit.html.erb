@@ -1,5 +1,6 @@
 <% if can? :manage, Route %>
 	<h1>Editar <%= @route.name %> </h1>
+	<h6 class="mb-3">Ruta de <%= @mountain.fullname %></h6>
 
 	<%= render 'form', route: @route %>
 

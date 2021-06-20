@@ -9,6 +9,16 @@
     <%= form.text_field :surname, :class => "form-control"  %>
   </div>
 
+  <div class="mb-3">
+    <%= form.label :img_url, "Link a imagen", :class => "form-label" %><br>
+    <%= form.text_area :img_url, :class => "form-control"  %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :img_author, "Autor imagen", :class => "form-label" %><br>
+    <%= form.text_field :img_author, :class => "form-control"  %>
+  </div>
+
   <div class="row">
     <div class="mb-3 col-4">
       <%= form.label :first_club, "Club",  :class => "form-label" %><br>
@@ -28,16 +38,18 @@
 
   <div class="row">
     <div class="mb-3 col-4">
-      <%= form.label :club, "Nacionalidad",  :class => "form-label" %><br>
-      <%= form.text_field :club, :class => "form-control"  %>
+       <%= form.label :first_country, "País",  :class => "form-label" %><br>
+      <% country_one = if @andinist.countries.count > 0 then @andinist.countries[0].name else "" end %>
+      <%= form.select :first_country, options_for_select(countries_for_select(), country_one), {:include_blank => true}, {:class => "form-control custom-select"} %>
     </div>
     <div class="mb-3 col-4">
-      <%= form.label :club, "Nacionalidad",  :class => "form-label" %><br>
-      <%= form.text_field :club, :class => "form-control"  %>
+      <%= form.label :second_country, "País",  :class => "form-label" %><br>
+      <% country_two = if @andinist.countries.count > 1 then @andinist.countries[1].name else "" end %>
+      <%= form.select :second_country, options_for_select(countries_for_select(), country_two), {:include_blank => true}, {:class => "form-control custom-select"} %>
     </div>
     <div class="mb-3 col-4">
-      <%= form.label :club, "Nacionalidad",  :class => "form-label" %><br>
-      <%= form.text_field :club, :class => "form-control"  %>
+      <%= form.label :third_country, "País (si no está en las opciones)",  :class => "form-label" %><br>
+      <%= form.text_field :third_country, :class => "form-control"  %>
     </div>
   </div>
 
