@@ -1,12 +1,15 @@
 class MountainsController < ApplicationController
   before_action :set_mountain, only: %i[ show edit update destroy ]
-  skip_before_action :authenticate_user!, :only => %i[ index show ]
+  skip_before_action :authenticate_user!, :only => %i[ index show index_init]
 
   attr_accessor :first_country, :second_country, :third_country
   
   # GET /mountains or /mountains.json
   def index
     @mountains = Mountain.search(params[:mountain])
+  end
+
+  def index_init
   end
 
   # GET /mountains/1 or /mountains/1.json

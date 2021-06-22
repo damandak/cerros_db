@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get "uncategorized/index"
   get "uncategorized/nomenclatura"
   get "uncategorized/about"
+  get "mountains_init", to: "mountains#index_init", as: "mountains_init"
   root to: "uncategorized#index"
 
   devise_for :users, controllers: {

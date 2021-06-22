@@ -4,7 +4,7 @@
 
 <h1>Cerros</h1>
 
-<div class="accordion" id="accordionExample">
+<div class="accordion mb-3" id="accordionExample">
   <div class="card">
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
@@ -65,63 +65,18 @@
   </div>
 </div>
 
-<div class="mb-3 row">
-  
-</div>
-
-
-
-<table id="mountain-table" class="table table-striped table-sm" role="datatable" data-turbolinks="false">
-  <thead class="thead-dark">
-    <tr>
-      <th>ID</th>
-      <th>Nombre</th>
-      <th>País(es)</th>
-      <th>Altura</th>
-      <th>Latitud Sur</th>
-      <th>Longitud Oeste</th>
-      <th>Ascendido</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @mountains.each do |mountain| %>
-      <tr>
-        <td> <%= mountain.id %> </th>
-        <td> <%= link_to mountain.fullname, mountain_path(mountain) %> </td>
-        <td>
-          <% not_first = false %>
-          <% mountain.countries.each do |country| %>
-            <% if not_first then %>
-              <%= "- " %>
-            <% else %>
-              <% not_first = true %>
-            <% end %>
-              <%= country.name %>
-          <% end %>
-        </td>
-        <td> <%= mountain.altitude ? mountain.altitude : "-" %> </td> 
-        <td> <%= mountain.latitude ? sprintf("%.4f",(mountain.latitude)) : "-" %> </td> 
-        <td> <%= mountain.longitude ? sprintf("%.4f",(mountain.longitude)) : "-" %> </td>
-        <td> <%= mountain.ascended_str %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
 <script>
   // Initialize and add the map
     function initMap() {
-      const center = { lat: <%= @mountains.average(:latitude) %>, lng: <%= @mountains.average(:longitude) %> };
+      const center = { lat: <%= Mountain.all.average(:latitude) %>, lng: <%= Mountain.all.average(:longitude) %>}
       const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 8,
+    zoom: 7,
     center: center,
     mapTypeId: 'satellite'
   });
   const image = '<%= image_path("icon_cerro.png") %>';
   const image_main = '<%= image_path("icon_cerro_main.png") %>';
-  <% @mountains.each do |m| %>
+  <% Mountain.all.each do |m| %>
     <% if m.latitude and m.longitude %>
         addMarker({
           coords:{lat: <%= m.latitude %>, lng: <%= m.longitude %>},
@@ -146,22 +101,17 @@
     };
 
   </script>
-  <div id="map" class="mb-3"></div>
+  <div id="map"></div>
 
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('#mountain-table').DataTable({
-      "language": {
-            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
-        }
-      });
-  });
-</script>
+<div class="mb-3 row">
+  
+</div>
+
 <script>
 $("[data-toggle=tooltip").tooltip();
   </script>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCakFWS-TejUPvZ-OHO1rM4yehU4AWb5tQ&callback=initMap&libraries=&v=weekly" async="false"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCakFWS-TejUPvZ-OHO1rM4yehU4AWb5tQ&callback=initMap&libraries=&v=weekly" async="false"></script>
 
 <% if user_signed_in? %>
   <div class="btn-group" role="group" aria-label="Acciones">
