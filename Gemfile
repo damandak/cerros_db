@@ -26,6 +26,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise'
 # Authorization
 gem 'cancancan'
+# Track changes to model
+gem 'paper_trail'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

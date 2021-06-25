@@ -7,6 +7,8 @@ class Mountain < ApplicationRecord
   has_many :sources, as: :referenceable
   validates :name, presence: true
   has_ancestry
+  
+  has_paper_trail
 
   attr_accessor :first_country, :second_country, :third_country
 
