@@ -7,14 +7,19 @@
 <% if Mountain.where(id: @mountain.parent_id).count > 0 then %>
 	<h6> Cumbre secundaria de <%= link_to Mountain.where(id: @mountain.parent_id).first.fullname, mountain_path(Mountain.where(id: @mountain.parent_id).first) %> </h6>
 <% end %>
-	<div class="btn-group" role="group" aria-label="Acciones">
-		<% if user_signed_in? %>
-			<%= link_to ['Editar', @mountain.fullname].join(" "), edit_mountain_path(@mountain), class: "btn btn-primary my-2"  %>
-		<% end %>
-		<%= link_to 'Volver a Cerros', mountains_path, class: "btn btn-secondary my-2"  %>
-	</div>
+<div class="btn-group" role="group" aria-label="Acciones">
+	<% if user_signed_in? %>
+		<%= link_to ['Editar', @mountain.fullname].join(" "), edit_mountain_path(@mountain), class: "btn btn-primary my-2"  %>
+	<% end %>
+	<%= link_to 'Volver a Cerros', mountains_init_url, class: "btn btn-secondary my-2"  %>
+</div>
 
 
+<% if current_user.superadmin_role? or current_user.supervisor_role? then %>
+	<% if @mountain.versions.size > 0 then %>
+		<small class="mb-3" style="display:block">Últimos cambios por <%= @mountain.versions.last.whodunnit %></small>
+	<% end %>
+<% end %>
 <table class="table table-striped">
 	<% if @mountain.unregistered_non_sport_ascent and @mountain.unregistered_sport_ascent then %>
 		<tfoot>
@@ -364,6 +369,35 @@
 	 	</tbody>
 	</table>
 
+<% end %>
+
+<% if current_user.superadmin_role? or current_user.supervisor_role? then %>
+	<% if @mountain.versions.size > 0 then %>
+		<h3 class="mt-3"> Últimas modificaciones </h3>
+		<table class="table table-sm table-striped">
+			<thead>
+				 <tr>
+				 	<th>ID</th>
+	                <th>Evento</th>
+	                <th>Fecha</th>
+	                <th style="max-width: 160px">Versión del objeto</th>
+	                <th>Usuario</th>
+	                <th>Acciones</th>
+	            </tr>
+			</thead>
+		<% @mountain.versions.reverse_each do |v| %>
+			<tbody>
+				<tr>
+					<td><%= v.id %></td>
+					<td><%= v.event %></td>
+					<td><%= v.created_at.to_s %></td>
+					<td  style="max-width: 160px"><%= v.changeset.inspect %></td>
+					<td><%= User.find(v.whodunnit).email %></td>
+					<td><%= link_to 'Revertir antes de este cambio', undo_path(:m_id => @mountain.id, :v_id => v.id ), method: :post %></td>
+				</tr>
+			</tbody>
+		<% end %>
+	<% end %>
 <% end %>
 
 <script>

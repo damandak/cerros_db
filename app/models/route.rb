@@ -3,6 +3,8 @@ class Route < ApplicationRecord
 	has_many :ascents
 	has_many :sources, as: :referenceable
 
+	has_paper_trail
+
 	def first_ascent
 		if self.unregistered_sport_ascent then
 			return nil

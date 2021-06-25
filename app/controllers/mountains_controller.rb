@@ -1,5 +1,5 @@
 class MountainsController < ApplicationController
-  before_action :set_mountain, only: %i[ show edit update destroy ]
+  before_action :set_mountain, only: %i[ show edit update destroy]
   skip_before_action :authenticate_user!, :only => %i[ index show index_init]
 
   attr_accessor :first_country, :second_country, :third_country
@@ -130,7 +130,30 @@ class MountainsController < ApplicationController
     end
   end
 
+  # PaperTrail
+  def undo
+    @mountain_version = PaperTrail::Version.find_by_id(params[:v_id])
+    @mountain = Mountain.find(params[:m_id])
+    begin
+      puts("wena")
+      if @mountain_version.reify
+        puts("wena2")
+        @mountain_version.reify.save
+      else
+        puts("wena3")
+        # For undoing the create action
+        @mountain_version.item.destroy
+      end
+      flash[:success] = "Undid that!"
+    rescue
+      flash[:alert] = "Failed undoing the action..."
+    ensure
+      redirect_to @mountain
+    end
+  end
+
   private
+
     # Use callbacks to share common setup or constraints between actions.
     def set_mountain
       @mountain = Mountain.find(params[:id])
