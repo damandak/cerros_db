@@ -11,7 +11,7 @@
 		<% if user_signed_in? %>
 			<%= link_to ['Editar', @mountain.fullname].join(" "), edit_mountain_path(@mountain), class: "btn btn-primary my-2"  %>
 		<% end %>
-		<%= link_to 'Volver a Cerros', mountains_path, class: "btn btn-secondary my-2"  %>
+		<%= link_to 'Volver a Cerros', mountains_init_url, class: "btn btn-secondary my-2"  %>
 	</div>
 
 
