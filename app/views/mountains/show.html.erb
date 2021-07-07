@@ -392,7 +392,10 @@
 					<td><%= v.event %></td>
 					<td><%= v.created_at.to_s %></td>
 					<td  style="max-width: 160px"><%= v.changeset.inspect %></td>
-					<td><%= User.find(v.whodunnit).email %></td>
+					<td><% if v.whodunnit %>
+						<%= User.find(v.whodunnit).email %>
+						<% end %>
+					</td>
 					<td><%= link_to 'Revertir antes de este cambio', undo_path(:m_id => @mountain.id, :v_id => v.id ), method: :post %></td>
 				</tr>
 			</tbody>
