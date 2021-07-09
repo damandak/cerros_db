@@ -305,7 +305,7 @@
                 <tr>
                     <td> <%= source.id %> </td>
                     <td> <%= source.name %> </td>
-                    <td> <%= link_to source.link, "http://#{source.link}" %> </td>
+                    <td> <%= link_to source.link, "https://#{source.link}" %> </td>
                     <% if user_signed_in? %>
 						<td style="text-align: center">
 							<%= link_to edit_source_path(source, :mountain => @mountain) do %>
