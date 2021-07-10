@@ -305,7 +305,15 @@
                 <tr>
                     <td> <%= source.id %> </td>
                     <td> <%= source.name %> </td>
-                    <td> <%= link_to source.link, "https://#{source.link}" %> </td>
+                    <td>
+                    	<% if source.link[6,2] == "//" then %>
+                    		<%= link_to source.link, "https://#{source.link[8..]}" %>
+                    	<% elsif source.link[5,2] == "//" then %>
+                    		<%= link_to source.link, "https://#{source.link[7..]}" %>
+                    	<% else %>
+                    		<%= source.link[6,2] %>
+						<% end %>
+                    </td>
                     <% if user_signed_in? %>
 						<td style="text-align: center">
 							<%= link_to edit_source_path(source, :mountain => @mountain) do %>
