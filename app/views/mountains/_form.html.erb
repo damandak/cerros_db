@@ -12,6 +12,16 @@
   </div>
 
   <div class="mb-3">
+    <%= form.label :alternative_name_prefix, "Tipo Alternativo", :class => "form-label" %><br>
+    <%= form.text_field :alternative_name_prefix, :class => "form-control"  %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :alternative_name, "Nombre Alternativo", :class => "form-label" %><br>
+    <%= form.text_field :alternative_name, :class => "form-control"  %>
+  </div>
+
+  <div class="mb-3">
     <%= form.label :img_url, "Link a imagen", :class => "form-label" %><br>
     <%= form.text_area :img_url, :class => "form-control"  %>
   </div>
