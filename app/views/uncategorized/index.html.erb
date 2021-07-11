@@ -6,11 +6,130 @@
         <p class="lead text-muted">La gran base de datos de los cerros de los Andes, y sus ascensiones más destacadas.</p>
         <p>
           <%= link_to "Montañas", mountains_init_url, class: "btn btn-secondary my-2"  %>
-          <%= link_to "Sectores", sectors_path, class: "btn btn-secondary my-2"  %>
-          <%= link_to "Ascensos", ascents_path, class: "btn btn-secondary my-2"  %>
-          <%= link_to "Andinistas", andinists_path, class: "btn btn-secondary my-2" %>
         </p>
       </div>
     </div>
   </section>
 </main>
+
+
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Buscar Cerros
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        <%= form_tag(mountains_path, :class => "form-inline", method: "get") do %>
+          <select name=mountain[:prefix], class = "form_control custom-select col-3 m-1">
+            <option value = "None">- Prefijo -</option>
+            <option value = "Punta">Punta</option>
+            <option value = "Cerro">Cerro</option>
+            <option value = "Morro">Morro</option>
+            <option value = "Nevado">Nevado</option>
+            <option value = "Innominado">Innominado</option>
+            <option value = "Volcán">Volcán</option>
+            <option value = "Torre">Torre</option>
+            <option value = "Aguja">Aguja</option>
+            <option value = "Aguja">Pico</option>
+          </select>
+          <input name=mountain[:similar_fullname], class="form-control col m-1" type="text" placeholder="Nombre">
+          <select  name=mountain[:country], class = "form_control custom-select col m-1">
+            <option value = "None">- País -</option>
+            <%= options_for_select(countries_for_mountain_select()) %>
+          </select>
+          <select name=mountain[:min_height], class = "form_control custom-select col-3 m-1">
+            <option value = "None">- Altura Mínima -</option>
+            <option value = 1000>1000</option>
+            <option value = 2000>2000</option>
+            <option value = 3000>3000</option>
+            <option value = 4000>4000</option>
+            <option value = 5000>5000</option>
+            <option value = 6000>6000</option>
+          </select>
+          <select name=mountain[:max_height], class = "form_control custom-select col-3 m-1">
+            <option value = "None">- Altura Máxima -</option>
+            <option value = 1000>1000</option>
+            <option value = 2000>2000</option>
+            <option value = 3000>3000</option>
+            <option value = 4000>4000</option>
+            <option value = 5000>5000</option>
+            <option value = 6000>6000</option>
+          </select>
+          <select name=mountain[:ascended], class = "form_control custom-select col-3 m-1">
+            <option value = "None">- Ascendido -</option>
+            <option value = "Sí">Sí</option>
+            <option value = "No">No</option>
+          </select>
+
+          <%= submit_tag "Filtrar", :class => "form-control btn btn-primary col-12 m-1"  %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mb-3 row">
+  
+</div>
+
+
+<br>
+
+<script>
+  // Initialize and add the map
+    function initMap() {
+      const center = { lat: <%= Mountain.all.average(:latitude) %>, lng: <%= Mountain.all.average(:longitude) %> };
+      const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 8,
+    center: center,
+    mapTypeId: 'satellite'
+  });
+  const image = '<%= image_path("icon_cerro.png") %>';
+  const image_main = '<%= image_path("icon_cerro_main.png") %>';
+  <% Mountain.all.each do |m| %>
+    <% if m.latitude and m.longitude %>
+        addMarker({
+          coords:{lat: <%= m.latitude %>, lng: <%= m.longitude %>},
+          iconImage: image_main,
+          content: '<h6><%= link_to m.fullname, mountain_path(m) %></h6>',
+        });
+    <% end %>
+  <% end %>
+  function addMarker(props){
+        var marker = new google.maps.Marker({
+          position: props.coords,
+      map: map,
+      icon: props.iconImage,
+        });
+        var infoWindow = new google.maps.InfoWindow({
+          content:props.content,
+        });
+        marker.addListener('click', function(){
+          infoWindow.open(map, marker);
+        });
+      };
+    };
+
+  </script>
+  <div id="map" class="mb-3"></div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#mountain-table').DataTable({
+      "language": {
+            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+        }
+      });
+  });
+</script>
+<script>
+$("[data-toggle=tooltip").tooltip();
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCakFWS-TejUPvZ-OHO1rM4yehU4AWb5tQ&callback=initMap&libraries=&v=weekly" async="false"></script>

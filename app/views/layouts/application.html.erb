@@ -57,16 +57,20 @@
             <li class="nav-item">
               <%= link_to "Montañas", mountains_init_url, class: "nav-link active"%>
             </li>
-            <li class="nav-item">
-              <%= link_to "Andinistas", andinists_path, class: "nav-link active"%>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Andinistas
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <% if not current_user.nil? then %>
+                  <%= link_to "Nuevo Andinista", new_andinist_path, class: "nav-link active"%>
+                <% end %>
+                <%= link_to "Todos los Andinistas", andinists_path, class: "nav-link active"%>
+              </div>
             </li>
             <li class="nav-item">
               <%= link_to "Ascensos", ascents_path, class: "nav-link active"%>
             </li>
-            <li class="nav-item">
-              <%= link_to "Rutas", routes_path, class: "nav-link active"%>
-            </li>
-
           </ul>
 
           <%= form_tag(mountains_path, :class => "form-inline my-2 my-lg-0", method: "get") do %>
