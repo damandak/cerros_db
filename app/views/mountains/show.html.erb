@@ -292,7 +292,7 @@
     <table class="table table-sm table-striped mb-5">
         <thead>
             <tr>
-                <th>ID</th>
+                <th>#</th>
                 <th>Referencia</th>
                 <th>Enlace</th>
                 <% if user_signed_in? %>
@@ -301,9 +301,11 @@
             </tr>
         </thead>
         <tbody>
+        	<% cont = 0 %>
             <% @mountain.sources.each do |source| %>
+            	<% cont += 1 %>
                 <tr>
-                    <td> <%= source.id %> </td>
+                    <td> <%= cont %> </td>
                     <td> <%= source.name %> </td>
                     <td>
                     	<% if source.link[6,2] == "//" then %>
