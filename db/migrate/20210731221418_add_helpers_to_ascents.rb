@@ -19,7 +19,7 @@ class AddHelpersToAscents < ActiveRecord::Migration[6.0]
       date_string_form += ascent.day ? day.to_s : "01"
 
       andinists = []
-      ascent.andinists.order("fullname")each do |andinist|
+      ascent.andinists.order("fullname").each do |andinist|
         andinists << andinist.fullname
       end
       ascent.update_column(:mountain_name, ascent.route.mountain.fullname)
