@@ -4,7 +4,11 @@ class AscentsController < ApplicationController
 
   # GET /ascents or /ascents.json
   def index
-    @ascents = Ascent.all
+    #@ascents = Ascent.all
+    respond_to do |format|
+      format.html
+      format.json { render json: AscentsDatatable.new(view_context) }
+    end
   end
 
   # GET /ascents/1 or /ascents/1.json
@@ -99,4 +103,4 @@ class AscentsController < ApplicationController
       params.fetch(:ascent, {})
       params.require(:ascent).permit(:name, :year, :month, :day, :route_id, :andinist_nonexistent, :ascent_date, :no_month, :no_day, :andinist_ids => [])
     end
-  end
+end

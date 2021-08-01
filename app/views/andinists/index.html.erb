@@ -4,50 +4,32 @@
 
 <h1>Andinistas</h1>
 
-<table id="andinist-table" class="table table-striped table-sm" role="datatable" data-turbolinks="false">
+<%= content_tag :table, role: :datatable, id: "andinist-table", class: "table table-striped table-sm", data: { turbolinks: false, url: andinists_path(format: :json)} do %>
   <thead class="thead-dark">
     <tr>
       <th>ID</th>
       <th>Nombre</th>
-      <th>País</th>
-      <th>Club</th>
-      <th>Referencias</th>
-      <th># Primeros Ascensos</th>
+      <th>País(es)</th>
+      <th>Club(es)</th>
+      <th># Ascensos Destacados</th>
+      <th># Primeras Absolutas</th>
       <th># Nuevas Rutas</th>
-      <th>Editar</th>
     </tr>
   </thead>
-
   <tbody>
-    <% @andinists.each do |andinist| %>
-      <tr>
-        <th> <%= andinist.id %> </th>
-        <th> <%= link_to andinist.fullname, andinist_path(andinist) %> </td>
-        <td> <%= andinist.countries.first ? andinist.countries.first.name : "" %> </td> 
-        <td> 
-          <% cont = 0  %>
-          <% andinist.clubs.each do |club| %>
-              <%= cont == 0 ? "" :', '%>
-              <%= club.name %>
-              <% cont += 1 %>
-          <% end %>
-        </td>
-        <td> Sin info </td>
-        <td> <%= andinist.ascents.count %></td>
-        <td> <%= andinist.ascents.count %></td>
-        <td><%= link_to 'Editar', edit_andinist_path(andinist) %></td>
-      </tr>
-    <% end %>
   </tbody>
-</table>
+<% end %>
 
 <script type="text/javascript">
   $(document).ready(function() {
     $('#andinist-table').DataTable({
+      processing: true,
+      serverSide: true,
+      ajax: '/andinists.json',
       "language": {
             "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
         }
-      });
+      })
   });
 </script>
 

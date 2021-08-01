@@ -2,46 +2,32 @@
   <div class="alert alert-primary" role="alert"><%= notice %></div>
 <% end %>
 
-<table id="ascent-table" class="table table-striped table-sm" role="datatable" data-turbolinks="false">
-  <thead class="thead-dark">
-    <tr>
-      <th>ID</th>
-      <th>Montaña</th>
-      <th>Ruta</th>
-      <th>Descripción</th>
-      <th>Andinistas</th>
-      <th style="min-width: 120px">Fecha</th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @ascents.each do |ascent| %>
+  <%= content_tag :table, role: :datatable, id: "ascent-table", class: "table table-striped table-sm", data: { turbolinks: false, url: ascents_path(format: :json)} do %>
+    <thead class="thead-dark">
       <tr>
-        <td> <%= ascent.id %> </th>
-        <th> <%= link_to ascent.route.mountain.fullname, mountain_path(ascent.route.mountain) %> </td>
-        <td> <%= link_to ascent.route.name, route_path(ascent.route) %> </td> 
-        <td> <%= ascent.name %> </td> 
-        <td>
-          <% cont = 0  %>
-          <% ascent.andinists.each do |andinist| %>
-            <%= cont == 0 ? "" :', '%>
-            <%= link_to andinist.fullname, andinist_path(andinist) %>
-            <% cont += 1 %>
-          <% end %>
-        </td>
-        <td> <%= ascent.fulldate %></td>
+        <th>ID</th>
+        <th>Montaña</th>
+        <th>Ruta</th>
+        <th>Descripción</th>
+        <th>Andinistas</th>
+        <th style="min-width: 120px">Fecha</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+    </tbody>
+  <% end %>
 
 <script type="text/javascript">
   $(document).ready(function() {
     $('#ascent-table').DataTable({
+      processing: true,
+      serverSide: true,
+      ajax: '/ascents.json',
       "language": {
             "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
         }
-      });
+      })
   });
 </script>
 

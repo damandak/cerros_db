@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_25_171849) do
+ActiveRecord::Schema.define(version: 2021_07_31_221418) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,12 @@ ActiveRecord::Schema.define(version: 2021_06_25_171849) do
     t.string "gender"
     t.text "img_url"
     t.string "img_author"
+    t.string "fullname"
+    t.string "club_to_s"
+    t.string "country_to_s"
+    t.integer "remarkable_ascents"
+    t.integer "first_absolutes"
+    t.integer "first_ascents"
   end
 
   create_table "andinists_ascents", id: false, force: :cascade do |t|
@@ -56,6 +62,13 @@ ActiveRecord::Schema.define(version: 2021_06_25_171849) do
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "route_id", null: false
     t.string "name"
+    t.boolean "first_absolute"
+    t.boolean "first_ascent"
+    t.string "mountain_name"
+    t.string "route_name"
+    t.string "andinists_to_s"
+    t.string "fulldate"
+    t.string "fulldate_for_form"
     t.index ["route_id"], name: "index_ascents_on_route_id"
   end
 

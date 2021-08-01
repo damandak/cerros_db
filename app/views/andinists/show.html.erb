@@ -32,23 +32,13 @@
     	<tr>
     		<th>Nacionalidad</th>
     		<td>
-                <% cont = 0  %>
-                <% @andinist.countries.each do |country| %>
-                    <%= cont == 0 ? "" : ", "%>
-                    <%= country.name %>
-                    <% cont += 1 %>
-                <% end %>
+                <%= @andinist.country_to_s%>
             </th>
     	</tr>
     	<tr>
     		<th>Club</th>
     		<td>
-                <% cont = 0  %>
-                <% @andinist.clubs.each do |club| %>
-                    <%= cont == 0 ? "" : ', '%>
-                    <%= club.name %>
-                    <% cont += 1 %>
-                <% end %>
+                <%= @andinist.club_to_s%>
             </td>
     	</tr>
     	<tr>

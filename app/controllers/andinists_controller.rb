@@ -6,7 +6,10 @@ class AndinistsController < ApplicationController
 
   # GET /andinists or /andinists.json
   def index
-    @andinists = Andinist.all
+    respond_to do |format|
+      format.html
+      format.json { render json: AndinistsDatatable.new(view_context) }
+    end
   end
 
   # GET /andinists/1 or /andinists/1.json
