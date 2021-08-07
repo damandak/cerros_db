@@ -3,6 +3,7 @@ class Ascent < ApplicationRecord
 	has_and_belongs_to_many :andinists
 	has_many :sources, as: :referenceable
 	after_update :update_badges
+	after_create :update_badges
 	
 	has_paper_trail
 	

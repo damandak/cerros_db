@@ -5,7 +5,7 @@ class Andinist < ApplicationRecord
   has_and_belongs_to_many :clubs
   has_many :sources, as: :referenceable
   after_update :update_fullname, :update_country_to_s, :update_club_to_s, :update_ascent_info
-  after_create :set_fullname_default
+  after_create :update_fullname, :update_country_to_s, :update_club_to_s, :update_ascent_info
 
   has_paper_trail
   

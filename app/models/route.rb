@@ -3,6 +3,7 @@ class Route < ApplicationRecord
 	has_many :ascents
 	has_many :sources, as: :referenceable
 	after_update :update_badges
+	after_create :update_badges
 
 	has_paper_trail
 

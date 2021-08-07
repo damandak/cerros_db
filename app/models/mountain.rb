@@ -8,6 +8,7 @@ class Mountain < ApplicationRecord
   validates :name, presence: true
   has_ancestry
   after_update :update_badges
+  after_create :update_badges
   
   has_paper_trail
 
