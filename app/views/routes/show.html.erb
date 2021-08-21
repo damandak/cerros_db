@@ -199,6 +199,9 @@
 	<%= link_to 'Agregar Referencia', new_source_path(:route => @route), class: "btn btn-primary btn-sm my-2 mb-3"  %>
 <% end %>
 
+<h3 class="mt-5"> Comentarios / Discusión </h3>
+<div class="fb-comments" data-href="<%= request.original_url %>" data-width="100%" data-numposts="10"></div>
+
 <script>
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
