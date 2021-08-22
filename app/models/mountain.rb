@@ -160,7 +160,7 @@ class Mountain < ApplicationRecord
   end
 
   def update_badges
-    mountain.ascents.each do |ascent|
+    self.ascents.each do |ascent|
       route = ascent.route
       if not route.unregistered_sport_ascent and route.ascents.sort_by(&:fulldate).first == ascent then
         ascent.update_column(:first_ascent, true)

@@ -63,6 +63,14 @@
     </div>
   </div>
   
+  <% Sector.all.order(:category).pluck(:category).uniq.each do |cat| %>
+    <div class="mb-3">
+      <%= form.label :sector_ids, cat, :class => "form-label" %><br>
+      <%= form.select :sector_ids, sectors_for_select(cat), {}, {:class => "form-select", :multiple => true} %>
+    </div>
+                  
+  <% end %>
+
   <div class="mb-3">
     <%= form.label :latitude, "Latitud Sur (WGS84)", :class => "form-label" %><br>
     <%= form.text_field :latitude, :class => "form-control"  %>
@@ -87,7 +95,11 @@
     new SlimSelect({
       select: '#mountain_parent_id'
     })
+    new SlimSelect({
+      select: '#mountain_sector_ids'
+    })
   </script>
+
 
   <% if mountain.errors.any? %>
     <div id="error_explanation">
