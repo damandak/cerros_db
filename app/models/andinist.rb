@@ -3,6 +3,7 @@ class Andinist < ApplicationRecord
   has_and_belongs_to_many :ascents
   has_and_belongs_to_many :countries
   has_and_belongs_to_many :clubs
+  has_and_belongs_to_many :articles
   has_many :sources, as: :referenceable
   after_update :update_fullname, :update_country_to_s, :update_club_to_s, :update_ascent_info
   after_create :update_fullname, :update_country_to_s, :update_club_to_s, :update_ascent_info

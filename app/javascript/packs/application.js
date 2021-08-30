@@ -8,6 +8,7 @@ import 'bootstrap'
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
+import "./quill-editor.js"
 require("channels")
 
 global.toastr = require("toastr")
