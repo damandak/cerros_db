@@ -1,23 +1,15 @@
-<main>
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Cerros de los Andes</h1>
-        <p class="lead text-muted">La gran base de datos de los cerros de los Andes, y sus ascensiones más destacadas.</p>
-        <p>
-          <%= link_to "Montañas", mountains_init_url, class: "btn btn-secondary my-2"  %>
-        </p>
-      </div>
-    </div>
-  </section>
-</main>
-
+<div class="main-cover mb-4">
+  <div class="title">
+    <h1 class="mb-2">Cerros de los Andes</h1>
+    <p>Los cerros de los andes y sus ascensiones más destacadas</p>
+  </div>
+</div>
 
 <div class="accordion" id="accordionExample">
   <div class="card">
     <div class="card-header" id="headingOne">
       <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           Buscar Cerros
         </button>
       </h2>
@@ -74,9 +66,10 @@
   </div>
 </div>
 
-<div class="mb-3 row">
+<div class="row">
   
 </div>
+
 
 
 <br>
@@ -126,8 +119,11 @@
             "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
         }
       });
+    $(".main-cover").css("background-image", "url(https://lh3.googleusercontent.com/pw/AM-JKLWclWIqru8LVF0aO_S04r7xXvlMynY1GZyN8S-EojyPa4hzOf6ttifWKhuz8MpRbdVwQx7GVtV_iyy5yvdhjsmnFFGXYtumN42-xt4n66WgZ5jRNfAi08U4ez3rA88aQa7YMLEEuloy3r_VSgS80YV22g=w1561-h736-no?authuser=1)");
+    $(".container").addClass("main-container");
   });
 </script>
+
 <script>
 $("[data-toggle=tooltip").tooltip();
   </script>
