@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :articles
   resources :sources
   resources :sectors
   get "/sectors/categories/:category", to: "sectors#index", as: "sectors_categories"

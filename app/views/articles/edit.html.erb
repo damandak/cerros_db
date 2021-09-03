@@ -1,0 +1,43 @@
+<% if can? :manage, Article  %>
+	<h1>Editar Entrada</h1>
+
+	<%= render 'form', article: @article %>
+
+	<%= link_to 'Mostrar ', @article %> |
+	<%= link_to 'Volver', articles_path %>
+
+	<script>
+	document.addEventListener("DOMContentLoaded", function (event) {
+	    var toolbarOptions = [
+	        ['bold', 'italic', 'underline', 'strike', 'link'],
+	        ['blockquote', 'image'],
+
+	        [{ list: 'ordered' }, { list: 'bullet' }],
+	        [{ indent: '-1'}, { indent: '+1' }]
+
+	        [{ size: [] }],
+	        [{ header: [1, 2, 3, 4, 5, 6, false] }],
+	        [ 'link', 'image', 'video', 'formula' ],
+
+	        [{ color: [] }],
+	        [{ align: ['center', 'right', 'justify', false] }]
+	      ];
+
+	      var quill = new Quill('#editor-container', {
+	        modules: {
+	          toolbar: toolbarOptions,
+	        },
+	        theme: 'snow'
+	      });
+
+	    quill.on('text-change', function() {
+	      $("input[class=article-content]").val(quill.root.innerHTML);
+	    });
+	});
+		
+
+
+	</script>			
+<% else %>
+	<p> No tienes acceso a este sitio </p>
+<% end %>				
