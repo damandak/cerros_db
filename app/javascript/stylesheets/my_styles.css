@@ -343,3 +343,14 @@ a {
         font-size: 15px;
     }
 }
+
+.about-cover {
+    display: block;
+    height: 20vh;
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
