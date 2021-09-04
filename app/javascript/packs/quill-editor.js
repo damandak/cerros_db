@@ -1,5 +1,4 @@
 const MAX_FILE_SIZE = 3000000
-console.log("wenaaa")
 
 importImage = function (textEditor) {
 	if (file.size > MAX_FILE_SIZE) {
