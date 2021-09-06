@@ -86,11 +86,11 @@ class SourcesController < ApplicationController
 
     def referenceable_object(obj_type, obj_id)
       if obj_type == "Mountain"
-        return Mountain.find(obj_id)
+        return Mountain.friendly.find(obj_id)
       elsif obj_type == "Route"
         return Route.find(obj_id)
       elsif obj_type == "Andinist"
-        return Andinist.find(obj_id)
+        return Andinist.friendly.find(obj_id)
       elsif obj_type == "Ascent"
         return Ascent.find(obj_id)
       else

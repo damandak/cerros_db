@@ -15,14 +15,14 @@ class RoutesController < ApplicationController
   def new
     @route = Route.new
     if params[:mountain]
-      @mountain = Mountain.find(params[:mountain])
+      @mountain = Mountain.friendly.find(params[:mountain])
     end
   end
 
   # GET /routes/1/edit
   def edit
     if params[:mountain]
-      @mountain = Mountain.find(params[:mountain])
+      @mountain = Mountain.friendly.find(params[:mountain])
     end
   end
 
