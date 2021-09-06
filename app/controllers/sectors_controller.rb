@@ -12,6 +12,7 @@ class SectorsController < ApplicationController
 
   # GET /sectors/1 or /sectors/1.json
   def show
+    @sector = Sector.friendly.find(params[:id])
   end
 
   # GET /sectors/new
@@ -63,7 +64,7 @@ class SectorsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_sector
-      @sector = Sector.find(params[:id])
+      @sector = Sector.friendly.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.

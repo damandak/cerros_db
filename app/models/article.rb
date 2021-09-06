@@ -4,5 +4,9 @@ class Article < ApplicationRecord
 	paginates_per 5
 
 	has_paper_trail
+
+	extend FriendlyId
+
+	friendly_id :title, use: :slugged
   
 end

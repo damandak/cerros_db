@@ -4,6 +4,7 @@ class MountainsController < ApplicationController
 
   attr_accessor :first_country, :second_country, :third_country
   
+
   # GET /mountains or /mountains.json
   def index
     @mountains = Mountain.search(params[:mountain])
@@ -14,6 +15,7 @@ class MountainsController < ApplicationController
 
   # GET /mountains/1 or /mountains/1.json
   def show
+    @mountain = Mountain.friendly.find(params[:id])
   end
 
   # GET /mountains/new
@@ -133,7 +135,7 @@ class MountainsController < ApplicationController
   # PaperTrail
   def undo
     @mountain_version = PaperTrail::Version.find_by_id(params[:v_id])
-    @mountain = Mountain.find(params[:m_id])
+    @mountain = Mountain.friendly.find(params[:m_id])
     begin
       puts("wena")
       if @mountain_version.reify
@@ -156,7 +158,7 @@ class MountainsController < ApplicationController
 
     # Use callbacks to share common setup or constraints between actions.
     def set_mountain
-      @mountain = Mountain.find(params[:id])
+      @mountain = Mountain.friendly.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.

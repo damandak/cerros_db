@@ -14,6 +14,7 @@ class AndinistsController < ApplicationController
 
   # GET /andinists/1 or /andinists/1.json
   def show
+    @andinist = Andinist.friendly.find(params[:id])
   end
 
   # GET /andinists/new
@@ -200,7 +201,7 @@ class AndinistsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_andinist
-      @andinist = Andinist.find(params[:id])
+      @andinist = Andinist.friendly.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.

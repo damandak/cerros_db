@@ -13,7 +13,9 @@ class Andinist < ApplicationRecord
   attr_accessor :first_club, :second_club, :third_club
   attr_accessor :first_country, :second_country, :third_country
 
-  
+  extend FriendlyId
+  friendly_id :fullname, use: :slugged
+
   private
 
   def update_fullname

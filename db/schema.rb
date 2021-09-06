@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_30_013625) do
+ActiveRecord::Schema.define(version: 2021_09_06_124223) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,6 +52,8 @@ ActiveRecord::Schema.define(version: 2021_08_30_013625) do
     t.integer "remarkable_ascents"
     t.integer "first_absolutes"
     t.integer "first_ascents"
+    t.string "slug"
+    t.index ["slug"], name: "index_andinists_on_slug", unique: true
   end
 
   create_table "andinists_articles", id: false, force: :cascade do |t|
@@ -90,6 +92,8 @@ ActiveRecord::Schema.define(version: 2021_08_30_013625) do
     t.string "subtitle"
     t.string "img_url"
     t.string "img_author"
+    t.string "slug"
+    t.index ["slug"], name: "index_articles_on_slug", unique: true
   end
 
   create_table "ascents", force: :cascade do |t|
@@ -129,6 +133,17 @@ ActiveRecord::Schema.define(version: 2021_08_30_013625) do
     t.index ["mountain_id"], name: "index_countries_mountains_on_mountain_id"
   end
 
+  create_table "friendly_id_slugs", force: :cascade do |t|
+    t.string "slug", null: false
+    t.integer "sluggable_id", null: false
+    t.string "sluggable_type", limit: 50
+    t.string "scope"
+    t.datetime "created_at"
+    t.index ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true
+    t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
+    t.index ["sluggable_type", "sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_type_and_sluggable_id"
+  end
+
   create_table "igm_rectangles", force: :cascade do |t|
     t.string "name"
     t.string "file_id"
@@ -157,6 +172,8 @@ ActiveRecord::Schema.define(version: 2021_08_30_013625) do
     t.string "img_author"
     t.boolean "unregistered_non_sport_ascent"
     t.boolean "unregistered_sport_ascent"
+    t.string "slug"
+    t.index ["slug"], name: "index_mountains_on_slug", unique: true
   end
 
   create_table "mountains_sectors", force: :cascade do |t|
@@ -201,6 +218,8 @@ ActiveRecord::Schema.define(version: 2021_08_30_013625) do
     t.text "img_url"
     t.string "description"
     t.string "img_author"
+    t.string "slug"
+    t.index ["slug"], name: "index_sectors_on_slug", unique: true
   end
 
   create_table "sources", force: :cascade do |t|

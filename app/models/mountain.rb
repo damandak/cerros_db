@@ -14,6 +14,9 @@ class Mountain < ApplicationRecord
 
   attr_accessor :first_country, :second_country, :third_country
 
+  extend FriendlyId
+  friendly_id :fullname, use: :slugged
+  
   scope :with_ascents, -> {
     self.joins(:ascents).distinct
   }
