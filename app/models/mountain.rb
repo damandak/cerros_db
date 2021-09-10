@@ -32,16 +32,9 @@ class Mountain < ApplicationRecord
 
   after_commit :create_unknown_route, on:[ :create ]
   
-  def ascended?
-    if self.ascents.count > 0 or self.previously_ascended then
-      return true
-    else
-      return false
-    end
-  end
 
   def self.ascended
-    where ascended: true
+    where previously_ascended: true
   end
 
   def fullname
@@ -53,7 +46,7 @@ class Mountain < ApplicationRecord
   end
 
   def ascended_str
-    if self.ascended? then
+    if self.previously_ascended then
       return "Sí"
     else
       return "No"
@@ -120,11 +113,11 @@ class Mountain < ApplicationRecord
       else
         mountains = Mountain.all
       end
-      if search[:":ascended"] then
+      if search[:":ascended"] and search[:":ascended"][","] != "None" then
         if search[:":ascended"][","] == "Sí" then
-          mountains = mountains.with_ascents
-        elsif search[:":ascended"][","] == "No" then
-          mountains = mountains.without_ascents
+          mountains = mountains.where("previously_ascended = ?", true)
+        else
+          mountains = mountains.where("previously_ascended = ?", false)
         end
       end
       if search[:":min_height"] and search[:":min_height"][","] != "None" then
@@ -163,6 +156,12 @@ class Mountain < ApplicationRecord
   end
 
   def update_badges
+    if self.ascents.count > 0 or self.unregistered_sport_ascent then
+      self.update_column(:previously_ascended, true)
+    else
+      self.update_column(:previously_ascended, false)
+    end
+
     self.ascents.each do |ascent|
       route = ascent.route
       if not route.unregistered_sport_ascent and route.ascents.sort_by(&:fulldate).first == ascent then

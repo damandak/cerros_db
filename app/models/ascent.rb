@@ -35,6 +35,12 @@ class Ascent < ApplicationRecord
   		route = self.route
   		mountain = route.mountain
 	  	
+	  	if mountain.ascents.count > 0 or mountain.unregistered_sport_ascent then
+	      self.previously_ascended = true
+	    else
+	      self.previously_ascended = false
+	    end
+
 	    mountain.ascents.each do |ascent|
 			if not route.unregistered_sport_ascent and route.ascents.sort_by(&:fulldate).first == ascent then
 				ascent.update_column(:first_ascent, true)
