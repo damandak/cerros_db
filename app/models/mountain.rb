@@ -172,8 +172,9 @@ class Mountain < ApplicationRecord
       end
     end
 
-    andinists = []
+    
     self.ascents.each do |ascent|
+      andinists = []
       ascent.andinists.each do |andinist|
         andinists << andinist.fullname
       end
