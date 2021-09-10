@@ -96,7 +96,7 @@
 	    			por
 	    			<%= link_to @mountain.first_absolute.route.name , route_path(@mountain.first_absolute.route.name) %>
 	    		<% elsif @mountain.unregistered_non_sport_ascent || @mountain.unregistered_sport_ascent %>
-	    			Ascendido pero sin registros del primer ascenso *
+	    			Ascendido pero sin registros o claridad del primer ascenso *
 	    		<% else %>
 	    			Sin ascensos registrados
 	    		<% end %>
