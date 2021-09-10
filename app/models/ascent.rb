@@ -36,9 +36,9 @@ class Ascent < ApplicationRecord
   		mountain = route.mountain
 	  	
 	  	if mountain.ascents.count > 0 or mountain.unregistered_sport_ascent then
-	      mountain.previously_ascended = true
+	      mountain.update_column(:previously_ascended, true)
 	    else
-	      mountain.previously_ascended = false
+	      mountain.update_column(:previously_ascended, false)
 	    end
 
 	    mountain.ascents.each do |ascent|
