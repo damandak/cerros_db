@@ -36,9 +36,9 @@ class Ascent < ApplicationRecord
   		mountain = route.mountain
 	  	
 	  	if mountain.ascents.count > 0 or mountain.unregistered_sport_ascent then
-	      self.previously_ascended = true
+	      mountain.previously_ascended = true
 	    else
-	      self.previously_ascended = false
+	      mountain.previously_ascended = false
 	    end
 
 	    mountain.ascents.each do |ascent|

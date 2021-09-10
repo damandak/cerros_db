@@ -17,12 +17,6 @@ class Mountain < ApplicationRecord
   extend FriendlyId
   friendly_id :fullname, use: :slugged
   
-  scope :with_ascents, -> {
-    self.joins(:ascents).distinct
-  }
-  scope :without_ascents, -> {
-    self.left_outer_joins(:ascents).where(ascents: {id: nil})
-  }
   scope :similar_fullname, ->(lookup){
     self.where("(lower(prefix) || ' ' || lower(mountains.name)) LIKE ?", "%#{lookup.downcase}%" )
   }
