@@ -1,3 +1,4 @@
+<% content_for :meta_title, "Nuevo Ascenso | #{DEFAULT_META["meta_title"]}" %>
 <% if can? :manage, Ascent  %>
 	<% if @mountain %>
 		<h1>Registrar ascenso de <%= Mountain.find(@mountain.id).fullname %></h1>

@@ -1,3 +1,4 @@
+<% content_for :meta_title, "#{@category} | #{DEFAULT_META["meta_title"]}" %>
 <% if @category and @sectors.where(category: @category).count > 0 then %>
 
   <p id="notice"><%= notice %></p>
